@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>데일리 코리안 - TOPIK Daily</title>
+    <link>https://topikdaily.github.io</link>
+    <description>Học tiếng Hàn và luyện thi TOPIK mỗi ngày</description>
+    <language>vi</language>
+    <lastBuildDate>Sun, 08 Feb 2026 07:59:24 GMT</lastBuildDate>
+    <atom:link href="https://topikdaily.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+        <title>TOPIK Daily - Bí mật TOPIK & Tin tức gây sốc!</title>
+        <link>https://topikdaily.github.io/posts/2026-02-08-bí-mật-topik-tin-tức-gây-sốc.html</link>
+        <description><![CDATA[최근 사회적으로 중요한 위치에 있는 몇몇 사람들이 어떤 회사로부터 큰돈을 받았다는 의혹이 있었습니다. 이들은 회사 일을 도와준 대가로 돈을 받았다는 혐의를 받았지만, 법원에서는 무죄 판결을 받았습니다. 이 소식을 들은 많은 사람들은 법의 판단을 이해하기 어렵다고...]]></description>
+        <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+        <guid>https://topikdaily.github.io/posts/2026-02-08-bí-mật-topik-tin-tức-gây-sốc.html</guid>
+    </item>
+
+</channel>
+</rss>
