@@ -3,60 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>데일리 코리안 - Học TOPIK Mỗi Ngày</title>
-    <meta name="description" content="Học tiếng Hàn và luyện thi TOPIK mỗi ngày với tin tức, bài văn mẫu, từ vựng và quiz.">
-    <meta name="keywords" content="TOPIK, Korean, 한국어, tiếng Hàn, học tiếng Hàn">
-    <meta property="og:title" content="데일리 코리안 - Học TOPIK Mỗi Ngày">
-    <meta property="og:description" content="Học tiếng Hàn và luyện thi TOPIK mỗi ngày">
+    <title>Daily Korean — Học Tiếng Hàn & TOPIK Mỗi Ngày</title>
+    <meta name="description" content="Blog học tiếng Hàn miễn phí — Từ vựng, ngữ pháp, luyện viết, đọc hiểu TOPIK II mỗi ngày. Video TikTok & YouTube kèm bài giảng chi tiết.">
+    <meta name="keywords" content="TOPIK, Korean, 한국어, tiếng Hàn, học tiếng Hàn, TOPIK II, luyện thi TOPIK">
+    <meta property="og:title" content="Daily Korean — Học Tiếng Hàn & TOPIK Mỗi Ngày">
+    <meta property="og:description" content="Blog học tiếng Hàn miễn phí — Video, bài giảng, quiz mỗi ngày">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://topikdaily.github.io">
     <link rel="stylesheet" href="style.css">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>🇰🇷 데일리 코리안</h1>
-        <p>Học TOPIK Mỗi Ngày - Tin Tức, Bài Văn, Quiz</p>
-    </header>
-    
-    <nav class="nav-links">
-        <a href="#posts">Bài Viết</a>
-        <a href="https://youtube.com/@topikdaily">YouTube</a>
-        <a href="https://tiktok.com/@topikdaily">TikTok</a>
-        <a href="feed.xml">RSS</a>
+    <!-- Reading Progress -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <span class="brand-icon">🇰🇷</span>
+                <span class="brand-text">Daily Korean</span>
+            </a>
+            <div class="nav-links">
+                <a href="#lessons">Bài Học</a>
+                <a href="https://youtube.com/@dailykorean.me" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.76 31.76 0 0 0 0 12a31.76 31.76 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.76 31.76 0 0 0 24 12a31.76 31.76 0 0 0-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://tiktok.com/@dailykorean.me" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.89 2.89 2.89 0 0 1 2.88-2.89c.28 0 .56.04.82.12v-3.5a6.37 6.37 0 0 0-.82-.05A6.34 6.34 0 0 0 3.14 15a6.34 6.34 0 0 0 6.35 6.33 6.34 6.34 0 0 0 6.35-6.33V8.72a8.19 8.19 0 0 0 4.75 1.5V6.77a4.83 4.83 0 0 1-1-.08z"/></svg>
+                    <span>TikTok</span>
+                </a>
+                <a href="feed.xml" title="RSS Feed">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18zM4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44zM4 10.1A9.9 9.9 0 0 1 13.9 20h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>
+                </a>
+            </div>
+        </div>
     </nav>
-    
-    <main>
-        <section id="posts" class="posts">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">📚 Cập nhật mỗi ngày</div>
+            <h1>Học Tiếng Hàn<br><span class="hero-gradient">Cùng Daily Korean</span></h1>
+            <p class="hero-subtitle">Từ vựng · Ngữ pháp · Luyện viết · Đọc hiểu TOPIK II<br>Video bài giảng kèm giải thích chi tiết mỗi ngày</p>
+            <div class="hero-cta">
+                <a href="https://youtube.com/@dailykorean.me" class="btn btn-primary" target="_blank" rel="noopener">
+                    ▶ Xem trên YouTube
+                </a>
+                <a href="https://tiktok.com/@dailykorean.me" class="btn btn-outline" target="_blank" rel="noopener">
+                    📱 Theo dõi TikTok
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-number">1</span><span class="stat-label">Bài học</span></div>
+                <div class="stat"><span class="stat-number">365</span><span class="stat-label">Ngày/Năm</span></div>
+                <div class="stat"><span class="stat-number">100%</span><span class="stat-label">Miễn phí</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="filter-section" id="lessons">
+        <div class="container">
+            <div class="section-header">
+                <h2>📖 Bài Học Gần Đây</h2>
+                <div class="search-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    <input type="text" id="searchInput" placeholder="Tìm bài học..." />
+                </div>
+            </div>
+            <div class="category-tabs">
+                <button class="tab active" data-category="all">Tất cả</button>
+                <button class="tab" data-category="vocab">📖 Từ Vựng</button>
+                <button class="tab" data-category="grammar">📐 Ngữ Pháp</button>
+                <button class="tab" data-category="writing">✍️ Viết</button>
+                <button class="tab" data-category="reading">📰 Đọc</button>
+                <button class="tab" data-category="listening">🎧 Nghe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Posts Grid -->
+    <main class="container">
+        <section class="posts-grid" id="postsGrid">
             
-        <article class="post-card" data-date="2026-02-11">
-            <div class="post-meta">
-                <span class="date">📅 2026-02-11</span>
-                <span class="reading-time">⏱️ 10 phút</span>
+        <article class="post-card" data-topic="Đọc hiểu" data-date="2026-02-13">
+            <div class="card-body">
+                <div class="card-header">
+                    <span class="topic-badge">Đọc hiểu</span>
+                    <span class="card-date">2026-02-13</span>
+                </div>
+                <h3><a href="posts/2026-02-13-đọc-hiểu.html">TOPIK Daily - Đọc hiểu</a></h3>
+                <p class="card-excerpt">Đọc hiểu</p>
+                <div class="card-footer">
+                    <div class="card-tags"><span class="tag">TOPIK</span> <span class="tag">Korean</span> <span class="tag">Learning</span> <span class="tag">Đọc hiểu</span></div>
+                    <div class="card-meta">
+                        <span>⏱️ 7 phút</span>
+                        <a href="posts/2026-02-13-đọc-hiểu.html" class="read-more-link">Đọc tiếp →</a>
+                    </div>
+                </div>
             </div>
-            <h2><a href="posts/2026-02-11-viết-câu-5152---điền-chỗ-trống.html">TOPIK Daily - Viết (Câu 51/52 - Điền chỗ trống)</a></h2>
-            <p class="topic">🏷️ Viết (Câu 51/52 - Điền chỗ trống)</p>
-            <p class="excerpt">Viết (Câu 51/52 - Điền chỗ trống)</p>
-            <div class="tags">
-                <span class="tag">TOPIK</span> <span class="tag">Korean</span> <span class="tag">Learning</span> <span class="tag">Viết (Câu 51/52 - Điền chỗ trống)</span>
-            </div>
-            <a href="posts/2026-02-11-viết-câu-5152---điền-chỗ-trống.html" class="read-more">Đọc tiếp →</a>
         </article>
 
         </section>
-        
         <section class="pagination">
             
         </section>
     </main>
-    
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>🎬 Video Bài Học Mỗi Ngày</h2>
+                <p>Theo dõi kênh YouTube & TikTok để nhận bài học mới mỗi ngày — hoàn toàn miễn phí!</p>
+                <div class="cta-buttons">
+                    <a href="https://youtube.com/@dailykorean.me" class="btn btn-yt" target="_blank" rel="noopener">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.76 31.76 0 0 0 0 12a31.76 31.76 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.76 31.76 0 0 0 24 12a31.76 31.76 0 0 0-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+                        YouTube @dailykorean.me
+                    </a>
+                    <a href="https://tiktok.com/@dailykorean.me" class="btn btn-tt" target="_blank" rel="noopener">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.89 2.89 2.89 0 0 1 2.88-2.89c.28 0 .56.04.82.12v-3.5a6.37 6.37 0 0 0-.82-.05A6.34 6.34 0 0 0 3.14 15a6.34 6.34 0 0 0 6.35 6.33 6.34 6.34 0 0 0 6.35-6.33V8.72a8.19 8.19 0 0 0 4.75 1.5V6.77a4.83 4.83 0 0 1-1-.08z"/></svg>
+                        TikTok @dailykorean.me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 데일리 코리안 | <a href="https://youtube.com/@topikdaily">YouTube</a> | <a href="https://tiktok.com/@topikdaily">TikTok</a></p>
-        <p>Made with ❤️ for Korean learners</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>🇰🇷 Daily Korean</h3>
+                    <p>Học tiếng Hàn mỗi ngày — từ vựng, ngữ pháp, luyện viết, video bài giảng chi tiết.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Theo dõi</h4>
+                    <a href="https://youtube.com/@dailykorean.me" target="_blank" rel="noopener">📺 YouTube</a>
+                    <a href="https://tiktok.com/@dailykorean.me" target="_blank" rel="noopener">📱 TikTok</a>
+                    <a href="feed.xml">📡 RSS Feed</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Chủ đề</h4>
+                    <a href="javascript:filterByCategory('vocab')">Từ Vựng 한국어</a>
+                    <a href="javascript:filterByCategory('grammar')">Ngữ Pháp</a>
+                    <a href="javascript:filterByCategory('writing')">Luyện Viết TOPIK</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Daily Korean · Made with ❤️ for Korean learners</p>
+            </div>
+        </div>
     </footer>
-    
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" title="Lên đầu trang">↑</button>
+
     <script src="script.js" defer></script>
 </body>
 </html>

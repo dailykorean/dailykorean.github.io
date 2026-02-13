@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-    <title>데일리 코리안 - TOPIK Daily</title>
+    <title>Daily Korean — TOPIK Daily</title>
     <link>https://topikdaily.github.io</link>
     <description>Học tiếng Hàn và luyện thi TOPIK mỗi ngày</description>
     <language>vi</language>
-    <lastBuildDate>Wed, 11 Feb 2026 19:57:44 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Feb 2026 05:12:53 GMT</lastBuildDate>
     <atom:link href="https://topikdaily.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
-        <title>TOPIK Daily - Viết (Câu 51/52 - Điền chỗ trống)</title>
-        <link>https://topikdaily.github.io/posts/2026-02-11-viết-câu-5152---điền-chỗ-trống.html</link>
-        <description><![CDATA[Viết (Câu 51/52 - Điền chỗ trống)]]></description>
-        <pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate>
-        <guid>https://topikdaily.github.io/posts/2026-02-11-viết-câu-5152---điền-chỗ-trống.html</guid>
+        <title>TOPIK Daily - Đọc hiểu</title>
+        <link>https://topikdaily.github.io/posts/2026-02-13-đọc-hiểu.html</link>
+        <description><![CDATA[Đọc hiểu]]></description>
+        <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+        <guid>https://topikdaily.github.io/posts/2026-02-13-đọc-hiểu.html</guid>
     </item>
 
 </channel>
