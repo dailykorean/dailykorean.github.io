@@ -14,21 +14,25 @@ document.addEventListener('DOMContentLoaded', function() {
         'listening': ['nghe', 'listening', '🎧']
     };
 
-    function getCategoryForTopic(topic) {
+    function getCategoriesForTopic(topic) {
         var t = (topic || '').toLowerCase();
+        var cats = [];
         for (var cat in topicMap) {
             var keywords = topicMap[cat];
             for (var i = 0; i < keywords.length; i++) {
-                if (t.indexOf(keywords[i]) !== -1) return cat;
+                if (t.indexOf(keywords[i]) !== -1) { cats.push(cat); break; }
             }
         }
-        return 'other';
+        // Every daily post contains vocab & grammar, so always include them
+        if (cats.indexOf('vocab') === -1) cats.push('vocab');
+        if (cats.length === 0) cats.push('other');
+        return cats;
     }
 
-    // Assign categories
+    // Assign categories (space-separated for multi-category)
     cards.forEach(function(card) {
         var topic = card.getAttribute('data-topic') || '';
-        card.setAttribute('data-category', getCategoryForTopic(topic));
+        card.setAttribute('data-categories', getCategoriesForTopic(topic).join(' '));
     });
 
     var activeCategory = 'all';
@@ -38,7 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
         var visible = 0;
 
         cards.forEach(function(card) {
-            var matchCat = activeCategory === 'all' || card.getAttribute('data-category') === activeCategory;
+            var cats = (card.getAttribute('data-categories') || '').split(' ');
+            var matchCat = activeCategory === 'all' || cats.indexOf(activeCategory) !== -1;
             var h3 = card.querySelector('h3');
             var title = h3 ? h3.textContent.toLowerCase() : '';
             var topic = (card.getAttribute('data-topic') || '').toLowerCase();
