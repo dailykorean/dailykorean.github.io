@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (t.indexOf(keywords[i]) !== -1) { cats.push(cat); break; }
             }
         }
-        // Every daily post contains vocab & grammar, so always include them
-        if (cats.indexOf('vocab') === -1) cats.push('vocab');
         if (cats.length === 0) cats.push('other');
         return cats;
     }
