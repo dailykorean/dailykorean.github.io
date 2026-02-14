@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var cards = document.querySelectorAll('.post-card');
     var searchInput = document.getElementById('searchInput');
     var postsGrid = document.getElementById('postsGrid');
+    var vocabGrid = document.getElementById('vocabGrid');
+    var grammarGrid = document.getElementById('grammarGrid');
 
     var topicMap = {
-        'vocab': ['từ vựng', 'word of day', 'vocab', '📖'],
-        'grammar': ['ngữ pháp', 'grammar', 'so sánh', '📐'],
         'writing': ['viết', 'writing', 'câu 51', 'câu 52', 'câu 53', 'câu 54', '✍'],
         'reading': ['đọc', 'reading', 'đọc hiểu', '📰'],
         'listening': ['nghe', 'listening', '🎧']
@@ -35,7 +35,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var activeCategory = 'all';
 
+    // Sections that use dedicated grids instead of post filtering
+    var dedicatedSections = { 'vocab': vocabGrid, 'grammar': grammarGrid };
+
     function filterPosts() {
+        // Check if this category has a dedicated section
+        if (dedicatedSections[activeCategory]) {
+            // Hide posts grid, show dedicated grid
+            if (postsGrid) postsGrid.style.display = 'none';
+            if (vocabGrid) vocabGrid.style.display = 'none';
+            if (grammarGrid) grammarGrid.style.display = 'none';
+            dedicatedSections[activeCategory].style.display = '';
+            return;
+        }
+
+        // Show posts grid, hide dedicated grids
+        if (postsGrid) postsGrid.style.display = '';
+        if (vocabGrid) vocabGrid.style.display = 'none';
+        if (grammarGrid) grammarGrid.style.display = 'none';
+
         var searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
         var visible = 0;
 
