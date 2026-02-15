@@ -1,8 +1,8 @@
 ---
-title: "TOPIK Daily - Chống Tin Giả: Bí Quyết TOPIK & Tin Tức Hàn"
-date: "2026-02-15"
-topic: "Chống Tin Giả: Bí Quyết TOPIK & Tin Tức Hàn"
-tags: ["TOPIK", "Korean", "Learning", "Chống Tin Giả: Bí Quyết TOPIK & Tin Tức Hàn"]
+title: "Daily Korean #2026-02-14 — TOPIK 쓰기 54 | Vấn đề xã hội Hàn Quốc hôm nay + Ngữ Pháp -에 비해 vs -에 반해"
+date: "2026-02-14"
+topic: "TOPIK 쓰기 54 | Vấn đề xã hội Hàn Quốc hôm nay + Ngữ Pháp -에 비해 vs -에 반해"
+tags: ["TOPIK", "Korean", "Learning", "TOPIK 쓰기 54 | Vấn đề xã hội Hàn Quốc hôm nay + Ngữ Pháp -에 비해 vs -에 반해"]
 description: "## 📝 So Sánh Ngữ Pháp: -에 비해 vs -에 반해
 🏷️ Loại: 정도·비교
 
@@ -14,13 +14,13 @@ description: "## 📝 So Sánh Ngữ Pháp: -에 비해 vs -에 반해
 ### Giải thích -에 반해
 🇰🇷 -에 반해..."
 lang: "vi"
-canonical: "https://dailykorean.me/posts/2026-02-15-chống-tin-giả-bí-quyết-topik-tin-tức-hàn.html"
+canonical: "https://dailykorean.me/posts/2026-02-14-topik-쓰기-54-vấn-đề-xã-hội-hàn-quốc-hôm-nay-ngữ-phá.html"
 ---
 
-# TOPIK Daily - Chống Tin Giả: Bí Quyết TOPIK & Tin Tức Hàn
+# Daily Korean #2026-02-14 — TOPIK 쓰기 54 | Vấn đề xã hội Hàn Quốc hôm nay + Ngữ Pháp -에 비해 vs -에 반해
 
-📅 **Ngày**: 2026-02-15
-🏷️ **Chủ đề**: Chống Tin Giả: Bí Quyết TOPIK & Tin Tức Hàn
+📅 **Ngày**: 2026-02-14
+🏷️ **Chủ đề**: TOPIK 쓰기 54 | Vấn đề xã hội Hàn Quốc hôm nay + Ngữ Pháp -에 비해 vs -에 반해
 ⏱️ **Thời gian đọc**: 7 phút
 
 ---
