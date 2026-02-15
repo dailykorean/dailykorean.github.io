@@ -1,7 +1,7 @@
 ---
-title: "Câu 54 — bóp méo khác với sự thật hoặc"
+title: "Câu 54 — Thông tin giả và tư duy phản biện"
 date: "2026-02-14"
-topic: "Câu 54 — bóp méo khác với sự thật hoặc"
+topic: "Câu 54 — Thông tin giả và tư duy phản biện"
 tags: ["TOPIK", "Korean", "Learning", "Câu 54"]
 description: "## 📝 So Sánh Ngữ Pháp: -에 비해 vs -에 반해
 🏷️ Loại: 정도·비교
@@ -14,13 +14,13 @@ description: "## 📝 So Sánh Ngữ Pháp: -에 비해 vs -에 반해
 ### Giải thích -에 반해
 🇰🇷 -에 반해..."
 lang: "vi"
-canonical: "https://dailykorean.me/posts/2026-02-14-câu-54-bóp-méo-khác-với-sự-thật-hoặc.html"
+canonical: "https://dailykorean.me/posts/2026-02-14-câu-54-thông-tin-giả-và-tư-duy-phản-biện.html"
 ---
 
-# Câu 54 — bóp méo khác với sự thật hoặc
+# Câu 54 — Thông tin giả và tư duy phản biện
 
 📅 **Ngày**: 2026-02-14
-🏷️ **Chủ đề**: Câu 54 — bóp méo khác với sự thật hoặc
+🏷️ **Chủ đề**: Câu 54 — Thông tin giả và tư duy phản biện
 ⏱️ **Thời gian đọc**: 7 phút
 
 ---
