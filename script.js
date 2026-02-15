@@ -27,13 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
         return cats;
     }
 
-    // Only assign categories if not already set by server
+    // Assign categories (space-separated for multi-category)
     cards.forEach(function(card) {
-        var existing = (card.getAttribute('data-categories') || '').trim();
-        if (!existing) {
-            var topic = card.getAttribute('data-topic') || '';
-            card.setAttribute('data-categories', getCategoriesForTopic(topic).join(' '));
-        }
+        var topic = card.getAttribute('data-topic') || '';
+        card.setAttribute('data-categories', getCategoriesForTopic(topic).join(' '));
     });
 
     var activeCategory = 'all';
