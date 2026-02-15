@@ -1,7 +1,7 @@
 ---
-title: "Câu 54 — Vấn đề xã hội Hàn Quốc hôm nay"
+title: "Câu 54 — bóp méo khác với sự thật hoặc"
 date: "2026-02-14"
-topic: "Câu 54 — Vấn đề xã hội Hàn Quốc hôm nay"
+topic: "Câu 54 — bóp méo khác với sự thật hoặc"
 tags: ["TOPIK", "Korean", "Learning", "Câu 54"]
 description: "## 📝 So Sánh Ngữ Pháp: -에 비해 vs -에 반해
 🏷️ Loại: 정도·비교
@@ -14,13 +14,13 @@ description: "## 📝 So Sánh Ngữ Pháp: -에 비해 vs -에 반해
 ### Giải thích -에 반해
 🇰🇷 -에 반해..."
 lang: "vi"
-canonical: "https://dailykorean.me/posts/2026-02-14-câu-54-vấn-đề-xã-hội-hàn-quốc-hôm-nay.html"
+canonical: "https://dailykorean.me/posts/2026-02-14-câu-54-bóp-méo-khác-với-sự-thật-hoặc.html"
 ---
 
-# Câu 54 — Vấn đề xã hội Hàn Quốc hôm nay
+# Câu 54 — bóp méo khác với sự thật hoặc
 
 📅 **Ngày**: 2026-02-14
-🏷️ **Chủ đề**: Câu 54 — Vấn đề xã hội Hàn Quốc hôm nay
+🏷️ **Chủ đề**: Câu 54 — bóp méo khác với sự thật hoặc
 ⏱️ **Thời gian đọc**: 7 phút
 
 ---
