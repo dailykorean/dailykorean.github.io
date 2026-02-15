@@ -1,8 +1,8 @@
 ---
-title: "Daily Korean #2026-02-14 — TOPIK 쓰기 54 | Vấn đề xã hội Hàn Quốc hôm nay + Ngữ Pháp -에 비해 vs -에 반해"
+title: "Daily Korean — 쓰기 54 · Vấn đề xã hội Hàn Quốc hôm nay"
 date: "2026-02-14"
-topic: "TOPIK 쓰기 54 | Vấn đề xã hội Hàn Quốc hôm nay + Ngữ Pháp -에 비해 vs -에 반해"
-tags: ["TOPIK", "Korean", "Learning", "TOPIK 쓰기 54 | Vấn đề xã hội Hàn Quốc hôm nay + Ngữ Pháp -에 비해 vs -에 반해"]
+topic: "쓰기 54 · Vấn đề xã hội Hàn Quốc hôm nay"
+tags: ["TOPIK", "Korean", "Learning", "쓰기 54"]
 description: "## 📝 So Sánh Ngữ Pháp: -에 비해 vs -에 반해
 🏷️ Loại: 정도·비교
 
@@ -14,13 +14,13 @@ description: "## 📝 So Sánh Ngữ Pháp: -에 비해 vs -에 반해
 ### Giải thích -에 반해
 🇰🇷 -에 반해..."
 lang: "vi"
-canonical: "https://dailykorean.me/posts/2026-02-14-topik-쓰기-54-vấn-đề-xã-hội-hàn-quốc-hôm-nay-ngữ-phá.html"
+canonical: "https://dailykorean.me/posts/2026-02-14-쓰기-54-vấn-đề-xã-hội-hàn-quốc-hôm-nay.html"
 ---
 
-# Daily Korean #2026-02-14 — TOPIK 쓰기 54 | Vấn đề xã hội Hàn Quốc hôm nay + Ngữ Pháp -에 비해 vs -에 반해
+# Daily Korean — 쓰기 54 · Vấn đề xã hội Hàn Quốc hôm nay
 
 📅 **Ngày**: 2026-02-14
-🏷️ **Chủ đề**: TOPIK 쓰기 54 | Vấn đề xã hội Hàn Quốc hôm nay + Ngữ Pháp -에 비해 vs -에 반해
+🏷️ **Chủ đề**: 쓰기 54 · Vấn đề xã hội Hàn Quốc hôm nay
 ⏱️ **Thời gian đọc**: 7 phút
 
 ---
