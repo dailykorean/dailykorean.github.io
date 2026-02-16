@@ -5,13 +5,21 @@
     <link>https://dailykorean.me</link>
     <description>Học tiếng Hàn và luyện thi TOPIK mỗi ngày</description>
     <language>vi</language>
-    <lastBuildDate>Mon, 16 Feb 2026 15:24:51 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 20:32:00 GMT</lastBuildDate>
     <atom:link href="https://dailykorean.me/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+        <title>TOPIK — Thông tin và xã hội</title>
+        <link>https://dailykorean.me/posts/2026-02-16-topik-thông-tin-và-xã-hội.html</link>
+        <description><![CDATA[TOPIK — Thông tin và xã hội]]></description>
+        <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+        <guid>https://dailykorean.me/posts/2026-02-16-topik-thông-tin-và-xã-hội.html</guid>
+    </item>
+
+    <item>
         <title>TOPIK — Giải đề TOPIK thực chiến</title>
         <link>https://dailykorean.me/posts/2026-02-15-topik-giải-đề-topik-thực-chiến.html</link>
-        <description><![CDATA[TOPIK — Giải đề TOPIK thực chiến]]></description>
+        <description><![CDATA[## 📖 Từ Vựng Hôm Nay]]></description>
         <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
         <guid>https://dailykorean.me/posts/2026-02-15-topik-giải-đề-topik-thực-chiến.html</guid>
     </item>
