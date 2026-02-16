@@ -20,7 +20,7 @@ canonical: "https://dailykorean.me/posts/2026-02-15-topik-giải-đề-topik-th�
 
 📅 **Ngày**: 2026-02-15
 🏷️ **Chủ đề**: TOPIK — Giải đề TOPIK thực chiến
-⏱️ **Thời gian đọc**: 10 phút
+⏱️ **Thời gian đọc**: 9 phút
 
 ---
 
@@ -36,25 +36,14 @@ canonical: "https://dailykorean.me/posts/2026-02-15-topik-giải-đề-topik-th�
 
 ---
 
-## 📝 Câu 1 — Từ đồng nghĩa
+## 📝 Câu 1 —  ()
 
----
-
-**Đề bài:** 다음 밑줄 친 부분과 의미가 비슷한 것을 고르십시오.
-
----
-
-*Chọn từ có nghĩa giống với phần gạch chân.*
-
----
+**Đề bài:** 
 
 ### 지문 (Đoạn văn)
----
+🇰🇷 
 
-🇰🇷 그는 모든 준비를 __철저하게__ 마쳤다.
-
----
-
+🇻🇳 
 
 ---
 
@@ -73,25 +62,14 @@ canonical: "https://dailykorean.me/posts/2026-02-15-topik-giải-đề-topik-th�
 
 ---
 
-## 📝 Câu 2 — Điền từ vựng
+## 📝 Câu 2 —  ()
 
----
-
-**Đề bài:** ( )에 들어갈 가장 알맞은 것을 고르십시오.
-
----
-
-*Chọn từ thích hợp nhất điền vào chỗ trống.*
-
----
+**Đề bài:** 
 
 ### 지문 (Đoạn văn)
----
+🇰🇷 
 
-🇰🇷 이 제품은 뛰어난 성능과 ( ) 디자인으로 소비자들에게 큰 인기를 얻고 있다.
-
----
-
+🇻🇳 
 
 ---
 
@@ -110,25 +88,14 @@ canonical: "https://dailykorean.me/posts/2026-02-15-topik-giải-đề-topik-th�
 
 ---
 
-## 📝 Câu 3 — Điền ngữ pháp
+## 📝 Câu 3 —  ()
 
----
-
-**Đề bài:** 다음 ( )에 들어갈 가장 알맞은 것을 고르십시오.
-
----
-
-*Chọn ngữ pháp thích hợp nhất điền vào chỗ trống.*
-
----
+**Đề bài:** 
 
 ### 지문 (Đoạn văn)
----
+🇰🇷 
 
-🇰🇷 그는 아무리 힘든 일이 ( ) 포기하는 법이 없다.
-
----
-
+🇻🇳 
 
 ---
 
@@ -147,15 +114,14 @@ canonical: "https://dailykorean.me/posts/2026-02-15-topik-giải-đề-topik-th�
 
 ---
 
-## 📝 Câu 4 — Tìm câu sai
+## 📝 Câu 4 —  ()
 
----
+**Đề bài:** 
 
-**Đề bài:** 다음 중 맞지 않는 것을 고르십시오.
+### 지문 (Đoạn văn)
+🇰🇷 
 
----
-
-*Chọn câu sai ngữ pháp.*
+🇻🇳 
 
 ---
 
@@ -174,25 +140,14 @@ canonical: "https://dailykorean.me/posts/2026-02-15-topik-giải-đề-topik-th�
 
 ---
 
-## 📝 Câu 5 — Đọc hiểu ngắn
+## 📝 Câu 5 —  ()
 
----
-
-**Đề bài:** 다음을 읽고 중심 생각을 고르십시오.
-
----
-
-*Đọc và chọn ý chính.*
-
----
+**Đề bài:** 
 
 ### 지문 (Đoạn văn)
----
-
 🇰🇷 최근에는 환경 보호의 중요성이 강조되면서 일회용품 사용을 줄이려는 노력이 사회 전반으로 확산되고 있다. 개인의 작은 실천이 모여 큰 변화를 이끌어낼 수 있다는 인식이 커지면서, 기업들도 친환경 제품 개발에 적극적으로 참여하는 추세다.
 
----
-
+🇻🇳 
 
 ---
 
