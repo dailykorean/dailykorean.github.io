@@ -12,7 +12,7 @@
     <meta property="og:locale" content="vi_VN">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://dailykorean.me">
-    <link rel="stylesheet" href="style.css?v=1771200591">
+    <link rel="stylesheet" href="style.css?v=1771200611">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +68,7 @@
                 </a>
             </div>
             <div class="hero-stats">
-                <div class="stat"><span class="stat-number">4</span><span class="stat-label">Bài học</span></div>
+                <div class="stat"><span class="stat-number">3</span><span class="stat-label">Bài học</span></div>
                 <div class="stat"><span class="stat-number">365</span><span class="stat-label">Ngày/Năm</span></div>
                 <div class="stat"><span class="stat-number">100%</span><span class="stat-label">Miễn phí</span></div>
             </div>
@@ -113,24 +113,6 @@
                     <div class="card-meta">
                         <span>⏱️ 9 phút</span>
                         <a href="posts/2026-02-15-thực-chiến-mock-test.html" class="read-more-link">Đọc tiếp →</a>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="post-card" data-topic="TOPIK — Giải đề TOPIK thực chiến" data-date="2026-02-15" data-categories="grammar vocab">
-            <div class="card-body">
-                <div class="card-header">
-                    <span class="topic-badge">TOPIK — Giải đề TOPIK thực chiến</span>
-                    <span class="card-date">2026-02-15</span>
-                </div>
-                <h3><a href="posts/2026-02-15-topik-giải-đề-topik-thực-chiến.html">TOPIK — Giải đề TOPIK thực chiến</a></h3>
-                <p class="card-excerpt">TOPIK — Giải đề TOPIK thực chiến</p>
-                <div class="card-footer">
-                    <div class="card-tags"><span class="tag">TOPIK</span> <span class="tag">Korean</span> <span class="tag">Learning</span> <span class="tag">TOPIK</span></div>
-                    <div class="card-meta">
-                        <span>⏱️ 9 phút</span>
-                        <a href="posts/2026-02-15-topik-giải-đề-topik-thực-chiến.html" class="read-more-link">Đọc tiếp →</a>
                     </div>
                 </div>
             </div>
@@ -197,12 +179,6 @@
                     <div class="vocab-word">세련된</div>
                     <div class="vocab-meaning">🇻🇳 tinh tế, sành điệu, thanh lịch</div>
                     <div class="vocab-explain">품격 있고 멋진 모양이나 태도를 갖추고 있음을 나타내는 형용사입니다. 주로 디자인, 스타일, 매너 등에 사용됩니다.</div>
-                    <div class="vocab-meta">📅 2026-02-15</div>
-                </div>
-                <div class="vocab-card vocab-featured">
-                    <div class="vocab-word">택배 <span class="vocab-hanja">(宅配)</span></div>
-                    <div class="vocab-meaning">🇻🇳 Giao hàng tận nhà</div>
-                    <div class="vocab-example"><span class="flag">🇰🇷</span> 요즘은 택배로 모든 것을 주문할 수 있다.</div><div class="vocab-example"><span class="flag">🇻🇳</span> Dạo này có thể đặt hàng mọi thứ qua dịch vụ giao hàng.</div>
                     <div class="vocab-meta">📅 2026-02-15</div>
                 </div>
                 <div class="vocab-card">
@@ -274,18 +250,6 @@
         </section>
         <section class="grammar-grid" id="grammarGrid" style="display:none;">
             
-                <div class="grammar-card">
-                    <div class="grammar-point">아무리 ~을지라도</div>
-                    <div class="grammar-meaning">🇻🇳 dù có... đến mấy đi chăng nữa</div>
-                    <div class="grammar-explain">앞 문장의 내용이 아무리 극단적인 상황이나 조건일지라도 뒤 문장의 내용이 변하지 않거나 영향을 받지 않음을 나타내는 표현입니다. '아무리 ~어도/아도'와 유사한 의미로 사용됩니다.</div>
-                    <div class="grammar-meta">📅 2026-02-15</div>
-                </div>
-                <div class="grammar-card">
-                    <div class="grammar-point">~ㅁ/음이 알려져 있다</div>
-                    <div class="grammar-meaning">🇻🇳 được biết là...</div>
-                    <div class="grammar-explain">어떤 사실이 주어로 알려져 있음을 나타낼 때 사용합니다. 동사나 형용사 뒤에 붙어 명사형을 만들고 주격조사 '이/가'와 함께 쓰입니다. ('~다고 알려져 있다'도 가능)</div>
-                    <div class="grammar-meta">📅 2026-02-15</div>
-                </div>
                 <div class="grammar-card">
                     <div class="grammar-point">아무리 ~을지라도</div>
                     <div class="grammar-meaning">🇻🇳 dù có... đến mấy đi chăng nữa</div>
@@ -384,6 +348,6 @@
     <!-- Back to top -->
     <button class="back-to-top" id="backToTop" title="Lên đầu trang">↑</button>
 
-    <script src="script.js?v=1771200591" defer></script>
+    <script src="script.js?v=1771200611" defer></script>
 </body>
 </html>
