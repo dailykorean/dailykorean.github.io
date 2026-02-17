@@ -1,8 +1,8 @@
 ---
-title: "TOPIK — Thông tin và xã hội"
+title: "📖 Đọc — Sự thay đổi của cộng đồng trong xã hội"
 date: "2026-02-16"
-topic: "TOPIK — Thông tin và xã hội"
-tags: ["TOPIK", "Korean", "Learning", "TOPIK"]
+topic: "📖 Đọc — Sự thay đổi của cộng đồng trong xã hội"
+tags: ["TOPIK", "Korean", "📖 Đọc", "Sự thay đổi của cộng đồng trong xã hội"]
 description: "## 📝 So Sánh Ngữ Pháp: -더라도 vs -든지
 🏷️ Loại: 대조·양보
 
@@ -14,14 +14,14 @@ description: "## 📝 So Sánh Ngữ Pháp: -더라도 vs -든지
 ### Giải thích -든지
 🇰🇷 -든지: 뭘 먹든지 상..."
 lang: "vi"
-canonical: "https://dailykorean.me/posts/2026-02-16-topik-thông-tin-và-xã-hội.html"
+canonical: "https://dailykorean.me/posts/2026-02-16-đọc-sự-thay-đổi-của-cộng-đồng-trong-xã-hội.html"
 ---
 
-# TOPIK — Thông tin và xã hội
+# 📖 Đọc — Sự thay đổi của cộng đồng trong xã hội
 
 📅 **Ngày**: 2026-02-16
-🏷️ **Chủ đề**: TOPIK — Thông tin và xã hội
-⏱️ **Thời gian đọc**: 7 phút
+🏷️ **Chủ đề**: 📖 Đọc — Sự thay đổi của cộng đồng trong xã hội
+⏱️ **Thời gian đọc**: 10 phút
 
 ---
 
@@ -48,14 +48,50 @@ canonical: "https://dailykorean.me/posts/2026-02-16-topik-thông-tin-và-xã-h�
 
 ---
 
-## 📝 Câu 1 —  ()
+## 📖 Từ Vựng Hôm Nay
 
-**Đề bài:** 
+---
 
-### 지문 (Đoạn văn)
-🇰🇷 
+- **급격하다** (急激-): nhanh chóng, đột ngột [TOPIK_4]
+---
 
-🇻🇳 
+- **왕래** (往來): sự qua lại, giao lưu [TOPIK_4]
+---
+
+- **공동체 의식** (共同體 意識): ý thức cộng đồng [TOPIK_4]
+---
+
+- **확산** (擴散): sự lan rộng, khuếch tán [TOPIK_4]
+---
+
+- **대면 교류** (對面 交流): giao tiếp trực tiếp [TOPIK_5]
+---
+
+- **고립감** (孤立感): cảm giác cô lập [TOPIK_4]
+---
+
+- **플랫폼**: nền tảng (platform) [TOPIK_3]
+---
+
+- **지리적 제약** (地理的 制約): hạn chế về địa lý [TOPIK_5]
+---
+
+
+---
+
+## 📰 Đoạn Văn Đọc Hiểu: 현대 사회의 공동체 변화
+
+🇰🇷 현대 사회는 급격한 변화를 겪고 있다. 과거에는 이웃 간의 왕래가 잦아 공동체 의식이 강했으나, 도시화와 개인주의의 확산으로 대면 교류가 점차 줄어드는 경향을 보인다. 이 때문에 사람들은 고립감을 느끼는 경우가 많다. 하지만 최근에는 온라인 플랫폼을 기반으로 한 다양한 형태의 공동체가 생겨나고 있다. 이러한 온라인 공동체는 지리적 제약이 없으므로, 공통의 관심사를 가진 사람들이 모여 정보를 교환하고 정서적 유대를 형성하는 새로운 소통의 장이 된다. 이는 전통적인 공동체와는 다른 방식으로 현대인의 사회적 욕구를 충족시키고 있는 것이다.
+
+🇻🇳 Xã hội hiện đại đang trải qua những thay đổi nhanh chóng. Trong quá khứ, việc giao lưu giữa hàng xóm thường xuyên, ý thức cộng đồng mạnh mẽ, nhưng do quá trình đô thị hóa và sự lan rộng của chủ nghĩa cá nhân, giao tiếp trực tiếp có xu hướng giảm dần. Vì lý do này, nhiều người cảm thấy cô lập. Tuy nhiên, gần đây, nhiều hình thức cộng đồng đa dạng dựa trên nền tảng trực tuyến đang xuất hiện. Những cộng đồng trực tuyến này, vì không có giới hạn về địa lý, trở thành một không gian giao tiếp mới nơi những người có cùng sở thích tập hợp lại, trao đổi thông tin và hình thành mối liên kết tình cảm. Điều này đang đáp ứng nhu cầu xã hội của con người hiện đại theo một cách khác so với cộng đồng truyền thống.
+
+---
+
+## 📝 Câu 1 — 내용 파악
+
+**Đề bài:** 다음을 읽고 내용과 같은 것을 고르십시오.
+→ Đọc đoạn văn sau và chọn nội dung đúng.
+
 
 ---
 
@@ -74,14 +110,15 @@ canonical: "https://dailykorean.me/posts/2026-02-16-topik-thông-tin-và-xã-h�
 
 ---
 
-## 📝 Câu 2 —  ()
+## 📝 Câu 2 — 빈칸 추론
 
-**Đề bài:** 
+**Đề bài:** 다음 글의 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.
 
-### 지문 (Đoạn văn)
-🇰🇷 
+현대 사회는 급격한 변화를 겪고 있다. 과거에는 이웃 간의 왕래가 잦아 공동체 의식이 강했으나, 도시화와 개인주의의 확산으로 대면 교류가 점차 줄어드는 경향을 보인다. 이 때문에 사람들은 고립감을 느끼는 경우가 많다. 하지만 최근에는 온라인 플랫폼을 기반으로 한 다양한 형태의 공동체가 생겨나고 있다. 이러한 온라인 공동체는 지리적 제약이 없으므로, 공통의 관심사를 가진 사람들이 모여 정보를 교환하고 정서적 유대를 형성하는 새로운 소통의 장이 된다. 결국, 현대 사회의 공동체는 ( ).
+→ Chọn nội dung phù hợp nhất điền vào chỗ trống ( ) của đoạn văn sau.
 
-🇻🇳 
+Xã hội hiện đại đang trải qua những thay đổi nhanh chóng. Trong quá khứ, việc giao lưu giữa hàng xóm thường xuyên, ý thức cộng đồng mạnh mẽ, nhưng do quá trình đô thị hóa và sự lan rộng của chủ nghĩa cá nhân, giao tiếp trực tiếp có xu hướng giảm dần. Vì lý do này, nhiều người cảm thấy cô lập. Tuy nhiên, gần đây, nhiều hình thức cộng đồng đa dạng dựa trên nền tảng trực tuyến đang xuất hiện. Những cộng đồng trực tuyến này, vì không có giới hạn về địa lý, trở thành một không gian giao tiếp mới nơi những người có cùng sở thích tập hợp lại, trao đổi thông tin và hình thành mối liên kết tình cảm. Cuối cùng, cộng đồng trong xã hội hiện đại ( ).
+
 
 ---
 

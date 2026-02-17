@@ -1,8 +1,8 @@
 ---
-title: "📝 TOPIK — Giải đề TOPIK thực chiến"
+title: "📝 TOPIK — Luyện đề Ngữ pháp · Từ vựng · Đọc hiểu"
 date: "2026-02-15"
-topic: "📝 TOPIK — Giải đề TOPIK thực chiến"
-tags: ["TOPIK", "Korean", "📝 TOPIK", "Giải đề TOPIK thực chiến"]
+topic: "📝 TOPIK — Luyện đề Ngữ pháp · Từ vựng · Đọc hiểu"
+tags: ["TOPIK", "Korean", "📝 TOPIK", "Luyện đề Ngữ pháp · Từ vựng · Đọc hiểu"]
 description: "## 📖 Từ Vựng Hôm Nay
 
 **택배** (宅配)
@@ -13,13 +13,13 @@ description: "## 📖 Từ Vựng Hôm Nay
 🇰🇷 요즘은 택배로 모든 것을 주문할 수 있다.
 🇻🇳 Dạo này có thể đặt hàng mọi thứ qua dịch vụ..."
 lang: "vi"
-canonical: "https://dailykorean.me/posts/2026-02-15-topik-giải-đề-topik-thực-chiến.html"
+canonical: "https://dailykorean.me/posts/2026-02-15-topik-luyện-đề-ngữ-pháp-từ-vựng-đọc-hiểu.html"
 ---
 
-# 📝 TOPIK — Giải đề TOPIK thực chiến
+# 📝 TOPIK — Luyện đề Ngữ pháp · Từ vựng · Đọc hiểu
 
 📅 **Ngày**: 2026-02-15
-🏷️ **Chủ đề**: 📝 TOPIK — Giải đề TOPIK thực chiến
+🏷️ **Chủ đề**: 📝 TOPIK — Luyện đề Ngữ pháp · Từ vựng · Đọc hiểu
 ⏱️ **Thời gian đọc**: 9 phút
 
 ---
