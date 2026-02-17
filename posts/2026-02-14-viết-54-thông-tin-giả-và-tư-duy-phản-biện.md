@@ -1,9 +1,9 @@
 ---
-title: "✍️ Viết — Thông tin giả và tư duy phản biện"
+title: "✍️ Viết 54 (Nghị luận) — Thông tin giả và tư duy phản biện"
 date: "2026-02-14"
-topic: "✍️ Viết — Thông tin giả và tư duy phản biện"
+topic: "✍️ Viết 54 (Nghị luận) — Thông tin giả và tư duy phản biện"
 skill: "writing_54"
-tags: ["TOPIK", "Korean", "✍️ Viết", "Thông tin giả và tư duy phản biện"]
+tags: ["TOPIK", "Korean", "✍️ Viết 54", "Thông tin giả và tư duy phản biện"]
 description: "## 📝 So Sánh Ngữ Pháp: -에 비해 vs -에 반해
 🏷️ Loại: 정도·비교
 
@@ -18,7 +18,7 @@ lang: "vi"
 canonical: "https://dailykorean.me/posts/2026-02-14-câu-54-thông-tin-giả-và-tư-duy-phản-biện.html"
 ---
 
-# ✍️ Viết — Thông tin giả và tư duy phản biện
+# ✍️ Viết 54 (Nghị luận) — Thông tin giả và tư duy phản biện
 
 📅 **Ngày**: 2026-02-14
 🏷️ **Chủ đề**: Câu 54 — Thông tin giả và tư duy phản biện

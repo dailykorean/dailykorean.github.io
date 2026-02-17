@@ -1,8 +1,8 @@
 ---
-title: "📖 Đọc — Sự thay đổi của cộng đồng trong xã hội"
+title: "📖 Đọc hiểu — Sự thay đổi của cộng đồng trong xã hội hiện đại"
 date: "2026-02-16"
-topic: "📖 Đọc — Sự thay đổi của cộng đồng trong xã hội"
-tags: ["TOPIK", "Korean", "📖 Đọc", "Sự thay đổi của cộng đồng trong xã hội"]
+topic: "📖 Đọc hiểu — Sự thay đổi của cộng đồng trong xã hội hiện đại"
+tags: ["TOPIK", "Korean", "📖 Đọc hiểu", "Sự thay đổi của cộng đồng trong xã hội hiện đại"]
 description: "## 📝 So Sánh Ngữ Pháp: -더라도 vs -든지
 🏷️ Loại: 대조·양보
 
@@ -14,13 +14,13 @@ description: "## 📝 So Sánh Ngữ Pháp: -더라도 vs -든지
 ### Giải thích -든지
 🇰🇷 -든지: 뭘 먹든지 상..."
 lang: "vi"
-canonical: "https://dailykorean.me/posts/2026-02-16-đọc-sự-thay-đổi-của-cộng-đồng-trong-xã-hội.html"
+canonical: "https://dailykorean.me/posts/2026-02-16-đọc-hiểu-sự-thay-đổi-của-cộng-đồng-trong-xã-hội-hi.html"
 ---
 
-# 📖 Đọc — Sự thay đổi của cộng đồng trong xã hội
+# 📖 Đọc hiểu — Sự thay đổi của cộng đồng trong xã hội hiện đại
 
 📅 **Ngày**: 2026-02-16
-🏷️ **Chủ đề**: 📖 Đọc — Sự thay đổi của cộng đồng trong xã hội
+🏷️ **Chủ đề**: 📖 Đọc hiểu — Sự thay đổi của cộng đồng trong xã hội hiện đại
 ⏱️ **Thời gian đọc**: 10 phút
 
 ---

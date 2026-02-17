@@ -1,9 +1,9 @@
 ---
-title: "✍️ Viết — Biểu đồ tiện nghi sinh hoạt"
+title: "✍️ Viết 53 (Biểu đồ) — Tiện nghi sinh hoạt"
 date: "2026-02-13"
-topic: "✍️ Viết — Biểu đồ tiện nghi sinh hoạt"
+topic: "✍️ Viết 53 (Biểu đồ) — Tiện nghi sinh hoạt"
 skill: "writing_53"
-tags: ["TOPIK", "Korean", "✍️ Viết", "Biểu đồ tiện nghi sinh hoạt"]
+tags: ["TOPIK", "Korean", "✍️ Viết 53", "Tiện nghi sinh hoạt"]
 description: "## 📖 Từ Vựng Hôm Nay
 
 **물가 상승** (物價上昇)
@@ -17,7 +17,7 @@ lang: "vi"
 canonical: "https://dailykorean.me/posts/2026-02-13-viết-câu-53---biểu-đồ.html"
 ---
 
-# ✍️ Viết — Biểu đồ tiện nghi sinh hoạt
+# ✍️ Viết 53 (Biểu đồ) — Tiện nghi sinh hoạt
 
 📅 **Ngày**: 2026-02-13
 🏷️ **Chủ đề**: Viết (Câu 53 - Biểu đồ)
