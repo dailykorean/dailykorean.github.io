@@ -220,27 +220,6 @@ body {
 }
 .show-answer-btn:hover { background: var(--primary-dark); }
 
-/* Related courses internal linking */
-.related-courses {
-    max-width: 900px; margin: 2rem auto; padding: 1.5rem;
-    background: var(--card-bg); border-radius: var(--radius);
-    box-shadow: var(--shadow); text-align: center;
-}
-.related-courses h3 { margin-bottom: 1rem; color: var(--text); font-size: 1.1rem; }
-.related-courses-grid {
-    display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center;
-}
-.related-course-link {
-    display: inline-block; padding: 0.5rem 1rem; background: var(--bg);
-    border: 1px solid var(--border); border-radius: 25px; color: var(--text);
-    text-decoration: none; font-size: 0.9rem; font-weight: 500;
-    transition: all var(--transition);
-}
-.related-course-link:hover {
-    background: var(--primary); color: white; border-color: var(--primary);
-    transform: translateY(-2px); box-shadow: var(--shadow-hover);
-}
-
 @media (max-width: 768px) {
     .cur-header h1 { font-size: 1.8rem; }
     .lesson-header h1 { font-size: 1.4rem; }
