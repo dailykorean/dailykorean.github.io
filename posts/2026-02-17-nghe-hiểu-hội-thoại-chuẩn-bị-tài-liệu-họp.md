@@ -20,7 +20,7 @@ canonical: "https://dailykorean.me/posts/2026-02-17-nghe-hiểu-hội-thoại-ch
 
 📅 **Ngày**: 2026-02-17
 🏷️ **Chủ đề**: 🎧 Nghe hiểu (Hội thoại) — Chuẩn bị tài liệu họp
-⏱️ **Thời gian đọc**: 6 phút
+⏱️ **Thời gian đọc**: 7 phút
 
 ---
 
@@ -37,6 +37,15 @@ canonical: "https://dailykorean.me/posts/2026-02-17-nghe-hiểu-hội-thoại-ch
 ---
 
 ## 🎧 Hội Thoại — Nghe Hiểu: 회의 자료 준비
+
+---
+
+**📍 Tình huống:** 사무실에서 남자와 여자가 다음 주 회의 자료 준비에 대해 대화하고 있습니다.
+---
+
+  → _Tại văn phòng, người nam và người nữ đang trò chuyện về việc chuẩn bị tài liệu cho cuộc họp tuần tới._
+---
+
 
 ---
 
@@ -91,6 +100,48 @@ canonical: "https://dailykorean.me/posts/2026-02-17-nghe-hiểu-hội-thoại-ch
 
 ### 🔑 Biểu Hiện Quan Trọng
 
+---
+
+- **어디까지 진행됐어요?**: Đã tiến triển đến đâu rồi?
+  _💬 어떤 일이나 프로젝트의 현재 상황이나 완료 정도를 물을 때 사용합니다._ [존댓말]
+---
+
+- **초안**: bản nháp, bản dự thảo
+  _💬 어떤 글, 계획, 보고서 등을 처음으로 작성한 원고를 의미합니다._ [비격식체]
+---
+
+- **검토하다**: xem xét, kiểm tra, duyệt
+  _💬 어떤 내용이나 안건이 타당한지 자세히 살펴보고 판단하는 행위를 말합니다._ [비격식체]
+---
+
+- **수정사항**: các mục cần sửa đổi, những điểm cần chỉnh sửa
+  _💬 원래 내용에서 고치거나 바꿔야 할 부분을 의미합니다. 주로 복수형으로 사용됩니다._ [비격식체]
+---
+
+- **부탁드릴게요**: tôi sẽ nhờ/nhờ cậy bạn
+  _💬 상대방에게 어떤 일을 해달라고 정중하게 요청할 때 사용합니다. '부탁하다'의 높임말입니다._ [존댓말]
+---
+
+
+---
+
+### 🎯 Thách Thức Nghe
+
+---
+
+**Câu khó nghe nhất:** 수정사항이 생기면
+---
+
+**Dạng đầy đủ:** 수정 사항이 생기면
+---
+
+**Từ khóa:** 수정사항
+---
+
+**Mẹo nghe:** _'수정사항이'는 '수정'과 '사항'이 합쳐진 단어로, '사항이' 부분이 [사항이] 또는 빠르게 [사앙이]로 연음되어 발음될 수 있습니다. 특히 'ㅅ'과 'ㅎ' 발음이 약해지면서 듣기 어려울 수 있습니다._
+---
+
+💡 '수정사항이' là từ ghép, phần '사항이' có thể được phát âm nối âm thành [사항이] hoặc nhanh hơn là [사앙이]. Đặc biệt, âm 'ㅅ' và 'ㅎ' có thể bị yếu đi, gây khó nghe.
 ---
 
 
