@@ -40,13 +40,7 @@ canonical: "https://dailykorean.me/posts/2026-02-17-nghe-hiểu-hội-thoại-ch
 
 ---
 
-<!--RAWHTML--><div class="audio-player" style="margin:1em 0;padding:1em;background:#f0f7ff;border-radius:12px;border:1px solid #d0e3f7;">
-<p style="margin:0 0 0.5em;font-weight:600;">🔊 Nghe đoạn hội thoại:</p>
-<audio controls preload="metadata" style="width:100%;max-width:500px;">
-<source src="../assets/2026-02-17_dialogue.mp3" type="audio/mpeg">
-</audio>
-<p style="font-size:0.85em;color:#888;margin:0.5em 0 0;">💡 Nghe 2-3 lần trước khi đọc lời thoại bên dưới</p>
-</div><!--/RAWHTML-->
+<!--RAWHTML--><div class="audio-player" style="margin:1em 0;padding:1em;background:#f0f7ff;border-radius:12px;border:1px solid #d0e3f7;"><div style="margin:0 0 0.5em;font-weight:600;">🔊 Nghe đoạn hội thoại:</div><audio controls preload="metadata" style="width:100%;max-width:500px;"><source src="../assets/2026-02-17_dialogue.mp3" type="audio/mpeg"></audio><div style="font-size:0.85em;color:#888;margin:0.5em 0 0;">💡 Nghe 2-3 lần trước khi đọc lời thoại bên dưới</div></div><!--/RAWHTML-->
 
 ---
 
