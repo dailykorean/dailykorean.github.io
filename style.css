@@ -1301,6 +1301,7 @@ details[open] summary { margin-bottom: 0.75rem; }
 .course-l2 { border-top: 4px solid #2196F3; }
 .course-eps { border-top: 4px solid #FF9800; }
 .course-conv { border-top: 4px solid #E91E63; }
+.course-t2 { border-top: 4px solid #9C27B0; }
 .course-badge {
     position: absolute;
     top: 1rem; right: 1rem;
@@ -1316,6 +1317,7 @@ details[open] summary { margin-bottom: 0.75rem; }
 .course-l2 .course-badge { background: #2196F3; }
 .course-eps .course-badge { background: #FF9800; }
 .course-conv .course-badge { background: #E91E63; }
+.course-t2 .course-badge { background: #9C27B0; }
 .course-icon {
     font-size: 3rem;
     margin-bottom: .5rem;
@@ -1379,6 +1381,8 @@ details[open] summary { margin-bottom: 0.75rem; }
 .course-eps .course-btn { background: #FF9800; }
 .course-eps .course-btn:hover { background: #E65100; }
 .course-conv .course-btn { background: #E91E63; }
+.course-t2 .course-btn { background: #9C27B0; }
+.course-t2 .course-btn:hover { background: #7B1FA2; }
 .course-conv .course-btn:hover { background: #AD1457; }
 
 /* Roadmap */
