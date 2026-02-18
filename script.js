@@ -5,64 +5,40 @@ document.addEventListener('DOMContentLoaded', function() {
     var cards = document.querySelectorAll('.post-card');
     var searchInput = document.getElementById('searchInput');
     var postsGrid = document.getElementById('postsGrid');
-    var vocabGrid = document.getElementById('vocabGrid');
-    var grammarGrid = document.getElementById('grammarGrid');
 
     var topicMap = {
+        'vocab': ['từ vựng', 'word of day', 'vocab', '📖'],
+        'grammar': ['ngữ pháp', 'grammar', 'so sánh', '📐'],
         'writing': ['viết', 'writing', 'câu 51', 'câu 52', 'câu 53', 'câu 54', '✍'],
         'reading': ['đọc', 'reading', 'đọc hiểu', '📰'],
         'listening': ['nghe', 'listening', '🎧']
     };
 
-    function getCategoriesForTopic(topic) {
+    function getCategoryForTopic(topic) {
         var t = (topic || '').toLowerCase();
-        var cats = [];
         for (var cat in topicMap) {
             var keywords = topicMap[cat];
             for (var i = 0; i < keywords.length; i++) {
-                if (t.indexOf(keywords[i]) !== -1) { cats.push(cat); break; }
+                if (t.indexOf(keywords[i]) !== -1) return cat;
             }
         }
-        if (cats.length === 0) cats.push('other');
-        return cats;
+        return 'other';
     }
 
-    // Only assign categories if not already set by server
+    // Assign categories
     cards.forEach(function(card) {
-        var existing = (card.getAttribute('data-categories') || '').trim();
-        if (!existing) {
-            var topic = card.getAttribute('data-topic') || '';
-            card.setAttribute('data-categories', getCategoriesForTopic(topic).join(' '));
-        }
+        var topic = card.getAttribute('data-topic') || '';
+        card.setAttribute('data-category', getCategoryForTopic(topic));
     });
 
     var activeCategory = 'all';
 
-    // Sections that use dedicated grids instead of post filtering
-    var dedicatedSections = { 'vocab': vocabGrid, 'grammar': grammarGrid };
-
     function filterPosts() {
-        // Check if this category has a dedicated section
-        if (dedicatedSections[activeCategory]) {
-            // Hide posts grid, show dedicated grid
-            if (postsGrid) postsGrid.style.display = 'none';
-            if (vocabGrid) vocabGrid.style.display = 'none';
-            if (grammarGrid) grammarGrid.style.display = 'none';
-            dedicatedSections[activeCategory].style.display = '';
-            return;
-        }
-
-        // Show posts grid, hide dedicated grids
-        if (postsGrid) postsGrid.style.display = '';
-        if (vocabGrid) vocabGrid.style.display = 'none';
-        if (grammarGrid) grammarGrid.style.display = 'none';
-
         var searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
         var visible = 0;
 
         cards.forEach(function(card) {
-            var cats = (card.getAttribute('data-categories') || '').split(' ');
-            var matchCat = activeCategory === 'all' || cats.indexOf(activeCategory) !== -1;
+            var matchCat = activeCategory === 'all' || card.getAttribute('data-category') === activeCategory;
             var h3 = card.querySelector('h3');
             var title = h3 ? h3.textContent.toLowerCase() : '';
             var topic = (card.getAttribute('data-topic') || '').toLowerCase();
