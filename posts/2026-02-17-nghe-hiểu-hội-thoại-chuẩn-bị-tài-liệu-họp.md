@@ -89,50 +89,6 @@ Người nữ chấp nhận ý kiến của người nam: 'Vâng, tôi hiểu r�
 Và người nam kết thúc cuộc hội thoại bằng cách nhờ cô Kim chuẩn bị cho một công việc khác: 'Vâng, tôi sẽ làm vậy. Cô Kim cũng hãy chuẩn bị tốt cho bài thuyết trình tuần tới nhé.'
 Vậy trong đoạn hội thoại này, suy nghĩ quan trọng nhất của người nam là gì? Chính là việc 'anh ấy sẽ tự mình kiểm tra lần cuối tài liệu'.
 
----
-
-### ✍️ Bài Văn Mẫu
-
----
-
-****
-🇰🇷 
-🇻🇳 
-
----
-
-****
-🇰🇷 
-🇻🇳 
-
----
-
-****
-🇰🇷 
-🇻🇳 
-
----
-
-### 📚 Từ Vựng Quan Trọng
-
----
-
-- ****: Đã tiến triển đến đâu rồi? — **
----
-
-- ****: bản nháp, bản dự thảo — **
----
-
-- ****: xem xét, kiểm tra, duyệt — **
----
-
-- ****: các mục cần sửa đổi, những điểm cần chỉnh sửa — **
----
-
-- ****: tôi sẽ nhờ/nhờ cậy bạn — **
----
-
-
 
 ---
 
