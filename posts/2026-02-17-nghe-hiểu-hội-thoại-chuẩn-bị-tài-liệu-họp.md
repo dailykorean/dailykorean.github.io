@@ -20,7 +20,7 @@ canonical: "https://dailykorean.me/posts/2026-02-17-nghe-hiểu-hội-thoại-ch
 
 📅 **Ngày**: 2026-02-17
 🏷️ **Chủ đề**: 🎧 Nghe hiểu (Hội thoại) — Chuẩn bị tài liệu họp
-⏱️ **Thời gian đọc**: 5 phút
+⏱️ **Thời gian đọc**: 6 phút
 
 ---
 
@@ -33,6 +33,72 @@ canonical: "https://dailykorean.me/posts/2026-02-17-nghe-hiểu-hội-thoại-ch
 ### Ví Dụ
 🇰🇷 이번 주에 야근을 세 번이나 했다.
 🇻🇳 Tuần này đã làm thêm buổi tối tới ba lần.
+
+---
+
+## 🎧 Hội Thoại — Nghe Hiểu: 회의 자료 준비
+
+---
+
+<!--RAWHTML--><div class="audio-player" style="margin:1em 0;padding:1em;background:#f0f7ff;border-radius:12px;border:1px solid #d0e3f7;">
+<p style="margin:0 0 0.5em;font-weight:600;">🔊 Nghe đoạn hội thoại:</p>
+<audio controls preload="metadata" style="width:100%;max-width:500px;">
+<source src="../assets/2026-02-17_dialogue.mp3" type="audio/mpeg">
+</audio>
+<p style="font-size:0.85em;color:#888;margin:0.5em 0 0;">💡 Nghe 2-3 lần trước khi đọc lời thoại bên dưới</p>
+</div><!--/RAWHTML-->
+
+---
+
+**👩 여자:** 팀장님, 다음 주 회의 자료 준비는 어디까지 진행됐어요?
+---
+
+  → _Trưởng nhóm, việc chuẩn bị tài liệu cho cuộc họp tuần tới đã tiến triển đến đâu rồi ạ?_
+---
+
+**👨 남자:** 아, 김대리. 자료 초안은 거의 다 나왔는데, 마지막 검토를 해야 해서요.
+---
+
+  → _À, cô Kim. Bản nháp tài liệu đã gần hoàn thành rồi, nhưng tôi cần phải kiểm tra lần cuối._
+---
+
+**👩 여자:** 그럼 제가 도와드릴 일이 있을까요? 혹시 필요한 데이터나 이미지 같은 거 있으세요?
+---
+
+  → _Vậy có việc gì tôi có thể giúp không ạ? Anh có cần dữ liệu hay hình ảnh gì không?_
+---
+
+**👨 남자:** 음... 지금은 제가 직접 내용 확인을 좀 해야 할 것 같아요. 혹시 검토 후에 수정사항이 생기면 그때 부탁드릴게요.
+---
+
+  → _Ừm... Hiện tại tôi nghĩ mình cần tự mình kiểm tra nội dung trước. Nếu sau khi kiểm tra mà có điểm cần sửa đổi thì lúc đó tôi sẽ nhờ cô nhé._
+---
+
+**👩 여자:** 네, 알겠습니다. 그럼 검토 다 하시면 저한테 말씀해주세요.
+---
+
+  → _Vâng, tôi hiểu rồi. Vậy khi nào anh kiểm tra xong thì nói cho tôi biết ạ._
+---
+
+**👨 남자:** 네, 그렇게 할게요. 김대리도 다음 주 발표 준비 잘 부탁드려요.
+---
+
+  → _Vâng, tôi sẽ làm vậy. Cô Kim cũng hãy chuẩn bị tốt cho bài thuyết trình tuần tới nhé._
+---
+
+**👩 여자:** 네, 팀장님. 걱정 마세요!
+---
+
+  → _Vâng, Trưởng nhóm. Đừng lo lắng ạ!_
+---
+
+
+---
+
+### 🔑 Biểu Hiện Quan Trọng
+
+---
+
 
 ---
 
