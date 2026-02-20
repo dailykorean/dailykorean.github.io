@@ -108,23 +108,50 @@
     
     <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
     <script>
-    // Korean TTS — Web Speech API
+    // Korean TTS — Web Speech API (improved voice quality)
     var _koVoice = null;
     function _findKoVoice(){
         if (_koVoice) return _koVoice;
         var voices = speechSynthesis.getVoices();
+        if (!voices.length) return null;
+        // Prefer high-quality voices: Google > Yuna > premium > any Korean
+        var best = null, bestScore = -1;
         for (var i=0; i<voices.length; i++){
-            if (voices[i].lang && voices[i].lang.startsWith('ko')) { _koVoice = voices[i]; return _koVoice; }
+            var v = voices[i];
+            if (!v.lang || !v.lang.match(/^ko/i)) continue;
+            var score = 1;
+            var nm = v.name.toLowerCase();
+            if (nm.indexOf('google') >= 0) score = 10;
+            else if (nm.indexOf('yuna') >= 0 || nm.indexOf('siri') >= 0) score = 8;
+            else if (nm.indexOf('premium') >= 0 || nm.indexOf('enhanced') >= 0) score = 7;
+            else if (!v.localService) score = 5;
+            if (score > bestScore) { best = v; bestScore = score; }
         }
-        return null;
+        _koVoice = best;
+        return _koVoice;
     }
-    if (window.speechSynthesis) speechSynthesis.onvoiceschanged = _findKoVoice;
+    if (window.speechSynthesis) {
+        speechSynthesis.onvoiceschanged = _findKoVoice;
+        _findKoVoice();
+    }
+    // Extract only Korean (Hangul + Jamo + spacing) from text
+    function _koreanOnly(text){
+        if (!text) return '';
+        // Keep Hangul syllables, Jamo, numbers, spaces, Korean punctuation
+        return text.replace(/\([^)]*\)/g, ' ')
+                   .replace(/[^가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿0-9\s,.!?~·…"']+/g, ' ')
+                   .replace(/\s+/g, ' ').trim();
+    }
     function speakKo(btn, text){
         if (!window.speechSynthesis || !text) return;
+        var koText = _koreanOnly(text);
+        if (!koText) return;
         speechSynthesis.cancel();
-        var u = new SpeechSynthesisUtterance(text);
+        var u = new SpeechSynthesisUtterance(koText);
         u.lang = 'ko-KR';
-        u.rate = 0.85;
+        u.rate = 0.9;
+        u.pitch = 1.0;
+        u.volume = 1.0;
         var v = _findKoVoice();
         if (v) u.voice = v;
         btn.classList.add('audio-playing');
