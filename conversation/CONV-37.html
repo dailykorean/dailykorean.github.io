@@ -12,6 +12,13 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Daily Korean">
     <meta property="og:locale" content="vi_VN">
+    <meta property="og:image" content="https://dailykorean.me/assets/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CONV-37: Nhà bị sự cố - Hội thoại tiếng Hàn thực tế - Daily Korean">
+    <meta name="twitter:description" content="집에 문제가 생겼어요 - Nhà bị sự cố. 40 bài hội thoại tiếng Hàn thực tế cho người Việt - giao tiếp hàng ngày tại Hàn Quốc.">
+    <meta name="twitter:image" content="https://dailykorean.me/assets/og-default.png">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -52,6 +59,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+    <!-- AdSense Auto Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4343125715021828" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -72,6 +85,9 @@
                 <a href="../topik-advanced/index.html">👑 T3</a>
             </div>
             <div class="cur-nav-actions">
+                <button class="search-btn" id="curSearchBtn" title="Tìm kiếm" aria-label="Tìm bài học">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
                 <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
                     <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -143,7 +159,17 @@
             <a href="index.html">📖 Mục lục</a>
             <a href="CONV-38.html">Bài tiếp →</a>
         </div>
+        
+        <div class="mark-complete-bar">
+            <button class="mark-complete-btn" id="markCompleteBtn">⬜ Đánh dấu hoàn thành</button>
+        </div>
     </main>
+    
+    <!-- Ad slot -->
+    <div class="ad-container">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4343125715021828" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     
     
     
@@ -180,6 +206,20 @@
     </script>
     
     <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-box">
+            <div class="search-input-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" class="search-input" id="searchInput" placeholder="Tìm bài học... (ví dụ: 인사, chào hỏi, TOPIK)" autocomplete="off">
+            </div>
+            <div class="search-results" id="searchResults">
+                <div class="search-hint">💡 Nhập từ khóa tiếng Hàn, tiếng Việt, hoặc mã bài học</div>
+            </div>
+        </div>
+    </div>
+    
     <script>
     // Korean TTS — Web Speech API (improved voice quality)
     var _koVoice = null;
@@ -187,7 +227,6 @@
         if (_koVoice) return _koVoice;
         var voices = speechSynthesis.getVoices();
         if (!voices.length) return null;
-        // Prefer high-quality voices: Google > Yuna > premium > any Korean
         var best = null, bestScore = -1;
         for (var i=0; i<voices.length; i++){
             var v = voices[i];
@@ -207,12 +246,10 @@
         speechSynthesis.onvoiceschanged = _findKoVoice;
         _findKoVoice();
     }
-    // Extract only Korean (Hangul + Jamo + spacing) from text
     function _koreanOnly(text){
         if (!text) return '';
-        // Keep Hangul syllables, Jamo, numbers, spaces, Korean punctuation
         return text.replace(/\([^)]*\)/g, ' ')
-                   .replace(/[^가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿0-9\s,.!?~·…"']+/g, ' ')
+                   .replace(/[^\uAC00-\uD7AF\u1100-\u11FF\u3130-\u318F\uA960-\uA97F\uD7B0-\uD7FF0-9\s,.!?~\u00B7\u2026\u201C\u201D\u2018\u2019]+/g, ' ')
                    .replace(/\s+/g, ' ').trim();
     }
     function speakKo(btn, text){
@@ -254,37 +291,132 @@
         backTop.classList.toggle('visible', window.scrollY > 300);
     });
     backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
-    // Progress tracking — mark visited lessons
+    
+    // ===== SEARCH =====
+    (function(){
+        var modal = document.getElementById('searchModal');
+        var input = document.getElementById('searchInput');
+        var results = document.getElementById('searchResults');
+        var searchBtn = document.getElementById('curSearchBtn');
+        var searchData = null;
+        
+        function openSearch(){
+            modal.classList.add('active');
+            input.focus();
+            if (!searchData) loadSearchIndex();
+        }
+        function closeSearch(){
+            modal.classList.remove('active');
+            input.value = '';
+            results.innerHTML = '<div class="search-hint">\ud83d\udca1 Nh\u1eadp t\u1eeb kh\u00f3a ti\u1ebfng H\u00e0n, ti\u1ebfng Vi\u1ec7t, ho\u1eb7c m\u00e3 b\u00e0i h\u1ecdc</div>';
+        }
+        function loadSearchIndex(){
+            // Determine base path
+            var base = location.pathname.indexOf('/curriculum/') >= 0 || 
+                       location.pathname.indexOf('/topik') >= 0 || 
+                       location.pathname.indexOf('/eps-topik/') >= 0 || 
+                       location.pathname.indexOf('/conversation/') >= 0
+                       ? '../' : '';
+            fetch(base + 'search-index.json')
+                .then(function(r){ return r.json(); })
+                .then(function(d){ searchData = d; })
+                .catch(function(){ results.innerHTML = '<div class="search-empty">\u26a0\ufe0f Kh\u00f4ng t\u1ea3i \u0111\u01b0\u1ee3c d\u1eef li\u1ec7u t\u00ecm ki\u1ebfm</div>'; });
+        }
+        if (searchBtn) searchBtn.addEventListener('click', openSearch);
+        modal.addEventListener('click', function(e){ if (e.target === modal) closeSearch(); });
+        document.addEventListener('keydown', function(e){
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
+            if (e.key === 'Escape') closeSearch();
+        });
+        input.addEventListener('input', function(){
+            if (!searchData) return;
+            var q = input.value.trim().toLowerCase();
+            if (q.length < 2) { results.innerHTML = '<div class="search-hint">\ud83d\udca1 Nh\u1eadp \u00edt nh\u1ea5t 2 k\u00fd t\u1ef1</div>'; return; }
+            var matches = searchData.filter(function(item){
+                return item.id.toLowerCase().indexOf(q) >= 0 ||
+                       (item.ko && item.ko.toLowerCase().indexOf(q) >= 0) ||
+                       (item.vi && item.vi.toLowerCase().indexOf(q) >= 0) ||
+                       (item.tags && item.tags.toLowerCase().indexOf(q) >= 0);
+            }).slice(0, 20);
+            if (matches.length === 0) {
+                results.innerHTML = '<div class="search-empty">\ud83d\ude45 Kh\u00f4ng t\u00ecm th\u1ea5y b\u00e0i h\u1ecdc ph\u00f9 h\u1ee3p</div>';
+                return;
+            }
+            var html = '';
+            matches.forEach(function(m){
+                html += '<a class="search-result-item" href="' + m.url + '">' +
+                    '<div class="sr-title">' + m.id + ': ' + (m.ko || '') + '</div>' +
+                    '<div class="sr-desc">' + (m.vi || '') + '</div>' +
+                    '<div class="sr-path">' + (m.path || '') + '</div></a>';
+            });
+            results.innerHTML = html;
+        });
+    })();
+    
+    // ===== PROGRESS TRACKING =====
     (function(){
         var path = location.pathname;
+        var DK_KEY = 'dk-progress';
+        var progress = JSON.parse(localStorage.getItem(DK_KEY) || '{}');
+        
+        // Mark current lesson as visited
         var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
         if (match) {
-            var key = 'dk-visited';
-            var visited = JSON.parse(localStorage.getItem(key) || '[]');
             var lessonId = match[2];
-            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+            if (!progress[lessonId]) {
+                progress[lessonId] = { visited: new Date().toISOString().slice(0,10) };
+                localStorage.setItem(DK_KEY, JSON.stringify(progress));
+            }
+            // "Mark as completed" button
+            var mcBtn = document.getElementById('markCompleteBtn');
+            if (mcBtn) {
+                if (progress[lessonId] && progress[lessonId].done) {
+                    mcBtn.classList.add('completed');
+                    mcBtn.innerHTML = '\u2705 \u0110\u00e3 ho\u00e0n th\u00e0nh';
+                }
+                mcBtn.addEventListener('click', function(){
+                    if (progress[lessonId] && progress[lessonId].done) {
+                        delete progress[lessonId].done;
+                        mcBtn.classList.remove('completed');
+                        mcBtn.innerHTML = '\u2b1c \u0110\u00e1nh d\u1ea5u ho\u00e0n th\u00e0nh';
+                    } else {
+                        progress[lessonId] = progress[lessonId] || {};
+                        progress[lessonId].done = new Date().toISOString().slice(0,10);
+                        mcBtn.classList.add('completed');
+                        mcBtn.innerHTML = '\u2705 \u0110\u00e3 ho\u00e0n th\u00e0nh';
+                    }
+                    localStorage.setItem(DK_KEY, JSON.stringify(progress));
+                });
+            }
         }
-        // Mark visited on index pages
+        
+        // Mark visited/completed on index pages
         var links = document.querySelectorAll('.lesson-link[href]');
         if (links.length > 0) {
-            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            var visitedCount = 0, completedCount = 0;
             links.forEach(function(a) {
                 var href = a.getAttribute('href');
                 var m = href.match(/([A-Z0-9]+-\d+)\.html/);
-                if (m && visited.indexOf(m[1]) !== -1) {
+                if (m && progress[m[1]]) {
                     a.classList.add('visited-lesson');
+                    visitedCount++;
                     var arrow = a.querySelector('.lesson-arrow');
-                    if (arrow) arrow.textContent = '✓';
+                    if (progress[m[1]].done) {
+                        completedCount++;
+                        if (arrow) arrow.textContent = '\u2705';
+                    } else {
+                        if (arrow) arrow.textContent = '\ud83d\udc41\ufe0f';
+                    }
                 }
             });
             // Update progress bar
             var progressFill = document.querySelector('.progress-fill');
             if (progressFill) {
                 var totalLinks = links.length;
-                var visitedCount = document.querySelectorAll('.visited-lesson').length;
-                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var pct = Math.round(completedCount/totalLinks*100);
+                progressFill.style.width = pct + '%';
                 var small = document.querySelector('.cur-progress small');
-                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+                if (small) small.textContent = completedCount + '/' + totalLinks + ' b\u00e0i ho\u00e0n th\u00e0nh \u00b7 ' + visitedCount + ' \u0111\u00e3 xem';
             }
         }
     })();

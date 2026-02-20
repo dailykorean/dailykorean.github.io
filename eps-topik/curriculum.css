@@ -406,8 +406,45 @@ a { color: var(--primary); }
 
 /* ===== PRINT ===== */
 @media print {
-    .cur-navbar, .cur-back-top, .lesson-nav-bar, .related-courses, .show-answer-btn, .breadcrumb { display: none !important; }
+    .cur-navbar, .cur-back-top, .lesson-nav-bar, .related-courses, .show-answer-btn, .breadcrumb, .search-modal, .ad-container, .mark-complete-bar { display: none !important; }
     .curriculum-lesson { box-shadow: none; border: 1px solid #ccc; }
     .lesson-section { break-inside: avoid; }
     .quiz-answer, .q-answer { display: block !important; }
 }
+
+/* ===== SEARCH MODAL ===== */
+.search-btn { background: none; border: none; color: var(--text); cursor: pointer; padding: 6px; border-radius: 50%; display: flex; align-items: center; }
+.search-btn:hover { background: var(--primary-light); }
+.search-modal { display: none; position: fixed; inset: 0; z-index: 10000; background: rgba(0,0,0,0.5); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); justify-content: center; padding-top: 10vh; }
+.search-modal.active { display: flex; }
+.search-box { background: var(--card-bg); border-radius: 16px; width: 90%; max-width: 600px; max-height: 70vh; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; display: flex; flex-direction: column; }
+.search-input-wrap { display: flex; align-items: center; padding: 1rem 1.25rem; border-bottom: 1px solid var(--border); }
+.search-input-wrap svg { color: var(--text-secondary); margin-right: 0.75rem; flex-shrink: 0; }
+.search-input { flex: 1; border: none; background: none; font-size: 1.1rem; color: var(--text); outline: none; font-family: inherit; }
+.search-input::placeholder { color: var(--text-secondary); }
+.search-results { overflow-y: auto; padding: 0.5rem; flex: 1; }
+.search-result-item { display: block; padding: 0.75rem 1rem; border-radius: 8px; text-decoration: none; color: var(--text); transition: background 0.15s; }
+.search-result-item:hover { background: var(--primary-light); }
+.search-result-item .sr-title { font-weight: 600; font-size: 0.95rem; }
+.search-result-item .sr-path { font-size: 0.8rem; color: var(--text-secondary); }
+.search-result-item .sr-desc { font-size: 0.85rem; color: var(--text-secondary); margin-top: 2px; }
+.search-empty { text-align: center; padding: 2rem; color: var(--text-secondary); }
+.search-hint { text-align: center; padding: 2rem; color: var(--text-secondary); font-size: 0.9rem; }
+
+/* ===== MARK COMPLETE ===== */
+.mark-complete-bar { display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 1rem; margin: 1.5rem auto; max-width: 600px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); }
+.mark-complete-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.25rem; border-radius: 8px; border: 2px solid var(--success); background: transparent; color: var(--success); font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.mark-complete-btn:hover { background: var(--success); color: #fff; }
+.mark-complete-btn.completed { background: var(--success); color: #fff; }
+.mark-complete-btn.completed:hover { opacity: 0.9; }
+
+/* ===== AD CONTAINERS ===== */
+.ad-container { text-align: center; margin: 2rem auto; padding: 0.5rem; max-width: 728px; min-height: 90px; }
+.ad-container-lesson { margin: 1.5rem -1rem; padding: 1rem; background: var(--bg); border-radius: 8px; text-align: center; }
+
+/* ===== VISITED LESSON ENHANCEMENTS ===== */
+.visited-lesson { position: relative; }
+.visited-lesson .lesson-arrow { color: var(--success); font-weight: 700; }
+.visited-lesson::after { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--success); border-radius: 3px; }
+.progress-stats { display: flex; gap: 1rem; justify-content: center; margin-top: 0.75rem; flex-wrap: wrap; }
+.progress-stat { font-size: 0.85rem; color: var(--text-secondary); background: var(--bg); padding: 0.3rem 0.8rem; border-radius: 20px; }
