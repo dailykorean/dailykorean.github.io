@@ -1,5 +1,61 @@
-// ====== Daily Korean Blog — Interactive Features ======
+// ====== Daily Korean Blog — Interactive Features v2 ======
+(function(){
+'use strict';
+
+// ====== THEME ======
+var html = document.documentElement;
+function getTheme() {
+    return localStorage.getItem('dk-theme') || (window.matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+}
+function setTheme(t) {
+    html.setAttribute('data-theme', t);
+    localStorage.setItem('dk-theme', t);
+}
+if (!html.getAttribute('data-theme') || html.getAttribute('data-theme') === 'light') {
+    setTheme(getTheme());
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+
+    // ====== THEME TOGGLE ======
+    var themeBtn = document.getElementById('themeToggle');
+    if (themeBtn) {
+        themeBtn.addEventListener('click', function() {
+            setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+        });
+    }
+
+    // ====== HAMBURGER MENU ======
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('navLinks');
+    var overlay = null;
+
+    if (hamburger && navLinks) {
+        overlay = document.createElement('div');
+        overlay.className = 'nav-overlay';
+        document.body.appendChild(overlay);
+
+        function toggleMenu(open) {
+            var isOpen = typeof open === 'boolean' ? open : !navLinks.classList.contains('open');
+            navLinks.classList.toggle('open', isOpen);
+            hamburger.classList.toggle('active', isOpen);
+            hamburger.setAttribute('aria-expanded', isOpen);
+            overlay.classList.toggle('open', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', function() { toggleMenu(); });
+        overlay.addEventListener('click', function() { toggleMenu(false); });
+
+        navLinks.querySelectorAll('a').forEach(function(a) {
+            a.addEventListener('click', function() { toggleMenu(false); });
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navLinks.classList.contains('open')) toggleMenu(false);
+        });
+    }
+
     // ====== CATEGORY FILTER ======
     var tabs = document.querySelectorAll('.tab');
     var cards = document.querySelectorAll('.post-card');
@@ -18,16 +74,14 @@ document.addEventListener('DOMContentLoaded', function() {
         var t = (topic || '').toLowerCase();
         var cats = [];
         for (var cat in topicMap) {
-            var keywords = topicMap[cat];
-            for (var i = 0; i < keywords.length; i++) {
-                if (t.indexOf(keywords[i]) !== -1) { cats.push(cat); break; }
+            for (var i = 0; i < topicMap[cat].length; i++) {
+                if (t.indexOf(topicMap[cat][i]) !== -1) { cats.push(cat); break; }
             }
         }
         if (cats.length === 0) cats.push('other');
         return cats;
     }
 
-    // Only assign categories if not already set by server
     cards.forEach(function(card) {
         var existing = (card.getAttribute('data-categories') || '').trim();
         if (!existing) {
@@ -37,22 +91,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     var activeCategory = 'all';
-
-    // Sections that use dedicated grids instead of post filtering
-    var dedicatedSections = { 'vocab': vocabGrid, 'grammar': grammarGrid };
+    var dedicatedSections = {};
+    if (vocabGrid) dedicatedSections['vocab'] = vocabGrid;
+    if (grammarGrid) dedicatedSections['grammar'] = grammarGrid;
 
     function filterPosts() {
-        // Check if this category has a dedicated section
         if (dedicatedSections[activeCategory]) {
-            // Hide posts grid, show dedicated grid
             if (postsGrid) postsGrid.style.display = 'none';
             if (vocabGrid) vocabGrid.style.display = 'none';
             if (grammarGrid) grammarGrid.style.display = 'none';
             dedicatedSections[activeCategory].style.display = '';
             return;
         }
-
-        // Show posts grid, hide dedicated grids
         if (postsGrid) postsGrid.style.display = '';
         if (vocabGrid) vocabGrid.style.display = 'none';
         if (grammarGrid) grammarGrid.style.display = 'none';
@@ -104,12 +154,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var backToTop = document.getElementById('backToTop');
     if (backToTop) {
         window.addEventListener('scroll', function() {
-            if (window.scrollY > 400) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        }, {passive: true});
         backToTop.addEventListener('click', function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
@@ -120,9 +166,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (progressBar) {
         window.addEventListener('scroll', function() {
             var height = document.documentElement.scrollHeight - window.innerHeight;
-            var progress = height > 0 ? (window.scrollY / height) * 100 : 0;
-            progressBar.style.width = progress + '%';
-        });
+            progressBar.style.width = (height > 0 ? (window.scrollY / height) * 100 : 0) + '%';
+        }, {passive: true});
     }
 
     // ====== SMOOTH SCROLL ======
@@ -141,23 +186,63 @@ document.addEventListener('DOMContentLoaded', function() {
     var navbar = document.getElementById('navbar') || document.querySelector('.post-navbar');
     if (navbar) {
         window.addEventListener('scroll', function() {
-            if (window.scrollY > 10) {
-                navbar.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.1)';
-            } else {
-                navbar.style.boxShadow = 'none';
-            }
+            navbar.style.boxShadow = window.scrollY > 10 ? 'var(--shadow-md)' : 'none';
+        }, {passive: true});
+    }
+
+    // ====== INTERSECTION OBSERVER ANIMATION ======
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.post-card, .vocab-card, .grammar-card, .course-card, .feature-item, .roadmap-step').forEach(function(el) {
+            el.classList.add('animate-in');
+            observer.observe(el);
         });
     }
+
+    // ====== LESSON PROGRESS TRACKING ======
+    var path = window.location.pathname;
+    if (path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/[A-Z0-9]+-\d+\.html/)) {
+        try {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '{}');
+            visited[path] = Date.now();
+            localStorage.setItem('dk-visited', JSON.stringify(visited));
+        } catch(e) {}
+    }
+
+    // Show visited indicators
+    function updateProgressIndicators() {
+        try {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '{}');
+            document.querySelectorAll('a[href]').forEach(function(a) {
+                var href = a.getAttribute('href');
+                if (href && !href.startsWith('http')) {
+                    var normalized = '/' + href.replace(/^\.\.\//, '').replace(/^\//, '');
+                    if (visited[normalized]) {
+                        a.classList.add('lesson-visited');
+                    }
+                }
+            });
+        } catch(e) {}
+    }
+    updateProgressIndicators();
+
 });
 
-// Global filter function (for footer links)
+// Global filter function
 function filterByCategory(category) {
     var tabs = document.querySelectorAll('.tab');
     tabs.forEach(function(tab) {
-        if (tab.getAttribute('data-category') === category) {
-            tab.click();
-        }
+        if (tab.getAttribute('data-category') === category) { tab.click(); }
     });
     var target = document.getElementById('lessons');
     if (target) target.scrollIntoView({ behavior: 'smooth' });
 }
+})();
