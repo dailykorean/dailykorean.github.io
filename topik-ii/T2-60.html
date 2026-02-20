@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-ii/T2-60.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Trung cấp (3~4급)", "item": "https://dailykorean.me/topik-ii/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T2-60: Thi thử (Viết) + Đánh giá cuối"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-advanced/index.html">👑 T3</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html" class="active">📕 T2</a>
+                <a href="../topik-advanced/index.html">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Trung cấp (3~4급)</a><span class="sep">›</span>
+        <span>Unit 10: Luyện thi thực chiến TOPIK II</span><span class="sep">›</span>
+        <span>T2-60</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -61,7 +102,6 @@
   <span class="lesson-tag"> · 중급 · 10</span>
   <h1>모의 시험 (쓰기) + 최종 평가</h1>
   <h2>Thi thử (Viết) + Đánh giá cuối</h2>
-  <p class="lesson-theme">🎯 </p>
 </header>
 <section class="lesson-section warm-up"><h3>🌅 워밍업 / Khởi động</h3><div class="content-ko">축하합니다! 여러분은 TOPIK II 과정의 마지막 수업에 도달했습니다! 지난 59과를 통해 중급 한국어의 핵심 문법, 어휘, 읽기, 듣기, 쓰기 능력을 체계적으로 학습했습니다. 오늘은 TOPIK II 쓰기 영역의 모의 시험을 치르고, 전체 과정을 최종 평가하는 시간입니다. 쓰기 영역은 TOPIK II에서 가장 어렵지만, 가장 점수 차이가 크게 나는 부분이기도 합니다. 준비되셨나요? 시작합시다!</div><div class="content-vi">Chúc mừng bạn! Bạn đã đến bài học cuối cùng của khóa TOPIK II! Qua 59 bài trước, bạn đã học một cách hệ thống ngữ pháp trung cấp, từ vựng, kỹ năng đọc, nghe và viết. Hôm nay chúng ta sẽ thực hiện bài thi thử phần Viết của TOPIK II và đánh giá tổng kết toàn bộ khóa học. Phần Viết là phần khó nhất nhưng cũng là phần tạo ra sự chênh lệch điểm lớn nhất trong TOPIK II. Bạn đã sẵn sàng chưa? Hãy bắt đầu!</div></section>
 <section class="lesson-section vocab"><h3>📚 어휘 / Từ vựng chủ đề thi viết</h3><table class="vocab-table"><thead><tr><th>한국어</th><th>발음</th><th>Tiếng Việt</th><th>Ví dụ</th></tr></thead><tbody><tr><td class="word-ko">작문</td><td class="word-pron">[작문]</td><td class="word-vi">Viết văn, viết bài</td><td class="word-ex">TOPIK II 작문 시험은 4문제로 구성되어 있습니다.<br><small>Bài thi viết TOPIK II gồm 4 câu hỏi.</small></td></tr><tr><td class="word-ko">서론</td><td class="word-pron">[서론]</td><td class="word-vi">Phần mở bài, dẫn nhập</td><td class="word-ex">서론에서는 주제를 소개하고 자신의 입장을 밝히세요.<br><small>Trong phần mở bài, hãy giới thiệu chủ đề và nêu quan điểm của mình.</small></td></tr><tr><td class="word-ko">본론</td><td class="word-pron">[본론]</td><td class="word-vi">Phần thân bài, nội dung chính</td><td class="word-ex">본론에서는 구체적인 이유와 예시를 들어 설명하세요.<br><small>Trong phần thân bài, hãy đưa ra lý do cụ thể và ví dụ minh họa.</small></td></tr><tr><td class="word-ko">결론</td><td class="word-pron">[결론]</td><td class="word-vi">Phần kết luận</td><td class="word-ex">결론에서는 자신의 의견을 다시 한번 정리하세요.<br><small>Trong phần kết luận, hãy tổng hợp lại ý kiến của mình một lần nữa.</small></td></tr><tr><td class="word-ko">채점 기준</td><td class="word-pron">[채점 기준]</td><td class="word-vi">Tiêu chí chấm điểm</td><td class="word-ex">TOPIK 쓰기의 채점 기준을 잘 알아야 높은 점수를 받을 수 있습니다.<br><small>Bạn cần hiểu rõ tiêu chí chấm điểm của phần Viết TOPIK để đạt điểm cao.</small></td></tr><tr><td class="word-ko">원고지</td><td class="word-pron">[원고지]</td><td class="word-vi">Giấy viết bài (có ô vuông)</td><td class="word-ex">쓰기 답안은 원고지에 작성해야 합니다.<br><small>Bài viết phải được viết trên giấy có ô vuông.</small></td></tr></tbody></table></section>
@@ -81,7 +121,7 @@
 5️⃣ Giữ gìn sức khỏe: Ngủ đủ giấc và ăn uống đầy đủ trước kỳ thi!
 
 Chúc bạn đạt kết quả tốt trong kỳ thi TOPIK II! 화이팅! 💪🎉</div></section>
-<section class="lesson-section summary"><h3>📋 과정 요약 / Tóm tắt khóa học</h3><div class="summary-cando">🎯 <strong>Sau bài này bạn có thể:</strong> </div><div class="summary-grammar">📝 <strong>Ngữ pháp:</strong> </div><div class="summary-vocab">📚 <strong>Từ vựng:</strong> </div><div class="summary-next">➡️ <strong>Bài tiếp:</strong> </div></section>
+<section class="lesson-section summary"><h3>📋 과정 요약 / Tóm tắt khóa học</h3></section>
 </article>
         
         <div class="lesson-nav-bar" style="margin-top:1.5rem">
@@ -90,6 +130,13 @@ Chúc bạn đạt kết quả tốt trong kỳ thi TOPIK II! 화이팅! 💪�
             <span class="disabled"></span>
         </div>
     </main>
+    
+    
+    <div class="completion-banner">
+        <h3>🎉 Chúc mừng! Bạn đã hoàn thành TOPIK II — Trung cấp (3~4급)!</h3>
+        <p>Tiếp tục hành trình với khóa học tiếp theo:</p>
+        <a href="../topik-advanced/index.html">👑 TOPIK II — Cao cấp (5~6급) →</a>
+    </div>
     
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
@@ -121,6 +168,66 @@ Chúc bạn đạt kết quả tốt trong kỳ thi TOPIK II! 화이팅! 💪�
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

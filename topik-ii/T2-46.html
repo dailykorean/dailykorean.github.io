@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-ii/T2-46.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Trung cấp (3~4급)", "item": "https://dailykorean.me/topik-ii/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T2-46: An toàn và phòng chống tội phạm"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-advanced/index.html">👑 T3</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html" class="active">📕 T2</a>
+                <a href="../topik-advanced/index.html">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Trung cấp (3~4급)</a><span class="sep">›</span>
+        <span>Unit 8: Pháp luật và Vấn đề xã hội</span><span class="sep">›</span>
+        <span>T2-46</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -67,7 +108,8 @@
 <section class="lesson-section vocab"><h3>📚 어휘 / Từ vựng</h3><table class="vocab-table"><thead><tr><th>한국어</th><th>발음</th><th>Tiếng Việt</th><th>Ví dụ</th></tr></thead><tbody><tr><td class="word-ko">안전</td><td class="word-pron">[안전]</td><td class="word-vi">An toàn</td><td class="word-ex">안전 벨트를 꼭 매세요.<br><small>Hãy thắt dây an toàn thật chặt.</small><span class="hanja-note">안 (An) + 전 (Toàn)</span></td></tr><tr><td class="word-ko">방범</td><td class="word-pron">[방범]</td><td class="word-vi">Phòng chống tội phạm, chống trộm</td><td class="word-ex">이 지역은 방범 카메라가 많이 설치되어 있어요.<br><small>Khu vực này được lắp đặt nhiều camera chống trộm.</small><span class="hanja-note">방 (Phòng) + 범 (Phạm)</span></td></tr><tr><td class="word-ko">조심하다</td><td class="word-pron">[조심하다]</td><td class="word-vi">Cẩn thận, chú ý</td><td class="word-ex">밤늦게 혼자 다닐 때는 조심해야 해요.<br><small>Khi đi một mình vào đêm muộn, bạn phải cẩn thận.</small><span class="hanja-note">조심 (Tâm) + 하다 (làm)</span></td></tr><tr><td class="word-ko">예방</td><td class="word-pron">[예방]</td><td class="word-vi">Phòng ngừa, dự phòng</td><td class="word-ex">감기 예방을 위해 손을 자주 씻으세요.<br><small>Hãy rửa tay thường xuyên để phòng ngừa cảm cúm.</small><span class="hanja-note">예 (Dự) + 방 (Phòng)</span></td></tr></tbody></table></section>
 <section class="lesson-section grammar"><h3>📝 문법 / Ngữ pháp</h3><div class="grammar-block"><h4>-아/어 놓다</h4><p class="grammar-explain">Được dùng khi hành động đã được hoàn thành và trạng thái kết quả của hành động đó được duy trì. Thường mang ý nghĩa 'làm sẵn' hoặc 'để đó' và giữ nguyên trạng thái.</p><p class="grammar-compare">🔄 So sánh: Tương tự 'làm sẵn rồi để đó' hoặc 'để nguyên trạng thái'.</p><ul class="grammar-examples"><li><span class="ko">문을 열어 놓았어요.</span> → <span class="vi">Tôi đã mở cửa sẵn (và để cửa mở).</span><br><em>Trạng thái 'cửa mở' được duy trì.</em></li><li><span class="ko">숙제를 다 해 놓아서 지금은 놀 수 있어요.</span> → <span class="vi">Tôi đã làm xong bài tập sẵn rồi nên bây giờ có thể chơi.</span><br><em>Trạng thái 'bài tập đã hoàn thành' được duy trì.</em></li><li><span class="ko">친구에게 줄 선물을 미리 사 놓았어요.</span> → <span class="vi">Tôi đã mua sẵn quà để tặng bạn rồi.</span><br><em>Trạng thái 'quà đã được mua' được duy trì.</em></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">내일 발표를 위해 자료를 (준비하다) _________.</li><li class="practice-item">방이 너무 더워서 창문을 (열다) _________.</li></ul></div></div><div class="grammar-block"><h4>-아/어 두다</h4><p class="grammar-explain">Được dùng khi hành động đã được hoàn thành với mục đích sử dụng sau này, hoặc để duy trì trạng thái cho một mục đích cụ thể. Có sắc thái 'làm sẵn để dành' hoặc 'để đó cho việc gì đó'.</p><p class="grammar-compare">🔄 So sánh: Tương tự 'làm sẵn để dành' hoặc 'để đó cho mục đích sau này'.</p><ul class="grammar-examples"><li><span class="ko">먹을 것을 냉장고에 넣어 두세요.</span> → <span class="vi">Hãy cho đồ ăn vào tủ lạnh để dành.</span><br><em>Cho vào tủ lạnh để bảo quản/dùng sau.</em></li><li><span class="ko">나중에 읽으려고 책을 빌려 두었어요.</span> → <span class="vi">Tôi đã mượn sách sẵn để đọc sau.</span><br><em>Mượn để dùng cho mục đích đọc sau.</em></li><li><span class="ko">여행 계획을 미리 세워 두는 것이 좋아요.</span> → <span class="vi">Nên lập kế hoạch du lịch sẵn.</span><br><em>Lập kế hoạch để dùng cho chuyến đi sau này.</em></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">졸릴 때 마시려고 커피를 (타다) _________.</li><li class="practice-item">내일 아침에 입을 옷을 (준비하다) _________.</li></ul></div></div></section>
 <section class="lesson-section pronunciation"><h3>🔊 발음 / Phát âm</h3><div class="pron-content">Từ '방범' (phòng chống tội phạm) được phát âm là [방범]. Mặc dù có hai chữ ㅂ liên tiếp, nhưng không có sự biến đổi đặc biệt nào. Chữ ㅂ cuối cùng trong âm tiết đầu tiên (방) được phát âm là âm môi đóng, sau đó đến âm tiết thứ hai (범) bắt đầu bằng ㅂ. Hãy luyện tập phát âm rõ ràng từng âm tiết nhé.</div></section>
-<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">안</div><div class="hv-arrow">↔</div><div class="hv-hanviet">An</div><div class="hv-meaning">peace, safe</div><div class=hv-sound>🔊 안 /an/ ↔ AN (Hán-Việt) — Giống hệt! Dễ nhớ!</div><ul class=hv-compounds><li><strong>안녕하다</strong> = Bình an/Khỏe <small>(An ninh)</small></li><li><strong>안전</strong> = An toàn <small>(An toàn)</small></li><li><strong>불안하다</strong> = Bất an/Lo lắng <small>(Bất an)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">전</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Toàn</div><div class="hv-meaning">whole, complete</div><div class=hv-sound>🔊 전 /jeon/ ← TOÀN (Hán-Việt) — Biến âm 't' → 'j'.</div><ul class=hv-compounds><li><strong>안전</strong> = An toàn <small>(An toàn)</small></li><li><strong>전체</strong> = Toàn thể <small>(Toàn thể)</small></li><li><strong>완전히</strong> = Hoàn toàn <small>(Hoàn toàn)</small></li></ul></div></div></section>
+<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">안</div><div class="hv-arrow">↔</div><div class="hv-hanviet">An</div><div class="hv-meaning">peace, safe</div><div class=hv-sound>🔊 안 /an/ ↔ AN (Hán-Việt) — Giống hệt! Dễ nhớ!</div><ul class=hv-compounds><li><strong>안녕하다</strong> = Bình an/Khỏe <small>(An ninh)</small></li><li><strong>안전</strong> = An toàn <small>(An toàn)</small></li><li><strong>불안하다</strong> = Bất an/Lo lắng <small>(Bất an)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">전</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Toàn</div><div class="hv-meaning">whole, complete</div><div class=hv-sound>🔊 전 /jeon/ ← TOÀN (Hán-Việt) — Biến âm 't' → 'j'.</div><ul class=hv-compounds><li><strong>안전</strong> = An toàn <small>(An toàn)</small></li><li><strong>전체</strong> = Toàn thể <small>(Toàn thể)</small></li><li><strong>완전히</strong> = Hoàn toàn <small>(Hoàn toàn)</small></li></ul></div></div></section>
 <section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">한국에서 안전하게 생활하는 방법
 
 한국은 비교적 안전한 나라지만, 언제나 조심하는 것이 중요합니다. 특히 밤늦게 혼자 다닐 때는 더욱 주의해야 합니다. 다음과 같은 안전 수칙을 지켜서 범죄를 예방하세요.
@@ -91,6 +133,8 @@
             <a href="T2-47.html">Bài tiếp →</a>
         </div>
     </main>
+    
+    
     
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
@@ -122,6 +166,66 @@
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

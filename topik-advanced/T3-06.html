@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-advanced/T3-06.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Cao cấp (5~6급)", "item": "https://dailykorean.me/topik-advanced/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T3-06: Tổng hợp Chính trị & Ngoại giao"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../topik-advanced/index.html" class="active">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Cao cấp (5~6급)</a><span class="sep">›</span>
+        <span>Unit 1: Chính trị & Ngoại giao</span><span class="sep">›</span>
+        <span>T3-06</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -74,7 +115,10 @@
     *   **Quy tắc biến âm:** Khi một phụ âm cuối (patchim) như 'ㅂ' (từ '법') đứng trước một phụ âm đầu 'ㄹ' (từ '률'), 'ㅂ' có thể bị mũi hóa thành 'ㅁ', và 'ㄹ' có thể bị biến đổi thành 'ㄴ'. 
     *   Vì vậy, '법률' (beop-ryul) trở thành '범뉼' (beom-nyul). Việc phát âm [범뉼] là hoàn toàn tự nhiên và được chấp nhận rộng rãi trong tiếng Hàn. 
     *   Hãy luyện tập: '법률' -> [범뉼]</div></section>
-<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">정</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Chính</div><div class="hv-meaning">chính, đúng, trị</div><div class=hv-sound>🔊 정 /jeong/ ← CHÍNH — âm khá tương đồng!</div><ul class=hv-compounds><li><strong>정치</strong> = Chính trị <small>(Chính trị)</small></li><li><strong>정부</strong> = Chính phủ <small>(Chính phủ)</small></li><li><strong>정당</strong> = Chính đảng <small>(Chính đảng)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">외</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Ngoại</div><div class="hv-meaning">ngoài, ngoại</div><div class=hv-sound>🔊 외 /oe/ ← NGOẠI — âm 'oe' khá đặc trưng, cần chú ý!</div><ul class=hv-compounds><li><strong>외교</strong> = Ngoại giao <small>(Ngoại giao)</small></li><li><strong>외국</strong> = Nước ngoài <small>(Ngoại quốc)</small></li><li><strong>외출</strong> = Ra ngoài <small>(Ngoại xuất)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">국</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Quốc</div><div class="hv-meaning">nước, quốc gia</div><div class=hv-sound>🔊 국 /guk/ ← QUỐC — âm 'uk' khá gần!</div><ul class=hv-compounds><li><strong>국제</strong> = Quốc tế <small>(Quốc tế)</small></li><li><strong>국가</strong> = Quốc gia <small>(Quốc gia)</small></li><li><strong>국민</strong> = Quốc dân <small>(Quốc dân)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">민</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Dân</div><div class="hv-meaning">dân, nhân dân</div><div class=hv-sound>🔊 민 /min/ ← DÂN — âm khá giống!</div><ul class=hv-compounds><li><strong>민주주의</strong> = Dân chủ <small>(Dân chủ chủ nghĩa)</small></li><li><strong>시민</strong> = Công dân <small>(Thị dân)</small></li><li><strong>국민</strong> = Quốc dân <small>(Quốc dân)</small></li></ul></div></div></section>
+<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">정</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Chính</div><div class="hv-meaning">chính, đúng, trị</div><div class=hv-sound>🔊 정 /jeong/ ← CHÍNH — âm khá tương đồng!</div><ul class=hv-compounds><li><strong>정치</strong> = Chính trị <small>(Chính trị)</small></li><li><strong>정부</strong> = Chính phủ <small>(Chính phủ)</small></li><li><strong>정당</strong> = Chính đảng <small>(Chính đảng)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">외</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Ngoại</div><div class="hv-meaning">ngoài, ngoại</div><div class=hv-sound>🔊 외 /oe/ ← NGOẠI — âm 'oe' khá đặc trưng, cần chú ý!</div><ul class=hv-compounds><li><strong>외교</strong> = Ngoại giao <small>(Ngoại giao)</small></li><li><strong>외국</strong> = Nước ngoài <small>(Ngoại quốc)</small></li><li><strong>외출</strong> = Ra ngoài <small>(Ngoại xuất)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">국</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Quốc</div><div class="hv-meaning">nước, quốc gia</div><div class=hv-sound>🔊 국 /guk/ ← QUỐC — âm 'uk' khá gần!</div><ul class=hv-compounds><li><strong>국제</strong> = Quốc tế <small>(Quốc tế)</small></li><li><strong>국가</strong> = Quốc gia <small>(Quốc gia)</small></li><li><strong>국민</strong> = Quốc dân <small>(Quốc dân)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">민</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Dân</div><div class="hv-meaning">dân, nhân dân</div><div class=hv-sound>🔊 민 /min/ ← DÂN — âm khá giống!</div><ul class=hv-compounds><li><strong>민주주의</strong> = Dân chủ <small>(Dân chủ chủ nghĩa)</small></li><li><strong>시민</strong> = Công dân <small>(Thị dân)</small></li><li><strong>국민</strong> = Quốc dân <small>(Quốc dân)</small></li></ul></div></div></section>
 <section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">최근 한반도 주변의 국제 정세는 매우 복잡합니다. 북한의 핵 개발은 국제 사회의 주요 안보 위협으로 간주되는 데다가, 주변 강대국들의 이해관계도 얽혀 있어 외교적 해결이 쉽지 않습니다. 일부에서는 강경한 제재만이 북한을 변화시킬 수 있다고 주장하지만, 단순히 제재만 강화한다고 해서 모든 문제가 해결되는 것은 아닙니다. 오히려 북한 주민들의 삶을 더욱 어렵게 만들 뿐이라는 비판도 있습니다. 따라서 한국 정부는 대화와 협상을 통한 평화적 해결을 최우선 과제로 삼고 있으며, 국제 사회와의 긴밀한 협력에 따라 유연한 외교 정책을 펼치고 있습니다. 이러한 상황에서 한국의 외교는 인내심과 전략적 사고를 바탕으로 균형 잡힌 접근 방식을 유지하는 것이 중요합니다.</div><div class="reading-hint"><small>💡 Tình hình quốc tế xung quanh bán đảo Triều Tiên gần đây rất phức tạp. Việc phát triển hạt nhân của Bắc Triều Tiên không những được coi là mối đe dọa an ninh chính của cộng đồng quốc tế mà còn bị vướng mắc bởi lợi ích của các cường quốc xung quanh, khiến việc giải quyết ngoại giao không hề dễ dàng. Một số người cho rằng chỉ có các biện pháp trừng phạt cứng rắn mới có thể thay đổi Bắc Triều Tiên, nhưng không phải cứ nói là chỉ tăng cường trừng phạt thì mọi vấn đề sẽ được giải quyết. Ngược lại, cũng có chỉ trích rằng điều đó chỉ làm cho cuộc sống của người dân Bắc Triều Tiên trở nên khó khăn hơn. Do đó, chính phủ Hàn Quốc đặt ưu tiên hàng đầu là giải quyết hòa bình thông qua đối thoại và đàm phán, đồng thời đang thực hiện chính sách ngoại giao linh hoạt tùy theo sự hợp tác chặt chẽ với cộng đồng quốc tế. Trong tình huống này, ngoại giao của Hàn Quốc cần duy trì một cách tiếp cận cân bằng dựa trên sự kiên nhẫn và tư duy chiến lược.</small></div><div class="reading-question"><p class="q-text">위 글의 내용과 일치하지 않는 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">북한의 핵 개발은 국제 안보에 위협이 되고 있다.</li><li class="option" data-idx="1">주변 강대국들의 이해관계가 외교적 해결을 어렵게 한다.</li><li class="option" data-idx="2">강력한 제재만이 북한 문제를 해결할 수 있는 유일한 방법이다.</li><li class="option" data-idx="3">한국 정부는 대화와 협상을 통한 평화적 해결을 중요하게 생각한다.</li></ul><div class="q-answer" hidden>Đáp án: 2 — Câu 3 ('강력한 제재만이 북한 문제를 해결할 수 있는 유일한 방법이다.') không đúng với nội dung bài đọc. Bài đọc nói rằng '단순히 제재만 강화한다고 해서 모든 문제가 해결되는 것은 아니다' (không phải cứ nói là chỉ tăng cường trừng phạt thì mọi vấn đề sẽ được giải quyết), và còn có chỉ trích rằng nó làm cuộc sống người dân khó khăn hơn. Điều này phủ nhận ý rằng trừng phạt là cách duy nhất.</div></div><div class="reading-question"><p class="q-text">한국 정부가 취하고 있는 외교 정책의 특징은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">오직 강경한 제재만을 고집한다.</li><li class="option" data-idx="1">주변 강대국들과의 협력을 거부한다.</li><li class="option" data-idx="2">대화와 협상을 통한 평화적 해결을 최우선으로 한다.</li><li class="option" data-idx="3">일방적인 정책을 통해 문제를 해결하려 한다.</li></ul><div class="q-answer" hidden>Đáp án: 2 — Theo đoạn văn, '한국 정부는 대화와 협상을 통한 평화적 해결을 최우선 과제로 삼고 있으며' (chính phủ Hàn Quốc đặt ưu tiên hàng đầu là giải quyết hòa bình thông qua đối thoại và đàm phán). Do đó, câu 3 là đáp án chính xác.</div></div></section>
 <section class="lesson-section writing"><h3>✍️ 쓰기 / Viết</h3><div class="writing-task">Viết một bài phân tích (khoảng 400 từ trở lên) về một vấn đề chính trị hoặc ngoại giao đương đại mà bạn quan tâm. Trong bài viết, bạn cần:
 1.  Giới thiệu vấn đề và tầm quan trọng của nó.
@@ -122,6 +166,8 @@ Phong trào 6월 항쟁 là minh chứng cho sức mạnh của người dân tr
         </div>
     </main>
     
+    
+    
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
         <div class="related-courses-grid">
@@ -152,6 +198,66 @@ Phong trào 6월 항쟁 là minh chứng cho sức mạnh của người dân tr
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

@@ -1,22 +1,94 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L1-06: Tổng ôn Hangul + Chào hỏi cơ bản - Giáo trình TOPIK I - Daily Korean</title>
     <meta name="description" content="한글 총정리 + 기본 인사 - Tổng ôn Hangul + Chào hỏi cơ bản. Giáo trình tiếng Hàn TOPIK I cho người Việt - 60 bài học từ cơ bản đến trung cấp.">
+    <link rel="canonical" href="https://dailykorean.me/curriculum/L1-06.html">
+    <meta property="og:title" content="L1-06: Tổng ôn Hangul + Chào hỏi cơ bản - Giáo trình TOPIK I - Daily Korean">
+    <meta property="og:description" content="한글 총정리 + 기본 인사 - Tổng ôn Hangul + Chào hỏi cơ bản. Giáo trình tiếng Hàn TOPIK I cho người Việt - 60 bài học từ cơ bản đến trung cấp.">
+    <meta property="og:url" content="https://dailykorean.me/curriculum/L1-06.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Daily Korean">
+    <meta property="og:locale" content="vi_VN">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LearningResource",
+      "name": "L1-06: Tổng ôn Hangul + Chào hỏi cơ bản",
+      "description": "한글 총정리 + 기본 인사 - Tổng ôn Hangul + Chào hỏi cơ bản",
+      "learningResourceType": "lesson",
+      "inLanguage": ["ko", "vi"],
+      "isAccessibleForFree": true,
+      "provider": {
+        "@type": "Organization",
+        "name": "Daily Korean",
+        "url": "https://dailykorean.me"
+      },
+      "isPartOf": {
+        "@type": "Course",
+        "name": "Giáo trình TOPIK I - Daily Korean",
+        "url": "https://dailykorean.me/curriculum/index.html"
+      },
+      "url": "https://dailykorean.me/curriculum/L1-06.html"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "Giáo trình TOPIK I (Level 1)", "item": "https://dailykorean.me/curriculum/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "L1-06: Tổng ôn Hangul + Chào hỏi cơ bản"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html" class="active">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../topik-advanced/index.html">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">Giáo trình TOPIK I (Level 1)</a><span class="sep">›</span>
+        <span>Unit 1: Học bảng chữ cái Hangul</span><span class="sep">›</span>
+        <span>L1-06</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -32,7 +104,7 @@
   <h2>Tổng ôn Hangul + Chào hỏi cơ bản</h2>
   <p class="lesson-theme">🎯 hangul_review</p>
 </header>
-<section class="lesson-section warm-up"><h3>🌅 워밍업 / Khởi động</h3><div class="content-ko"></div><div class="content-vi">Chào các bạn! Hôm nay chúng ta sẽ cùng tổng ôn lại toàn bộ bảng chữ cái Hangul mà chúng ta đã học qua các bài trước. Sau đó, chúng ta sẽ học những câu chào hỏi cơ bản nhất để có thể giao tiếp đơn giản với người Hàn Quốc. Mục tiêu của bài học này là các bạn có thể đọc viết Hangul hoàn chỉnh và tự tin chào hỏi, giới thiệu tên mình nhé!</div></section>
+<section class="lesson-section warm-up"><h3>🌅 워밍업 / Khởi động</h3><div class="content-vi">Chào các bạn! Hôm nay chúng ta sẽ cùng tổng ôn lại toàn bộ bảng chữ cái Hangul mà chúng ta đã học qua các bài trước. Sau đó, chúng ta sẽ học những câu chào hỏi cơ bản nhất để có thể giao tiếp đơn giản với người Hàn Quốc. Mục tiêu của bài học này là các bạn có thể đọc viết Hangul hoàn chỉnh và tự tin chào hỏi, giới thiệu tên mình nhé!</div></section>
 <section class="lesson-section vocab"><h3>📚 어휘 / Từ vựng</h3><table class="vocab-table"><thead><tr><th>한국어</th><th>발음</th><th>Tiếng Việt</th><th>Ví dụ</th></tr></thead><tbody><tr><td class="word-ko">안녕하세요</td><td class="word-pron">[안녕하세여]</td><td class="word-vi">Xin chào (lịch sự)</td><td class="word-ex">안녕하세요? 저는 민아입니다.<br><small>Xin chào? Tôi là Mina.</small></td></tr><tr><td class="word-ko">감사합니다</td><td class="word-pron">[감사함니다]</td><td class="word-vi">Cảm ơn (lịch sự)</td><td class="word-ex">도와주셔서 감사합니다.<br><small>Cảm ơn vì đã giúp đỡ.</small></td></tr><tr><td class="word-ko">죄송합니다</td><td class="word-pron">[죄송함니다]</td><td class="word-vi">Xin lỗi (lịch sự)</td><td class="word-ex">늦어서 죄송합니다.<br><small>Xin lỗi vì đã đến muộn.</small></td></tr><tr><td class="word-ko">네</td><td class="word-pron">[네]</td><td class="word-vi">Vâng, dạ, đúng vậy</td><td class="word-ex">네, 맞아요.<br><small>Vâng, đúng rồi ạ.</small></td></tr><tr><td class="word-ko">아니요</td><td class="word-pron">[아니요]</td><td class="word-vi">Không, không phải</td><td class="word-ex">아니요, 괜찮아요.<br><small>Không, không sao đâu.</small></td></tr><tr><td class="word-ko">안녕히 가세요</td><td class="word-pron">[안녕히 가세여]</td><td class="word-vi">Tạm biệt (nói với người đi)</td><td class="word-ex">선생님, 안녕히 가세요!<br><small>Thầy/Cô ơi, tạm biệt ạ! (nói với thầy/cô rời đi)</small></td></tr><tr><td class="word-ko">안녕히 계세요</td><td class="word-pron">[안녕히 계세여]</td><td class="word-vi">Tạm biệt (nói với người ở lại)</td><td class="word-ex">여러분, 안녕히 계세요!<br><small>Các bạn ơi, tạm biệt nhé! (nói với các bạn ở lại)</small></td></tr><tr><td class="word-ko">만나서 반갑습니다</td><td class="word-pron">[만나서 반갑씀니다]</td><td class="word-vi">Rất vui được gặp bạn</td><td class="word-ex">만나서 반갑습니다, 저는 지민입니다.<br><small>Rất vui được gặp bạn, tôi là Jimin.</small></td></tr><tr><td class="word-ko">이름</td><td class="word-pron">[이름]</td><td class="word-vi">Tên</td><td class="word-ex">이름이 뭐예요?<br><small>Tên bạn là gì?</small></td></tr><tr><td class="word-ko">저는</td><td class="word-pron">[저는]</td><td class="word-vi">Tôi (chủ ngữ, lịch sự)</td><td class="word-ex">저는 학생입니다.<br><small>Tôi là học sinh.</small></td></tr></tbody></table></section>
 <section class="lesson-section grammar"><h3>📝 문법 / Ngữ pháp</h3><div class="grammar-block"><h4>저는 [Tên]입니다.</h4><p class="grammar-explain">Đây là cấu trúc dùng để giới thiệu tên của bản thân một cách lịch sự. '저' có nghĩa là 'tôi' (dạng khiêm tốn, lịch sự), '-는' là tiểu từ chủ ngữ, và '입니다' là đuôi câu trần thuật lịch sự có nghĩa là 'là'.</p><p class="grammar-compare">🔄 So sánh: Trong tiếng Việt, chúng ta nói 'Tôi là [Tên]'. Trong tiếng Hàn, cấu trúc tương tự là '저는 [Tên]입니다.'.</p><ul class="grammar-examples"><li><span class="ko">안녕하세요? 저는 민아입니다.</span> → <span class="vi">Xin chào? Tôi là Mina.</span><br><em>Giới thiệu tên của mình.</em></li><li><span class="ko">만나서 반갑습니다. 저는 투이입니다.</span> → <span class="vi">Rất vui được gặp bạn. Tôi là Thúy.</span><br><em>Kết hợp chào hỏi và giới thiệu tên.</em></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">Hoàn thành câu sau để giới thiệu tên của bạn: 안녕하세요? 저는 _______입니다.</li><li class="practice-item">Điền vào chỗ trống: 만나서 반갑습니다. _______ 민수입니다.</li></ul></div></div><div class="grammar-block"><h4>Các câu chào hỏi cơ bản</h4><p class="grammar-explain">Chúng ta đã học 6 câu chào hỏi cơ bản. Hãy cùng xem lại cách sử dụng chúng:</p><p class="grammar-compare">🔄 So sánh: Tiếng Việt có 'Xin chào', 'Cảm ơn', 'Xin lỗi', 'Tạm biệt'. Tiếng Hàn cũng có các câu tương tự nhưng cần chú ý sắc thái và đối tượng giao tiếp.</p><ul class="grammar-examples"><li><span class="ko">A: 안녕하세요?</span> → <span class="vi">A: Xin chào?</span><br><em>Chào hỏi khi gặp mặt.</em></li><li><span class="ko">B: 네, 안녕하세요.</span> → <span class="vi">B: Vâng, xin chào.</span><br><em>Đáp lại lời chào.</em></li><li><span class="ko">A: 감사합니다.</span> → <span class="vi">A: Cảm ơn.</span><br><em>Bày tỏ lòng biết ơn.</em></li><li><span class="ko">B: 죄송합니다.</span> → <span class="vi">B: Xin lỗi.</span><br><em>Bày tỏ sự hối lỗi.</em></li><li><span class="ko">A: 안녕히 가세요!</span> → <span class="vi">A: Tạm biệt! (nói với người đi)</span><br><em>Khi bạn ở lại và người khác ra về.</em></li><li><span class="ko">B: 안녕히 계세요!</span> → <span class="vi">B: Tạm biệt! (nói với người ở lại)</span><br><em>Khi bạn ra về và người khác ở lại.</em></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">Bạn sẽ nói gì khi gặp một người bạn lần đầu?</li><li class="practice-item">Bạn sẽ nói gì khi bạn rời đi và giáo viên của bạn ở lại lớp?</li></ul></div></div></section>
 <section class="lesson-section pronunciation"><h3>🔊 발음 / Phát âm</h3><div class="pron-content">Trong tiếng Hàn, một hiện tượng phát âm rất quan trọng là '연음' (nối âm). Đây là khi phụ âm cuối (받침) của một âm tiết 'nhảy' sang âm tiết tiếp theo nếu âm tiết tiếp theo bắt đầu bằng nguyên âm 'ㅇ' (âm câm). Khi nối âm, phụ âm cuối sẽ được phát âm như phụ âm đầu của âm tiết sau.
@@ -44,7 +116,7 @@ Ví dụ:
 4.  만나서 반갑습니다 (rất vui được gặp) → [만나서 반갑씀니다]: 받침 'ㅂ' của '갑' nối với '습' và 'ㅂ니다' biến đổi thành '음니다' (do quy tắc biến âm).
 
 **Lưu ý quan trọng**: Khi đọc các câu tiếng Hàn, hãy cố gắng luyện tập nối âm để phát âm tự nhiên và chuẩn xác hơn.</div></section>
-<section class="lesson-section han-viet-bridge"><h3>🔗 한자 / Hán tự</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"></div></section>
+
 <section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">민아: 안녕하세요?
 지훈: 네, 안녕하세요.
 민아: 만나서 반갑습니다. 저는 민아입니다.
@@ -55,7 +127,7 @@ Jihoon: Vâng, xin chào.
 Mina: Rất vui được gặp bạn. Tôi là Mina.
 Jihoon: Rất vui được gặp bạn. Tôi là Jihoon.
 Mina: Vâng, cảm ơn!
-Jihoon: Không, không có gì.</small></div><div class="reading-question"><p class="q-text">민아는 누구에게 인사를 하고 있습니까?</p><ul class="q-options"><li class="option" data-idx="0">지훈</li><li class="option" data-idx="1">선생님</li><li class="option" data-idx="2">친구</li></ul><div class="q-answer" hidden>Đáp án: 0 — Mina đang chào Jihoon. Trong đoạn hội thoại, Mina và Jihoon đang giới thiệu bản thân cho nhau.</div></div><div class="reading-question"><p class="q-text">지훈은 민아에게 무엇이라고 소개했습니까?</p><ul class="q-options"><li class="option" data-idx="0">학생</li><li class="option" data-idx="1">지훈</li><li class="option" data-idx="2">선생님</li></ul><div class="q-answer" hidden>Đáp án: 1 — Jihoon đã giới thiệu mình là 지훈 (Jihoon).</div></div></section>
+Jihoon: Không, không có gì.</small></div><div class="reading-question"><p class="q-text">민아는 누구에게 인사를 하고 있습니까?</p><ul class="q-options"><li class="option" data-idx="0">지훈</li><li class="option" data-idx="1">선생님</li><li class="option" data-idx="2">친구</li></ul><div class="q-answer" hidden>Đáp án:  — Mina đang chào Jihoon. Trong đoạn hội thoại, Mina và Jihoon đang giới thiệu bản thân cho nhau.</div></div><div class="reading-question"><p class="q-text">지훈은 민아에게 무엇이라고 소개했습니까?</p><ul class="q-options"><li class="option" data-idx="0">학생</li><li class="option" data-idx="1">지훈</li><li class="option" data-idx="2">선생님</li></ul><div class="q-answer" hidden>Đáp án: 1 — Jihoon đã giới thiệu mình là 지훈 (Jihoon).</div></div></section>
 <section class="lesson-section writing"><h3>✍️ 쓰기 / Viết</h3><div class="writing-task">Hãy viết một đoạn hội thoại ngắn giới thiệu bản thân bạn và chào hỏi một người bạn mới. Sử dụng các câu chào hỏi và cấu trúc '저는 ~입니다' đã học.</div><details class="writing-model"><summary>📝 Bài mẫu</summary><div class="model-answer">A: 안녕하세요?
 B: 네, 안녕하세요. 만나서 반갑습니다. 저는 [Tên của bạn]입니다.
 A: 만나서 반갑습니다. 저는 [Tên người bạn tưởng tượng]입니다.
@@ -87,8 +159,21 @@ Việc phân biệt và sử dụng đúng hai câu chào này thể hiện sự
         </div>
     </main>
     
+    
+    
+    <section class="related-courses">
+        <h3>📚 Khóa học khác trên Daily Korean</h3>
+        <div class="related-courses-grid">
+            <a href="../topik2/index.html" class="related-course-link">📘 TOPIK I (Lv2)</a>
+            <a href="../eps-topik/index.html" class="related-course-link">🏭 EPS-TOPIK</a>
+            <a href="../conversation/index.html" class="related-course-link">🗣️ Hội thoại</a>
+            <a href="../topik-ii/index.html" class="related-course-link">📕 TOPIK II 중급</a>
+            <a href="../topik-advanced/index.html" class="related-course-link">👑 TOPIK II 고급</a>
+        </div>
+    </section>
+    
     <footer class="cur-footer">
-        <p>© 2026 Daily Korean | <a href="index.html">Giáo trình</a> | <a href="../index.html">Trang chủ</a></p>
+        <p>© 2026 Daily Korean | <a href="index.html">Giáo trình</a> | <a href="../index.html">Trang chủ</a> | <a href="../courses.html">Tất cả khóa học</a></p>
     </footer>
     
     <script>
@@ -106,6 +191,66 @@ Việc phân biệt và sử dụng đúng hai câu chào này thể hiện sự
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

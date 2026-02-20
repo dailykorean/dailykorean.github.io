@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-advanced/T3-13.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Cao cấp (5~6급)", "item": "https://dailykorean.me/topik-advanced/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T3-13: Trí tuệ nhân tạo & Xã hội tương lai"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../topik-advanced/index.html" class="active">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Cao cấp (5~6급)</a><span class="sep">›</span>
+        <span>Unit 3: Khoa học & Công nghệ</span><span class="sep">›</span>
+        <span>T3-13</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -68,7 +109,8 @@
 <section class="lesson-section grammar"><h3>📝 문법 / Ngữ pháp</h3><div class="grammar-block"><h4>-(으)로 인해(서)</h4><p class="grammar-explain">Cấu trúc này được dùng để chỉ nguyên nhân, lý do của một sự việc nào đó, thường là những sự việc mang tính tiêu cực hoặc kết quả nghiêm trọng, hoặc được dùng trong văn viết, văn phong trang trọng. Có thể dịch là 'do, bởi vì, vì, do bởi'.</p><p class="grammar-compare">🔄 So sánh: Tương tự như 'do/bởi vì...' trong tiếng Việt, nhưng thường dùng trong ngữ cảnh trang trọng hoặc khi nói về nguyên nhân của một vấn đề.</p><ul class="grammar-examples"><li><span class="ko">인공지능 기술의 발전으로 인해 많은 직업이 사라질 수 있습니다.</span> → <span class="vi">Do sự phát triển của công nghệ trí tuệ nhân tạo, nhiều công việc có thể biến mất.</span><br><em>Diễn tả nguyên nhân dẫn đến kết quả tiêu cực (mất việc làm).</em></li><li><span class="ko">환경 오염으로 인해 지구 온난화 문제가 심각해지고 있습니다.</span> → <span class="vi">Do ô nhiễm môi trường, vấn đề nóng lên toàn cầu đang trở nên nghiêm trọng.</span><br><em>Nguyên nhân dẫn đến vấn đề nghiêm trọng.</em></li><li><span class="ko">갑작스러운 사고로 인하여 행사가 취소되었습니다.</span> → <span class="vi">Do tai nạn bất ngờ, sự kiện đã bị hủy bỏ.</span><br><em>Dùng trong văn phong trang trọng.</em></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">교통 체증 ______ 회의에 늦었습니다. (Giao thông tắc nghẽn)</li><li class="practice-item">기술의 발전 ______ 우리의 삶은 더욱 편리해질 것입니다. (Sự phát triển của công nghệ)</li><li class="practice-item">경제 위기 ______ 많은 기업들이 어려움을 겪고 있습니다. (Khủng hoảng kinh tế)</li></ul></div></div><div class="grammar-block"><h4>-(으)ㄹ 것으로 예상되다/전망되다</h4><p class="grammar-explain">Cấu trúc này được dùng để diễn tả sự dự đoán, kỳ vọng hoặc triển vọng về một sự việc sẽ xảy ra trong tương lai. '예상되다' (được dự đoán) và '전망되다' (được dự báo, có triển vọng) có nghĩa tương tự, thường dùng trong các bài báo, phân tích.</p><p class="grammar-compare">🔄 So sánh: Tương đương với 'được dự đoán là sẽ...', 'được kỳ vọng là sẽ...' trong tiếng Việt.</p><ul class="grammar-examples"><li><span class="ko">미래에는 인공지능 로봇이 우리의 일상생활을 도울 것으로 예상됩니다.</span> → <span class="vi">Trong tương lai, robot trí tuệ nhân tạo được dự đoán là sẽ giúp đỡ cuộc sống hàng ngày của chúng ta.</span><br><em>Dự đoán về vai trò của robot AI.</em></li><li><span class="ko">내년 경제는 더 성장할 것으로 전망됩니다.</span> → <span class="vi">Kinh tế năm sau được dự báo là sẽ tăng trưởng hơn nữa.</span><br><em>Dự báo về tình hình kinh tế.</em></li><li><span class="ko">이번 프로젝트는 성공적으로 마무리될 것으로 예상하고 있습니다.</span> → <span class="vi">Chúng tôi đang dự đoán rằng dự án này sẽ kết thúc thành công.</span><br><em>Có thể dùng với '예상하다' (dự đoán) thay vì '예상되다' (được dự đoán).</em></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">인구 감소 ______ 사회에 큰 변화가 올 것으로 예상됩니다. (Dân số giảm)</li><li class="practice-item">이 새로운 기술은 시장에 큰 영향을 미칠 ______ 전망됩니다. (Ảnh hưởng lớn đến thị trường)</li><li class="practice-item">다음 주부터 날씨가 더 추워질 ______ 예상됩니다. (Thời tiết lạnh hơn)</li></ul></div></div></section>
 <section class="lesson-section pronunciation"><h3>🔊 발음 / Phát âm</h3><div class="pron-content">1.  **인공지능 → [인공지능]**: Từ này được phát âm đúng như viết, không có biến âm đặc biệt. Mỗi âm tiết Hán Hàn giữ nguyên cách đọc của nó. 
 2.  **딥러닝 → [딤너닝]**: Đây là một trường hợp biến âm quan trọng. Khi phụ âm cuối 'ㅂ' (từ '딥') gặp phụ âm đầu 'ㄹ' (từ '러닝'), 'ㅂ' sẽ biến thành 'ㅁ' và 'ㄹ' sẽ biến thành 'ㄴ'. Đây là quy tắc 'đồng hóa âm mũi' (비음화). Hãy luyện tập để phát âm tự nhiên hơn nhé!</div></section>
-<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">인</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Nhân</div><div class="hv-meaning">person, people</div><div class=hv-sound>🔊 인 /in/ ↔ NHÂN. Mẹo nhớ: Bỏ 'nh' trong 'Nhân' ta được /in/!</div><ul class=hv-compounds><li><strong>한국인</strong> = Người Hàn <small>(Hàn Quốc nhân)</small></li><li><strong>외국인</strong> = Người nước ngoài <small>(Ngoại quốc nhân)</small></li><li><strong>개인</strong> = Cá nhân <small>(Cá nhân)</small></li><li><strong>인구</strong> = Dân số <small>(Nhân khẩu)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">공</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Công</div><div class="hv-meaning">work, craft, public</div><div class=hv-sound>🔊 공 /gong/ ↔ CÔNG. Mẹo nhớ: Âm 'công' trong tiếng Việt rất gần với '공' trong tiếng Hàn!</div><ul class=hv-compounds><li><strong>공부</strong> = Học tập <small>(Công phu)</small></li><li><strong>공장</strong> = Nhà máy <small>(Công xưởng)</small></li><li><strong>공업</strong> = Công nghiệp <small>(Công nghiệp)</small></li><li><strong>공공</strong> = Công cộng <small>(Công cộng)</small></li></ul></div></div></section>
+<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">인</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Nhân</div><div class="hv-meaning">person, people</div><div class=hv-sound>🔊 인 /in/ ↔ NHÂN. Mẹo nhớ: Bỏ 'nh' trong 'Nhân' ta được /in/!</div><ul class=hv-compounds><li><strong>한국인</strong> = Người Hàn <small>(Hàn Quốc nhân)</small></li><li><strong>외국인</strong> = Người nước ngoài <small>(Ngoại quốc nhân)</small></li><li><strong>개인</strong> = Cá nhân <small>(Cá nhân)</small></li><li><strong>인구</strong> = Dân số <small>(Nhân khẩu)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">공</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Công</div><div class="hv-meaning">work, craft, public</div><div class=hv-sound>🔊 공 /gong/ ↔ CÔNG. Mẹo nhớ: Âm 'công' trong tiếng Việt rất gần với '공' trong tiếng Hàn!</div><ul class=hv-compounds><li><strong>공부</strong> = Học tập <small>(Công phu)</small></li><li><strong>공장</strong> = Nhà máy <small>(Công xưởng)</small></li><li><strong>공업</strong> = Công nghiệp <small>(Công nghiệp)</small></li><li><strong>공공</strong> = Công cộng <small>(Công cộng)</small></li></ul></div></div></section>
 <section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">인공지능(AI) 기술은 빠르게 발전하고 있으며, 우리 사회에 혁명적인 변화를 가져올 것으로 예상됩니다. 특히 딥러닝과 알고리즘의 발달로 인해 AI는 더욱 정교해지고 있습니다. 이는 의료, 교육, 산업 등 다양한 분야에서 긍정적인 영향을 미칠 것으로 전망됩니다. 예를 들어, 인공지능은 질병 진단을 돕고, 맞춤형 교육을 제공하며, 공장의 자동화를 가속화할 수 있습니다. 하지만, 인공지능으로 인해 일자리 감소, 개인 정보 침해와 같은 사회적 문제도 발생할 수 있습니다. 따라서 우리는 인공지능의 긍정적인 면을 극대화하고 부정적인 영향을 최소화하기 위한 노력이 필요합니다.</div><div class="reading-hint"><small>💡 Bài viết phân tích sự phát triển của AI, những tác động tích cực (y tế, giáo dục, công nghiệp) và tiêu cực (mất việc làm, xâm phạm quyền riêng tư) của nó, đồng thời nhấn mạnh sự cần thiết phải nỗ lực để tối đa hóa lợi ích và giảm thiểu rủi ro.</small></div><div class="reading-question"><p class="q-text">이 글의 주제로 가장 적절한 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">인공지능 기술의 역사</li><li class="option" data-idx="1">인공지능의 긍정적 영향과 부정적 영향</li><li class="option" data-idx="2">인공지능이 의료 분야에 미치는 영향</li><li class="option" data-idx="3">딥러닝과 알고리즘의 작동 원리</li></ul><div class="q-answer" hidden>Đáp án: 1 — Bài viết thảo luận cả về tác động tích cực ('긍정적인 영향을 미칠 것으로 전망됩니다') và tiêu cực ('사회적 문제도 발생할 수 있습니다') của AI.</div></div><div class="reading-question"><p class="q-text">다음 중 인공지능의 긍정적인 영향으로 언급되지 않은 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">질병 진단 지원</li><li class="option" data-idx="1">맞춤형 교육 제공</li><li class="option" data-idx="2">공장 자동화 가속화</li><li class="option" data-idx="3">일자리 증가</li></ul><div class="q-answer" hidden>Đáp án: 3 — Bài viết đề cập '일자리 감소' (giảm việc làm) là một vấn đề tiêu cực, không phải tác động tích cực.</div></div><div class="reading-question"><p class="q-text">인공지능의 발달로 인해 발생할 수 있는 사회적 문제로 언급된 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">환경 오염</li><li class="option" data-idx="1">문화적 갈등</li><li class="option" data-idx="2">개인 정보 침해</li><li class="option" data-idx="3">교통 체증</li></ul><div class="q-answer" hidden>Đáp án: 2 — Bài viết nói rõ '일자리 감소, 개인 정보 침해와 같은 사회적 문제도 발생할 수 있습니다'.</div></div></section>
 <section class="lesson-section writing"><h3>✍️ 쓰기 / Viết</h3><div class="writing-task">인공지능이 미래 사회에 미칠 영향에 대해 자신의 의견을 150-200자로 써 보세요. (Sử dụng từ vựng và ngữ pháp đã học: 인공지능, 딥러닝, 알고리즘, 자동화, -(으)로 인해(서), -(으)ㄹ 것으로 예상되다/전망되다)</div><details class="writing-model"><summary>📝 Bài mẫu</summary><div class="model-answer">인공지능(AI) 기술은 딥러닝과 알고리즘의 발전으로 인해 우리 삶에 큰 변화를 가져올 것으로 예상됩니다. 긍정적인 면에서는 의료, 교육 분야의 자동화가 가속화되어 삶의 질이 향상될 것으로 전망됩니다. 하지만 인공지능으로 인해 일부 직업이 사라지거나 개인 정보 침해와 같은 문제가 발생할 수도 있습니다. 따라서 우리는 인공지능의 긍정적인 영향을 극대화하고 부정적인 영향을 최소화하기 위한 사회적 논의와 노력이 필요하다고 생각합니다.</div><div class="writing-tips">1. Mở bài: Nêu nhận định chung về AI và tương lai.
 2. Thân bài: Phân tích các tác động tích cực (sử dụng '-(으)로 인해(서)' và '-(으)ㄹ 것으로 예상되다/전망되다') và tiêu cực của AI.
@@ -96,6 +138,8 @@ Sự đầu tư mạnh mẽ này cho thấy tầm nhìn của Hàn Quốc về m
             <a href="T3-14.html">Bài tiếp →</a>
         </div>
     </main>
+    
+    
     
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
@@ -127,6 +171,66 @@ Sự đầu tư mạnh mẽ này cho thấy tầm nhìn của Hàn Quốc về m
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

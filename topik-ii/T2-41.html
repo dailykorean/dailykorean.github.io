@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-ii/T2-41.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Trung cấp (3~4급)", "item": "https://dailykorean.me/topik-ii/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T2-41: Du lịch quốc tế và hiểu biết liên văn hóa"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-advanced/index.html">👑 T3</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html" class="active">📕 T2</a>
+                <a href="../topik-advanced/index.html">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Trung cấp (3~4급)</a><span class="sep">›</span>
+        <span>Unit 7: Du lịch và Địa lý</span><span class="sep">›</span>
+        <span>T2-41</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -67,7 +108,8 @@
 <section class="lesson-section vocab"><h3>📚 어휘 / Từ vựng</h3><table class="vocab-table"><thead><tr><th>한국어</th><th>발음</th><th>Tiếng Việt</th><th>Ví dụ</th></tr></thead><tbody><tr><td class="word-ko">다문화</td><td class="word-pron">[다문화]</td><td class="word-vi">đa văn hóa</td><td class="word-ex">한국은 점점 다문화 사회가 되고 있습니다.<br><small>Hàn Quốc đang dần trở thành một xã hội đa văn hóa.</small><span class="hanja-note">다 (多 - Đa: nhiều) + 문화 (文化 - Văn hóa)</span></td></tr><tr><td class="word-ko">이해하다</td><td class="word-pron">[이해하다]</td><td class="word-vi">hiểu, thấu hiểu</td><td class="word-ex">다른 사람의 문화를 이해하는 것이 중요합니다.<br><small>Việc thấu hiểu văn hóa của người khác là rất quan trọng.</small><span class="hanja-note">이해 (理解 - Lý giải: hiểu, giải thích)</span></td></tr><tr><td class="word-ko">존중</td><td class="word-pron">[존중]</td><td class="word-vi">sự tôn trọng</td><td class="word-ex">서로의 다름을 존중해야 합니다.<br><small>Chúng ta cần tôn trọng sự khác biệt của nhau.</small><span class="hanja-note">존중 (尊重 - Tôn trọng)</span></td></tr><tr><td class="word-ko">차이점</td><td class="word-pron">[차이점]</td><td class="word-vi">điểm khác biệt</td><td class="word-ex">두 문화의 차이점을 배우는 것은 흥미로워요.<br><small>Việc học về những điểm khác biệt giữa hai nền văn hóa rất thú vị.</small><span class="hanja-note">차이 (差異 - Sai dị: sự khác biệt) + 점 (點 - Điểm: điểm)</span></td></tr></tbody></table></section>
 <section class="lesson-section grammar"><h3>📝 문법 / Ngữ pháp</h3><div class="grammar-block"><h4>-(으)ㅁ으로써</h4><p class="grammar-explain">Diễn tả hành động ở vế trước là phương tiện hoặc nguyên nhân dẫn đến kết quả ở vế sau. Có nghĩa là 'bằng cách làm gì đó', 'nhờ việc làm gì đó'. Thường dùng trong văn viết hoặc các bài phát biểu trang trọng.</p><p class="grammar-compare">🔄 So sánh: Tương đương với 'bằng cách...', 'nhờ vào việc...' trong tiếng Việt.</p><ul class="grammar-examples"><li><span class="ko">다양한 문화를 경험함으로써 세상을 더 넓게 볼 수 있습니다.</span> → <span class="vi">Bằng cách trải nghiệm các nền văn hóa đa dạng, chúng ta có thể nhìn thế giới rộng lớn hơn.</span><br><em>Kinh nghiệm các nền văn hóa đa dạng là phương tiện để nhìn thế giới rộng hơn.</em></li><li><span class="ko">꾸준히 노력함으로써 목표를 달성했습니다.</span> → <span class="vi">Nhờ vào việc nỗ lực không ngừng, tôi đã đạt được mục tiêu.</span><br><em>Nỗ lực không ngừng là nguyên nhân để đạt được mục tiêu.</em></li><li><span class="ko">소통함으로써 오해를 풀 수 있습니다.</span> → <span class="vi">Bằng cách giao tiếp, chúng ta có thể hóa giải hiểu lầm.</span><br><em>Giao tiếp là cách để hóa giải hiểu lầm.</em></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">여행을 _______ (가다) 새로운 사람들을 만날 수 있어요.</li><li class="practice-item">꾸준히 한국어를 _______ (공부하다) 실력이 많이 늘었습니다.</li><li class="practice-item">서로의 의견을 _______ (경청하다) 더 좋은 해결책을 찾을 수 있습니다.</li></ul></div></div><div class="grammar-block"><h4>-(으)ㄹ 필요가 있다/없다</h4><p class="grammar-explain">Diễn tả sự cần thiết hoặc không cần thiết của một hành động hay trạng thái nào đó. '-(으)ㄹ 필요가 있다' có nghĩa là 'cần phải...', 'có sự cần thiết phải...'. '-(으)ㄹ 필요가 없다' có nghĩa là 'không cần phải...', 'không có sự cần thiết phải...'.</p><p class="grammar-compare">🔄 So sánh: Tương đương với 'cần phải...' hoặc 'không cần phải...' trong tiếng Việt.</p><ul class="grammar-examples"><li><span class="ko">다른 문화를 이해하고 존중할 필요가 있습니다.</span> → <span class="vi">Chúng ta cần phải hiểu và tôn trọng các nền văn hóa khác.</span><br><em>Nhấn mạnh sự cần thiết của việc hiểu và tôn trọng.</em></li><li><span class="ko">지금은 서두를 필요가 없습니다.</span> → <span class="vi">Bây giờ không cần phải vội vàng.</span><br><em>Diễn tả sự không cần thiết của việc vội vàng.</em></li><li><span class="ko">여행 전에 미리 계획을 세울 필요가 있어요.</span> → <span class="vi">Trước khi đi du lịch, cần phải lập kế hoạch trước.</span><br><em>Diễn tả sự cần thiết của việc lập kế hoạch.</em></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">환경 보호를 위해 일회용품 사용을 _______ (줄이다).</li><li class="practice-item">건강을 위해 규칙적으로 _______ (운동하다).</li><li class="practice-item">작은 실수에 너무 걱정할 _______ (없다).</li></ul></div></div></section>
 <section class="lesson-section pronunciation"><h3>🔊 발음 / Phát âm</h3><div class="pron-content">Từ '다문화' được phát âm là [다문화]. Đây là một từ ghép và không có quy tắc biến âm đặc biệt nào ở đây, các âm tiết được phát âm rõ ràng như viết. Hãy chú ý phát âm rõ ba âm tiết: 다 - 문 - 화.</div></section>
-<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">다</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Đa</div><div class="hv-meaning">nhiều, rất</div><div class=hv-sound>🔊 다 /da/ ← ĐA. Bỏ 'đ' → /da/.</div><ul class=hv-compounds><li><strong>다양하다</strong> = Đa dạng <small>(Đa dạng)</small></li><li><strong>다수</strong> = Đa số <small>(Đa số)</small></li><li><strong>다문화</strong> = Đa văn hóa <small>(Đa văn hóa)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">문</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Văn</div><div class="hv-meaning">chữ viết, văn học</div><div class=hv-sound>🔊 문 /mun/ ← VĂN. Biến âm 'v' → 'm'.</div><ul class=hv-compounds><li><strong>문화</strong> = Văn hóa <small>(Văn hóa)</small></li><li><strong>문학</strong> = Văn học <small>(Văn học)</small></li><li><strong>문법</strong> = Ngữ pháp <small>(Văn pháp)</small></li><li><strong>문제</strong> = Vấn đề/Câu hỏi <small>(Vấn đề)</small></li></ul></div></div></section>
+<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">다</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Đa</div><div class="hv-meaning">nhiều, rất</div><div class=hv-sound>🔊 다 /da/ ← ĐA. Bỏ 'đ' → /da/.</div><ul class=hv-compounds><li><strong>다양하다</strong> = Đa dạng <small>(Đa dạng)</small></li><li><strong>다수</strong> = Đa số <small>(Đa số)</small></li><li><strong>다문화</strong> = Đa văn hóa <small>(Đa văn hóa)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">문</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Văn</div><div class="hv-meaning">chữ viết, văn học</div><div class=hv-sound>🔊 문 /mun/ ← VĂN. Biến âm 'v' → 'm'.</div><ul class=hv-compounds><li><strong>문화</strong> = Văn hóa <small>(Văn hóa)</small></li><li><strong>문학</strong> = Văn học <small>(Văn học)</small></li><li><strong>문법</strong> = Ngữ pháp <small>(Văn pháp)</small></li><li><strong>문제</strong> = Vấn đề/Câu hỏi <small>(Vấn đề)</small></li></ul></div></div></section>
 <section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">글로벌 시대에 여행은 단순한 여가 활동을 넘어섭니다. 우리는 여행을 통해 다른 나라의 문화를 직접 경험하고, 그들의 생활 방식과 가치관을 이해할 수 있습니다. 이러한 경험은 우리 안에 존재하는 편견을 깨고, 세상을 더 넓은 시야로 바라보게 합니다. 특히, 다양한 문화적 차이점을 존중하는 태도를 기르는 것은 매우 중요합니다. 서로의 다름을 인정함으로써 우리는 더욱 풍요로운 사회를 만들어갈 수 있습니다. 따라서 글로벌 여행은 개인의 성장은 물론, 세계 시민으로서의 역량을 강화하는 데 필수적인 활동이라고 할 수 있습니다. 우리는 여행을 통해 타인에 대한 이해를 높이고, 더 나아가 평화로운 세상을 만드는 데 기여할 필요가 있습니다.</div><div class="reading-hint"><small>💡 Trong thời đại toàn cầu hóa, du lịch không chỉ là một hoạt động giải trí đơn thuần. Thông qua du lịch, chúng ta có thể trực tiếp trải nghiệm văn hóa của các quốc gia khác, hiểu được lối sống và giá trị quan của họ. Những trải nghiệm này phá vỡ những định kiến tồn tại trong chúng ta và giúp chúng ta nhìn thế giới với một tầm nhìn rộng lớn hơn. Đặc biệt, việc hình thành thái độ tôn trọng những điểm khác biệt văn hóa đa dạng là vô cùng quan trọng. Bằng cách công nhận sự khác biệt của nhau, chúng ta có thể xây dựng một xã hội phong phú hơn. Do đó, du lịch toàn cầu có thể nói là một hoạt động thiết yếu không chỉ cho sự phát triển cá nhân mà còn để tăng cường năng lực của một công dân toàn cầu. Chúng ta cần nâng cao sự thấu hiểu về người khác thông qua du lịch, và hơn nữa, đóng góp vào việc tạo dựng một thế giới hòa bình.</small></div><div class="reading-question"><p class="q-text">이 글의 내용과 다른 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">여행은 편견을 깨는 데 도움이 됩니다.</li><li class="option" data-idx="1">다양한 문화를 존중하는 태도는 중요합니다.</li><li class="option" data-idx="2">글로벌 여행은 개인의 성장에는 도움이 되지만, 세계 평화에는 기여하지 않습니다.</li><li class="option" data-idx="3">여행을 통해 다른 나라의 생활 방식과 가치관을 이해할 수 있습니다.</li></ul><div class="q-answer" hidden>Đáp án: 2 — Câu '글로벌 여행은 개인의 성장에는 도움이 되지만, 세계 평화에는 기여하지 않습니다.' trái ngược với nội dung bài đọc. Bài viết nói rằng '더 나아가 평화로운 세상을 만드는 데 기여할 필요가 있습니다.' (hơn nữa, cần đóng góp vào việc tạo dựng một thế giới hòa bình).</div></div></section>
 <section class="lesson-section writing"><h3>✍️ 쓰기 / Viết</h3><div class="writing-task">Bạn hãy viết một bài văn ngắn (khoảng 200-300 chữ) về 'Tầm quan trọng của du lịch quốc tế và việc hiểu biết liên văn hóa' theo đề bài TOPIK 쓰기 53 sau đây. Sử dụng từ vựng và ngữ pháp đã học trong bài.</div><details class="writing-model"><summary>📝 Bài mẫu</summary><div class="model-answer">최근 전 세계적으로 '다문화 체험'에 대한 관심이 높아지고 있습니다. 이에 따라 국제 교류 프로그램 참여율도 꾸준히 증가하고 있습니다. 특히 20대 젊은 층에서 이러한 경향이 두드러지게 나타나고 있습니다. 
 
@@ -94,6 +136,8 @@
             <a href="T2-42.html">Bài tiếp →</a>
         </div>
     </main>
+    
+    
     
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
@@ -125,6 +169,66 @@
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

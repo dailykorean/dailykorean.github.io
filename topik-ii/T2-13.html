@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-ii/T2-13.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Trung cấp (3~4급)", "item": "https://dailykorean.me/topik-ii/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T2-13: Biểu đạt niềm vui và cảm động"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-advanced/index.html">👑 T3</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html" class="active">📕 T2</a>
+                <a href="../topik-advanced/index.html">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Trung cấp (3~4급)</a><span class="sep">›</span>
+        <span>Unit 3: Biểu đạt cảm xúc và tâm lý</span><span class="sep">›</span>
+        <span>T2-13</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -73,7 +114,8 @@ Ví dụ:
 - 놓다 [노타]: 'ㄷ' sau 'ㅎ' biến thành 'ㅌ'.
 
 Hãy luyện tập phát âm '뿌듯하다' thật chuẩn nhé: [뿌드타다].</div></section>
-<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">감</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Cảm</div><div class="hv-meaning">feel, emotion</div><div class=hv-sound>🔊 감 /gam/ ← CẢM. Biến âm 'c' → 'g'. Rất giống!</div><ul class=hv-compounds><li><strong>감사하다</strong> = Cảm ơn <small>(Cảm tạ)</small></li><li><strong>감기</strong> = Cảm cúm <small>(Cảm khí)</small></li><li><strong>감동</strong> = Cảm động <small>(Cảm động)</small></li><li><strong>감정</strong> = Cảm xúc <small>(Cảm tình)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">동</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Động</div><div class="hv-meaning">move</div><div class=hv-sound>🔊 동 /dong/ ← ĐỘNG. Giống hệt!</div><ul class=hv-compounds><li><strong>운동</strong> = Thể thao <small>(Vận động)</small></li><li><strong>자동</strong> = Tự động <small>(Tự động)</small></li><li><strong>동물</strong> = Động vật <small>(Động vật)</small></li><li><strong>활동</strong> = Hoạt động <small>(Hoạt động)</small></li></ul></div></div></section>
+<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">감</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Cảm</div><div class="hv-meaning">feel, emotion</div><div class=hv-sound>🔊 감 /gam/ ← CẢM. Biến âm 'c' → 'g'. Rất giống!</div><ul class=hv-compounds><li><strong>감사하다</strong> = Cảm ơn <small>(Cảm tạ)</small></li><li><strong>감기</strong> = Cảm cúm <small>(Cảm khí)</small></li><li><strong>감동</strong> = Cảm động <small>(Cảm động)</small></li><li><strong>감정</strong> = Cảm xúc <small>(Cảm tình)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">동</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Động</div><div class="hv-meaning">move</div><div class=hv-sound>🔊 동 /dong/ ← ĐỘNG. Giống hệt!</div><ul class=hv-compounds><li><strong>운동</strong> = Thể thao <small>(Vận động)</small></li><li><strong>자동</strong> = Tự động <small>(Tự động)</small></li><li><strong>동물</strong> = Động vật <small>(Động vật)</small></li><li><strong>활동</strong> = Hoạt động <small>(Hoạt động)</small></li></ul></div></div></section>
 <section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">어제는 제 인생에서 잊을 수 없는 날이었어요. 오랫동안 준비했던 한국어능력시험(TOPIK) 결과가 나오는 날이었거든요. 아침부터 가슴이 두근거렸어요. 드디어 결과를 확인했는데, 6급에 합격했다는 글자를 보고는 믿을 수 없었어요. 제가 6급에 합격하다니! 너무 기뻐서 눈물이 났어요. 부모님께 전화해서 합격 소식을 전하자, 부모님께서는 정말 흐뭇해하시며 저에게 잘했다고 칭찬해주셨어요. 부모님의 목소리를 들으니 제가 정말 뿌듯하고, 그동안의 노력이 헛되지 않았다는 생각에 가슴이 벅찼어요. 앞으로도 더 열심히 공부해야겠다고 다짐했습니다.</div><div class="reading-hint"><small>💡 Bài đọc kể về một ngày đáng nhớ của nhân vật 'tôi' khi nhận được kết quả thi TOPIK. Người ấy đã trải qua nhiều cung bậc cảm xúc: hồi hộp, ngạc nhiên, vui sướng, tự hào và xúc động.</small></div><div class="reading-question"><p class="q-text">글쓴이는 어떤 시험 결과를 확인했나요?</p><ul class="q-options"><li class="option" data-idx="0">TOPIK 3급</li><li class="option" data-idx="1">TOPIK 4급</li><li class="option" data-idx="2">TOPIK 5급</li><li class="option" data-idx="3">TOPIK 6급</li></ul><div class="q-answer" hidden>Đáp án: 3 — Trong bài viết có đoạn '6급에 합격했다는 글자를 보고는 믿을 수 없었어요.' (Tôi không thể tin được khi nhìn thấy dòng chữ đã đỗ cấp 6).</div></div><div class="reading-question"><p class="q-text">글쓴이가 부모님께 소식을 전했을 때, 부모님의 기분은 어떠했나요?</p><ul class="q-options"><li class="option" data-idx="0">슬퍼하셨어요</li><li class="option" data-idx="1">걱정하셨어요</li><li class="option" data-idx="2">흐뭇해하셨어요</li><li class="option" data-idx="3">화내셨어요</li></ul><div class="q-answer" hidden>Đáp án: 2 — Trong bài viết có đoạn '부모님께서는 정말 흐뭇해하시며 저에게 잘했다고 칭찬해주셨어요.' (Bố mẹ tôi thực sự ấm lòng và khen tôi giỏi).</div></div><div class="reading-question"><p class="q-text">글쓴이가 느낀 감정이 아닌 것은 무엇인가요?</p><ul class="q-options"><li class="option" data-idx="0">뿌듯하다</li><li class="option" data-idx="1">벅차다</li><li class="option" data-idx="2">감동받다</li><li class="option" data-idx="3">외롭다</li></ul><div class="q-answer" hidden>Đáp án: 3 — Người viết đã thể hiện các cảm xúc như 뿌듯하다, 벅차다, và 감동받다 (qua việc nhận được lời khen của bố mẹ). Cảm giác 외롭다 (cô đơn) không được đề cập.</div></div></section>
 <section class="lesson-section writing"><h3>✍️ 쓰기 / Viết</h3><div class="writing-task">Hãy viết một đoạn văn ngắn (khoảng 100-150 chữ) kể về một trải nghiệm khiến bạn cảm thấy vô cùng vui sướng, tự hào hoặc xúc động. Sử dụng ít nhất 2 từ vựng đã học (감동받다, 뿌듯하다, 흐뭇하다, 벅차다) và cấu trúc ngữ pháp '-다니'.</div><details class="writing-model"><summary>📝 Bài mẫu</summary><div class="model-answer">작년에 제가 다니는 대학교에서 장학금을 받게 되었어요. 등록금 때문에 걱정이 많았는데, 장학금을 받게 되다니 정말 꿈만 같았어요. 부모님께 이 소식을 알려드리자, 부모님께서는 너무 기뻐하시고 저를 자랑스러워하셨어요. 부모님의 환한 미소를 보니 제 마음이 정말 흐뭇했어요. 저의 노력이 인정받은 것 같아 뿌듯했고, 부모님께 기쁨을 드릴 수 있어서 가슴이 벅찼습니다. 앞으로도 열심히 공부해서 부모님께 더 큰 기쁨을 드리고 싶어요.</div><div class="writing-tips">1. Bắt đầu bằng việc giới thiệu sự kiện hoặc tình huống.
 2. Diễn tả cảm xúc của bản thân và những người xung quanh (nếu có).
@@ -99,6 +141,8 @@ Ví dụ: 친구가 시험에 합격했다는 소식을 듣고 '와! 대박! 정
             <a href="T2-14.html">Bài tiếp →</a>
         </div>
     </main>
+    
+    
     
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
@@ -130,6 +174,66 @@ Ví dụ: 친구가 시험에 합격했다는 소식을 듣고 '와! 대박! 정
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

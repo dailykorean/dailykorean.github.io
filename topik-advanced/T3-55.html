@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-advanced/T3-55.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Cao cấp (5~6급)", "item": "https://dailykorean.me/topik-advanced/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T3-55: Chiến lược đọc hiểu cao cấp"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../topik-advanced/index.html" class="active">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Cao cấp (5~6급)</a><span class="sep">›</span>
+        <span>Unit 10: Luyện thi thực chiến TOPIK II 고급</span><span class="sep">›</span>
+        <span>T3-55</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -78,7 +119,8 @@
 4.  **Đọc thầm và đọc to luân phiên**: Ban đầu, hãy đọc to để luyện phát âm và ngữ điệu. Sau đó, chuyển sang đọc thầm để tăng tốc độ và khả năng tập trung. Thỉnh thoảng đọc to lại để kiểm tra.
 5.  **Tăng tốc độ dần dần**: Đừng cố gắng đọc quá nhanh ngay từ đầu. Hãy bắt đầu với tốc độ thoải mái, sau đó tăng dần khi bạn cảm thấy tự tin hơn. Sử dụng đồng hồ bấm giờ để theo dõi tiến độ.
 6.  **Hiểu ngữ cảnh (문맥 이해)**: Đôi khi không cần hiểu 100% từng từ. Hãy cố gắng nắm bắt ý nghĩa tổng thể của câu và đoạn văn dựa vào ngữ cảnh. Điều này đặc biệt quan trọng khi gặp từ mới.</div></section>
-<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">독</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Độc</div><div class="hv-meaning">đọc</div><div class=hv-sound>🔊 독 /dok/ ← ĐỘC — âm gần giống!</div><ul class=hv-compounds><li><strong>독서</strong> = Đọc sách <small>(Độc thư)</small></li><li><strong>독해</strong> = Đọc hiểu <small>(Độc giải)</small></li><li><strong>독자</strong> = Độc giả <small>(Độc giả)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">전략</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Chiến lược</div><div class="hv-meaning">strategy</div><div class=hv-sound>🔊 전략 /jeollyak/ ← CHIẾN LƯỢC — âm khá tương đồng!</div><ul class=hv-compounds><li><strong>전략적</strong> = Mang tính chiến lược <small>(Chiến lược tính)</small></li><li><strong>핵심 전략</strong> = Chiến lược cốt lõi <small>(Hạch tâm chiến lược)</small></li></ul></div></div></section>
+<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">독</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Độc</div><div class="hv-meaning">đọc</div><div class=hv-sound>🔊 독 /dok/ ← ĐỘC — âm gần giống!</div><ul class=hv-compounds><li><strong>독서</strong> = Đọc sách <small>(Độc thư)</small></li><li><strong>독해</strong> = Đọc hiểu <small>(Độc giải)</small></li><li><strong>독자</strong> = Độc giả <small>(Độc giả)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">전략</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Chiến lược</div><div class="hv-meaning">strategy</div><div class=hv-sound>🔊 전략 /jeollyak/ ← CHIẾN LƯỢC — âm khá tương đồng!</div><ul class=hv-compounds><li><strong>전략적</strong> = Mang tính chiến lược <small>(Chiến lược tính)</small></li><li><strong>핵심 전략</strong> = Chiến lược cốt lõi <small>(Hạch tâm chiến lược)</small></li></ul></div></div></section>
 <section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">최근 인공지능(AI) 기술은 급속도로 발전하며 우리 사회 전반에 걸쳐 혁신적인 변화를 가져오고 있다. 특히 의료, 교육, 산업 분야에서 AI의 활용은 효율성을 극대화하고 새로운 가치를 창출하는 데 기여하고 있다. 그러나 이러한 긍정적인 측면과 더불어 AI 기술의 발전은 윤리적 문제, 일자리 감소, 개인 정보 침해와 같은 심각한 사회적 문제들을 야기할 수 있다는 우려도 커지고 있다. AI의 자율성이 증대될수록 인간의 통제 범위를 벗어날 위험이 있으며, 이는 궁극적으로 인간의 존엄성과 사회적 가치에 대한 근본적인 질문을 던지게 된다. 따라서 AI 기술의 발전은 기술 혁신 자체를 넘어, 사회적 합의와 규제 마련을 통한 신중한 접근이 필요하다고 볼 수 있다. 우리는 AI가 가져올 미래를 단순히 낙관하거나 비관할 것이 아니라, 인간 중심적인 관점에서 AI의 발전 방향을 모색하고 사회적 책임을 다해야 할 것이다.</div><div class="reading-hint"><small>💡 Gần đây, công nghệ AI đang phát triển nhanh chóng và mang lại những thay đổi mang tính cách mạng trên toàn xã hội chúng ta. Đặc biệt, việc ứng dụng AI trong các lĩnh vực y tế, giáo dục, công nghiệp đang góp phần tối đa hóa hiệu quả và tạo ra giá trị mới. Tuy nhiên, bên cạnh những khía cạnh tích cực này, những lo ngại cũng đang gia tăng rằng sự phát triển của công nghệ AI có thể gây ra các vấn đề xã hội nghiêm trọng như vấn đề đạo đức, giảm việc làm, xâm phạm thông tin cá nhân. Khi quyền tự chủ của AI tăng lên, có nguy cơ nó sẽ vượt ra ngoài tầm kiểm soát của con người, điều này cuối cùng đặt ra những câu hỏi cơ bản về phẩm giá con người và các giá trị xã hội. Do đó, sự phát triển của công nghệ AI có thể được xem là cần một cách tiếp cận thận trọng thông qua sự đồng thuận xã hội và việc thiết lập các quy định, vượt ra ngoài bản thân sự đổi mới công nghệ. Chúng ta không nên chỉ đơn thuần lạc quan hoặc bi quan về tương lai mà AI sẽ mang lại, mà phải tìm kiếm hướng phát triển của AI từ quan điểm lấy con người làm trung tâm và thực hiện trách nhiệm xã hội.</small></div><div class="reading-question"><p class="q-text">이 글의 '주제'로 가장 적절한 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">1) 인공지능 기술의 발전과 활용</li><li class="option" data-idx="1">2) 인공지능 시대의 윤리적 문제</li><li class="option" data-idx="2">3) 인공지능 발전의 양면성과 사회적 책임</li><li class="option" data-idx="3">4) 미래 사회를 위한 인간 중심적 사고</li></ul><div class="q-answer" hidden>Đáp án: 2 — Chủ đề (주제) là nội dung bao quát nhất. Bài viết không chỉ nói về sự phát triển (1) hay vấn đề đạo đức (2), mà bao gồm cả hai mặt tích cực và tiêu cực của AI, đồng thời nhấn mạnh trách nhiệm xã hội trong việc định hướng AI. Lựa chọn (3) bao hàm đầy đủ nhất.</div></div><div class="reading-question"><p class="q-text">위 글의 '요지'로 가장 적절한 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">1) 인공지능은 의료 및 교육 분야의 효율성을 높인다.</li><li class="option" data-idx="1">2) 인공지능 기술의 발전은 불가피하게 일자리 감소를 초래한다.</li><li class="option" data-idx="2">3) 인공지능 발전은 긍정적 변화와 함께 사회적 문제를 야기하므로 신중한 접근과 사회적 책임이 필요하다.</li><li class="option" data-idx="3">4) 인간은 인공지능의 통제 범위를 벗어나지 않도록 노력해야 한다.</li></ul><div class="q-answer" hidden>Đáp án: 2 — Ý chính (요지) là thông điệp cốt lõi tác giả muốn truyền tải. Câu (3) tổng hợp cả hai mặt của AI (lợi ích và vấn đề) và đưa ra kết luận về sự cần thiết của cách tiếp cận thận trọng và trách nhiệm xã hội, đây chính là điều tác giả muốn nhấn mạnh.</div></div><div class="reading-question"><p class="q-text">작가가 이 글을 통해 '논지'로 주장하는 바는 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">1) 인공지능 기술 혁신은 사회 발전을 위한 최우선 과제이다.</li><li class="option" data-idx="1">2) 인공지능의 윤리적 문제 해결을 위한 법적 규제가 시급하다.</li><li class="option" data-idx="2">3) 인공지능 발전은 기술 혁신을 넘어 사회적 합의와 규제를 통해 인간 중심적으로 이루어져야 한다.</li><li class="option" data-idx="3">4) 인공지능으로 인한 일자리 감소는 새로운 직업 창출로 해결될 수 있다.</li></ul><div class="q-answer" hidden>Đáp án: 2 — Luận điểm (논지) là lập luận cụ thể mà tác giả muốn chứng minh. Dòng cuối của đoạn văn có nói 'AI 기술의 발전은 기술 혁신 자체를 넘어, 사회적 합의와 규제 마련을 통한 신중한 접근이 필요하다고 볼 수 있다.' và '인간 중심적인 관점에서 AI의 발전 방향을 모색하고 사회적 책임을 다해야 할 것이다.' Điều này tương ứng với lựa chọn (3).</div></div><div class="reading-question"><p class="q-text">위 글에서 '인공지능의 자율성이 증대될수록 인간의 통제 범위를 벗어날 위험이 있다'는 문장이 '함의'하는 바는 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">1) 인공지능은 결국 인간의 지능을 능가할 것이다.</li><li class="option" data-idx="1">2) 인공지능의 자율성 증가는 인간에게 잠재적인 위협이 될 수 있다.</li><li class="option" data-idx="2">3) 인공지능 개발은 인간의 통제 하에 이루어져야 한다.</li><li class="option" data-idx="3">4) 인공지능의 자율성은 미래 사회의 필수적인 요소이다.</li></ul><div class="q-answer" hidden>Đáp án: 1 — Hàm ý (함의) là điều có thể suy ra. Câu '인공지능의 자율성이 증대될수록 인간의 통제 범위를 벗어날 위험이 있으며, 이는 궁극적으로 인간의 존엄성과 사회적 가치에 대한 근본적인 질문을 던지게 된다.' ngụ ý rằng nếu không kiểm soát, AI có thể trở thành mối đe dọa hoặc thách thức đối với vị thế của con người. Lựa chọn (2) phản ánh đúng hàm ý này.</div></div></section>
 <section class="lesson-section writing"><h3>✍️ 쓰기 / Viết</h3><div class="writing-task">Sau khi học về các chiến lược đọc hiểu cao cấp và phân biệt các khái niệm '주제', '요지', '논지', '함의', hãy viết một đoạn văn ngắn (khoảng 150-200 chữ) tóm tắt lại sự khác biệt giữa chúng và tầm quan trọng của việc phân biệt chúng trong việc giải đề TOPIK II. Hãy sử dụng cấu trúc '~다고 볼 수 있다' hoặc '~다고 할 수 있다' ít nhất một lần.</div><details class="writing-model"><summary>📝 Bài mẫu</summary><div class="model-answer">TOPIK II 읽기 영역에서 고득점을 얻기 위해서는 '주제', '요지', '논지', '함의'를 명확히 구분하는 것이 매우 중요합니다. '주제'는 글이 무엇에 관한 것인지를 나타내는 가장 넓은 범위의 내용이며, '요지'는 작가가 글을 통해 전달하고자 하는 핵심 메시지나 결론을 의미합니다. 반면 '논지'는 작가가 자신의 주장을 펼치고 설득하려는 구체적인 논점을 말하며, 이는 요지보다 더 구체적이고 설득력이 강하다고 볼 수 있습니다. 마지막으로 '함의'는 글에 직접적으로 드러나지는 않지만, 내용을 통해 추론할 수 있는 숨겨진 의미나 결과를 뜻합니다. 이 네 가지 개념을 정확히 이해하고 적용할 줄 아는 것은 단순히 내용을 파악하는 것을 넘어 작가의 의도와 글의 깊은 의미까지 읽어낼 수 있게 해줍니다. 따라서 이들을 구분하는 능력은 TOPIK II 고급 읽기 문제 해결에 필수적인 전략이라고 할 수 있습니다.</div><div class="writing-tips">1.  **Bắt đầu bằng định nghĩa ngắn gọn**: Nêu rõ từng khái niệm là gì.
 2.  **So sánh sự khác biệt**: Tập trung vào điểm khác biệt chính giữa chúng (ví dụ: 주제 là 'về cái gì', 요지 là 'muốn nói gì', 논지 là 'muốn chứng minh gì', 함의 là 'có thể suy ra gì').
@@ -110,6 +152,8 @@ Phần Đọc hiểu TOPIK II có tổng cộng 50 câu hỏi trong 70 phút, tr
         </div>
     </main>
     
+    
+    
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
         <div class="related-courses-grid">
@@ -140,6 +184,66 @@ Phần Đọc hiểu TOPIK II có tổng cộng 50 câu hỏi trong 70 phút, tr
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

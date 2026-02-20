@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-advanced/T3-42.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Cao cấp (5~6급)", "item": "https://dailykorean.me/topik-advanced/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T3-42: Tổng hợp Truyền thông & Dư luận"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../topik-advanced/index.html" class="active">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Cao cấp (5~6급)</a><span class="sep">›</span>
+        <span>Unit 7: Truyền thông & Dư luận</span><span class="sep">›</span>
+        <span>T3-42</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -72,7 +113,10 @@
 2.  **보도 [보도]**: Phát âm đơn giản, không có biến âm đặc biệt. Đọc rõ ràng từng âm tiết.
 3.  **정치인 [정치인]**: Đây là từ có hiện tượng nối âm (연음). '치' (ㅊ + ㅣ) và '인' (ㅇ + ㅣㄴ). Khi 'ㅊ' gặp 'ㅣ', nó tạo ra âm 'ch' mạnh. 'ㅇ' ở đầu âm tiết thứ hai không phát âm, nên âm '인' được nối trực tiếp sau '치'.
 4.  **방송국 [방송국]**: Từ này có hiện tượng 강세화 (경음화) - căng âm. Khi 'ㄱ' (âm cuối của 방송) gặp 'ㄱ' (âm đầu của 국), âm 'ㄱ' thứ hai sẽ được phát âm căng hơn, gần như 'ㄲ'. [방송꾹].</div></section>
-<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">여</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Dư</div><div class="hv-meaning">công chúng, xe ngựa</div><div class=hv-sound>🔊 여 /yeo/ ← DƯ — âm 'd' tiếng Việt tương tự 'y' trong tiếng Hàn!</div><ul class=hv-compounds><li><strong>여론</strong> = Dư luận <small>(Dư luận)</small></li><li><strong>여론조사</strong> = Điều tra dư luận <small>(Dư luận điều tra)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">론</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Luận</div><div class="hv-meaning">bàn luận, lý luận</div><div class=hv-sound>🔊 론 /ron/ ← LUẬN — âm 'l' và 'n' tương đồng!</div><ul class=hv-compounds><li><strong>논리</strong> = Luận lý <small>(Luận lý)</small></li><li><strong>결론</strong> = Kết luận <small>(Kết luận)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">보</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Báo</div><div class="hv-meaning">báo cáo, thông báo</div><div class=hv-sound>🔊 보 /bo/ ← BÁO — âm 'b' tương đồng!</div><ul class=hv-compounds><li><strong>보도</strong> = Bản tin, đưa tin <small>(Báo đạo)</small></li><li><strong>보고서</strong> = Báo cáo <small>(Báo cáo thư)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">도</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Đạo</div><div class="hv-meaning">con đường, đạo đức, dẫn dắt</div><div class=hv-sound>🔊 도 /do/ ← ĐẠO — âm 'đ' và 'd' tương đồng!</div><ul class=hv-compounds><li><strong>지도</strong> = Chỉ đạo <small>(Chỉ đạo)</small></li><li><strong>도입</strong> = Đưa vào, giới thiệu <small>(Đạo nhập)</small></li></ul></div></div></section>
+<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">여</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Dư</div><div class="hv-meaning">công chúng, xe ngựa</div><div class=hv-sound>🔊 여 /yeo/ ← DƯ — âm 'd' tiếng Việt tương tự 'y' trong tiếng Hàn!</div><ul class=hv-compounds><li><strong>여론</strong> = Dư luận <small>(Dư luận)</small></li><li><strong>여론조사</strong> = Điều tra dư luận <small>(Dư luận điều tra)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">론</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Luận</div><div class="hv-meaning">bàn luận, lý luận</div><div class=hv-sound>🔊 론 /ron/ ← LUẬN — âm 'l' và 'n' tương đồng!</div><ul class=hv-compounds><li><strong>논리</strong> = Luận lý <small>(Luận lý)</small></li><li><strong>결론</strong> = Kết luận <small>(Kết luận)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">보</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Báo</div><div class="hv-meaning">báo cáo, thông báo</div><div class=hv-sound>🔊 보 /bo/ ← BÁO — âm 'b' tương đồng!</div><ul class=hv-compounds><li><strong>보도</strong> = Bản tin, đưa tin <small>(Báo đạo)</small></li><li><strong>보고서</strong> = Báo cáo <small>(Báo cáo thư)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">도</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Đạo</div><div class="hv-meaning">con đường, đạo đức, dẫn dắt</div><div class=hv-sound>🔊 도 /do/ ← ĐẠO — âm 'đ' và 'd' tương đồng!</div><ul class=hv-compounds><li><strong>지도</strong> = Chỉ đạo <small>(Chỉ đạo)</small></li><li><strong>도입</strong> = Đưa vào, giới thiệu <small>(Đạo nhập)</small></li></ul></div></div></section>
 <section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">최근 디지털 미디어의 발달은 여론 형성 과정에 지대한 영향을 미치고 있다. 과거에는 신문이나 방송과 같은 전통 미디어가 정보 전달의 주요 통로였지만, 이제는 소셜 미디어를 비롯한 다양한 온라인 플랫폼이 여론을 주도하는 시대가 되었다. 이러한 변화는 긍정적인 측면도 많다. 시민들은 언제 어디서든 정보를 생산하고 공유할 수 있게 되었으며, 이는 다양한 목소리가 표출될 수 있다는 점에서 민주주의 발전에 기여한다.
 
 그러나 부정적인 측면도 간과할 수 없다. 검증되지 않은 정보, 즉 가짜 뉴스가 빠르게 확산될 수 있다는 점에서 사회적 혼란을 야기할 위험이 크다. 또한, 특정 정보만 반복적으로 접하게 되는 '필터 버블' 현상으로 인해 개인의 사고가 편향될 수 있으며, 이는 건전한 여론 형성을 방해한다. 언론은 이러한 문제점을 인식하고 정확하고 객관적인 보도를 통해 신뢰를 회복해야 할 것이다. 미디어 수용자 역시 비판적 사고를 바탕으로 콘텐츠를 소비하는 자세가 중요하다. 국적과 인종을 막론하고 정보의 홍수 속에서 현명하게 판단하는 능력이 더욱 요구되는 시점이다.</div><div class="reading-hint"><small>💡 Sự phát triển của truyền thông số gần đây đang ảnh hưởng sâu sắc đến quá trình hình thành dư luận. Trước đây, các phương tiện truyền thông truyền thống như báo chí hay truyền hình là kênh truyền tải thông tin chính, nhưng giờ đây, thời đại mà các nền tảng trực tuyến đa dạng, bao gồm cả mạng xã hội, đang dẫn dắt dư luận đã đến. Sự thay đổi này cũng có nhiều mặt tích cực. Người dân có thể sản xuất và chia sẻ thông tin mọi lúc mọi nơi, điều này góp phần vào sự phát triển của dân chủ ở khía cạnh là nhiều tiếng nói đa dạng có thể được thể hiện.
@@ -116,6 +160,8 @@ Tuy nhiên, các mặt tiêu cực cũng không thể bỏ qua. Nguy cơ gây ra
         </div>
     </main>
     
+    
+    
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
         <div class="related-courses-grid">
@@ -146,6 +192,66 @@ Tuy nhiên, các mặt tiêu cực cũng không thể bỏ qua. Nguy cơ gây ra
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

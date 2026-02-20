@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Trang không tìm thấy | Daily Korean</title>
+    <meta name="description" content="Trang bạn tìm không tồn tại. Quay về trang chủ Daily Korean để tiếp tục học tiếng Hàn miễn phí.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){var t=localStorage.getItem('dk-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark');})();</script>
+    <style>
+        :root {
+            --bg: #ffffff; --text: #1a1a2e; --text-muted: #6b7280;
+            --primary: #4f46e5; --primary-hover: #4338ca;
+            --card-bg: #f8fafc; --card-border: #e2e8f0;
+        }
+        [data-theme="dark"] {
+            --bg: #0f172a; --text: #e2e8f0; --text-muted: #94a3b8;
+            --primary: #818cf8; --primary-hover: #a5b4fc;
+            --card-bg: #1e293b; --card-border: #334155;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', 'Noto Sans KR', -apple-system, sans-serif;
+            background: var(--bg); color: var(--text);
+            min-height: 100vh; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; text-align: center;
+            padding: 2rem;
+        }
+        .error-code { font-size: 8rem; font-weight: 800; line-height: 1; color: var(--primary); margin-bottom: 0.5rem; }
+        .error-emoji { font-size: 4rem; margin-bottom: 1rem; }
+        h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .error-desc { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem; max-width: 500px; }
+        .error-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 3rem; }
+        .error-links a {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.75rem 1.5rem; border-radius: 12px; text-decoration: none;
+            font-weight: 600; font-size: 0.95rem; transition: all 0.2s;
+        }
+        .btn-primary { background: var(--primary); color: #fff; }
+        .btn-primary:hover { background: var(--primary-hover); transform: translateY(-2px); }
+        .btn-secondary { background: var(--card-bg); color: var(--text); border: 1px solid var(--card-border); }
+        .btn-secondary:hover { border-color: var(--primary); transform: translateY(-2px); }
+        .courses-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem; max-width: 700px; width: 100%;
+        }
+        .course-link {
+            background: var(--card-bg); border: 1px solid var(--card-border);
+            border-radius: 12px; padding: 1rem; text-decoration: none; color: var(--text);
+            transition: all 0.2s; display: flex; align-items: center; gap: 0.75rem;
+        }
+        .course-link:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(79,70,229,0.15); }
+        .course-icon { font-size: 1.5rem; }
+        .course-name { font-weight: 600; font-size: 0.9rem; text-align: left; }
+        @media (max-width: 600px) { .error-code { font-size: 5rem; } h1 { font-size: 1.3rem; } .courses-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="error-code">404</div>
+    <div class="error-emoji">🤔</div>
+    <h1>이 페이지를 찾을 수 없습니다</h1>
+    <p class="error-desc">Trang bạn tìm không tồn tại hoặc đã được di chuyển. Hãy quay về trang chủ hoặc chọn một khóa học bên dưới.</p>
+    
+    <div class="error-links">
+        <a href="/" class="btn-primary">🏠 Trang chủ</a>
+        <a href="/courses.html" class="btn-secondary">🎓 Khóa học</a>
+    </div>
+    
+    <div class="courses-grid">
+        <a href="/curriculum/index.html" class="course-link">
+            <span class="course-icon">📚</span>
+            <span class="course-name">TOPIK I — Level 1</span>
+        </a>
+        <a href="/topik2/index.html" class="course-link">
+            <span class="course-icon">📘</span>
+            <span class="course-name">TOPIK I — Level 2</span>
+        </a>
+        <a href="/topik-ii/index.html" class="course-link">
+            <span class="course-icon">📕</span>
+            <span class="course-name">TOPIK II 중급</span>
+        </a>
+        <a href="/topik-advanced/index.html" class="course-link">
+            <span class="course-icon">👑</span>
+            <span class="course-name">TOPIK II 고급</span>
+        </a>
+        <a href="/eps-topik/index.html" class="course-link">
+            <span class="course-icon">🏭</span>
+            <span class="course-name">EPS-TOPIK</span>
+        </a>
+        <a href="/conversation/index.html" class="course-link">
+            <span class="course-icon">🗣️</span>
+            <span class="course-name">Hội thoại thực tế</span>
+        </a>
+    </div>
+</body>
+</html>

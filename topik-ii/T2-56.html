@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-ii/T2-56.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Trung cấp (3~4급)", "item": "https://dailykorean.me/topik-ii/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T2-56: Chiến lược và luyện nghe hiểu"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-advanced/index.html">👑 T3</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html" class="active">📕 T2</a>
+                <a href="../topik-advanced/index.html">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Trung cấp (3~4급)</a><span class="sep">›</span>
+        <span>Unit 10: Luyện thi thực chiến TOPIK II</span><span class="sep">›</span>
+        <span>T2-56</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -82,7 +123,10 @@
     *   Khi các phụ âm cuối ㄱ, ㄷ, ㅂ gặp các phụ âm đầu ㅁ, ㄴ ở âm tiết tiếp theo, chúng sẽ biến thành âm mũi ㅇ, ㄴ, ㅁ tương ứng.
     *   **Ví dụ**: 입니다 [임니다] (không phải [입니다]), 먹는 [멍는] (không phải [먹는]), 학문 [항문] (không phải [학문]).
     *   **Lưu ý**: Đây là một trong những quy tắc biến âm khó nhận biết nhất đối với người mới học, nhưng lại xuất hiện rất nhiều trong giao tiếp tự nhiên. Ví dụ '합니다' thường được nghe thành '함니다'.</div></section>
-<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">대</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Đối</div><div class="hv-meaning">đối diện, đối lại</div><div class=hv-sound>🔊 대 /dae/ ← ĐỐI — phát âm gần giống!</div><ul class=hv-compounds><li><strong>대화</strong> = Đối thoại <small>(Đối thoại)</small></li><li><strong>대답</strong> = Trả lời <small>(Đối đáp)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">화</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Thoại</div><div class="hv-meaning">nói chuyện</div><div class=hv-sound>🔊 화 /hwa/ ← THOẠI — phát âm gần giống!</div><ul class=hv-compounds><li><strong>대화</strong> = Đối thoại <small>(Đối thoại)</small></li><li><strong>전화</strong> = Điện thoại <small>(Điện thoại)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">담</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Đàm</div><div class="hv-meaning">nói chuyện, bàn luận</div><div class=hv-sound>🔊 담 /dam/ ← ĐÀM — phát âm gần giống!</div><ul class=hv-compounds><li><strong>담화</strong> = Đàm thoại <small>(Đàm thoại)</small></li><li><strong>회담</strong> = Hội đàm <small>(Hội đàm)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">강</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Giảng</div><div class="hv-meaning">giảng dạy, diễn giảng</div><div class=hv-sound>🔊 강 /gang/ ← GIẢNG — phát âm khá giống!</div><ul class=hv-compounds><li><strong>강연</strong> = Bài giảng <small>(Giảng diễn)</small></li><li><strong>강사</strong> = Giảng sư (giảng viên) <small>(Giảng sư)</small></li></ul></div></div></section>
+<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">대</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Đối</div><div class="hv-meaning">đối diện, đối lại</div><div class=hv-sound>🔊 대 /dae/ ← ĐỐI — phát âm gần giống!</div><ul class=hv-compounds><li><strong>대화</strong> = Đối thoại <small>(Đối thoại)</small></li><li><strong>대답</strong> = Trả lời <small>(Đối đáp)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">화</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Thoại</div><div class="hv-meaning">nói chuyện</div><div class=hv-sound>🔊 화 /hwa/ ← THOẠI — phát âm gần giống!</div><ul class=hv-compounds><li><strong>대화</strong> = Đối thoại <small>(Đối thoại)</small></li><li><strong>전화</strong> = Điện thoại <small>(Điện thoại)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">담</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Đàm</div><div class="hv-meaning">nói chuyện, bàn luận</div><div class=hv-sound>🔊 담 /dam/ ← ĐÀM — phát âm gần giống!</div><ul class=hv-compounds><li><strong>담화</strong> = Đàm thoại <small>(Đàm thoại)</small></li><li><strong>회담</strong> = Hội đàm <small>(Hội đàm)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">강</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Giảng</div><div class="hv-meaning">giảng dạy, diễn giảng</div><div class=hv-sound>🔊 강 /gang/ ← GIẢNG — phát âm khá giống!</div><ul class=hv-compounds><li><strong>강연</strong> = Bài giảng <small>(Giảng diễn)</small></li><li><strong>강사</strong> = Giảng sư (giảng viên) <small>(Giảng sư)</small></li></ul></div></div></section>
 <section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">TOPIK II 듣기 시험은 총 50문제로 60분 동안 진행됩니다. 각 문제는 한 번만 들려주기 때문에 집중해서 듣는 것이 중요합니다. 특히 대화나 강연을 들을 때는 핵심 내용을 파악하고, 화자의 의도를 이해하는 것이 듣기 전략의 핵심이라고 할 수 있습니다. 뉴스를 들을 때도 마찬가지입니다. 간접화법을 사용하여 정보를 전달하는 경우가 많으므로, 누가 무엇을 말했다고 하는지 잘 파악해야 합니다. 또한, 자연스러운 한국어 발음 변화(연음, 경음화, 비음화 등)에 익숙해지는 연습을 꾸준히 하는 것이 듣기 실력 향상에 큰 도움이 됩니다.</div><div class="reading-hint"><small>💡 Bài thi nghe TOPIK II có tổng cộng 50 câu hỏi, diễn ra trong 60 phút. Vì mỗi câu chỉ được nghe một lần nên việc tập trung lắng nghe rất quan trọng. Đặc biệt khi nghe hội thoại hay bài giảng, việc nắm bắt nội dung cốt lõi và hiểu ý đồ của người nói có thể nói là trọng tâm của chiến lược nghe hiểu. Khi nghe tin tức cũng vậy. Vì có nhiều trường hợp truyền đạt thông tin bằng lời nói gián tiếp, nên cần phải nắm rõ ai đã nói gì. Ngoài ra, việc luyện tập thường xuyên để quen thuộc với các biến đổi phát âm tự nhiên của tiếng Hàn (nối âm, căng âm, mũi hóa, v.v.) sẽ giúp ích rất nhiều trong việc cải thiện kỹ năng nghe hiểu.</small></div><div class="reading-question"><p class="q-text">TOPIK II 듣기 시험은 몇 분 동안 진행됩니까?</p><ul class="q-options"><li class="option" data-idx="0">30분</li><li class="option" data-idx="1">50분</li><li class="option" data-idx="2">60분</li><li class="option" data-idx="3">90분</li></ul><div class="q-answer" hidden>Đáp án: 2 — Theo đoạn văn, bài thi nghe TOPIK II diễn ra trong 60 phút.</div></div><div class="reading-question"><p class="q-text">듣기 전략의 핵심은 무엇이라고 했습니까?</p><ul class="q-options"><li class="option" data-idx="0">모든 단어를 받아쓰기</li><li class="option" data-idx="1">핵심 내용을 파악하고 화자의 의도를 이해하는 것</li><li class="option" data-idx="2">빠르게 정답을 찍는 것</li><li class="option" data-idx="3">오직 문법만 집중하는 것</li></ul><div class="q-answer" hidden>Đáp án: 1 — Đoạn văn nêu rõ: '핵심 내용을 파악하고, 화자의 의도를 이해하는 것이 듣기 전략의 핵심이라고 할 수 있습니다.' (Việc nắm bắt nội dung cốt lõi và hiểu ý đồ của người nói có thể nói là trọng tâm của chiến lược nghe hiểu.)</div></div></section>
 <section class="lesson-section writing"><h3>✍️ 쓰기 / Viết</h3><div class="writing-task">Bạn vừa nghe một bài 강연 (bài giảng) về 'Chiến lược học tiếng Hàn hiệu quả'. Hãy viết một đoạn văn ngắn (khoảng 5-7 câu) tóm tắt lại 2-3 điểm chính mà bạn nhớ được từ bài giảng đó, sử dụng cả từ vựng và ngữ pháp đã học trong bài (đặc biệt là 간접화법 - lời nói gián tiếp).</div><details class="writing-model"><summary>📝 Bài mẫu</summary><div class="model-answer">방금 '효과적인 한국어 학습 전략'이라는 강연을 들었습니다. 강사님은 한국어를 잘하기 위해서는 꾸준히 듣기 연습을 해야 한다고 강조하셨습니다. 특히, 자연스러운 발음 변화에 익숙해지는 것이 중요하다고 말씀하셨습니다. 또한, 매일 뉴스를 들으면서 한국 문화를 이해하는 것도 좋다고 하셨습니다. 마지막으로, 친구들과 한국어로 대화를 많이 하는 것이 실력 향상에 도움이 된다고 조언하셨습니다.</div><div class="writing-tips">Khi viết, hãy tưởng tượng bạn đang kể lại cho người khác nghe về nội dung bài giảng. Sử dụng các cấu trúc như '-다고 하다' (nói rằng), '-으라고 하다' (bảo rằng), '-자고 하다' (đề nghị rằng) để tường thuật lại các lời khuyên hoặc thông tin từ 강연. Cố gắng lồng ghép các từ vựng như 강연, 대화, 뉴스.</div></details></section>
 <section class="lesson-section error-alerts"><h3>⚠️ ⚠️ Lỗi thường gặp</h3><div class="error-alert-item"><span class="wrong">❌ Nghe tiếng Hàn như đọc sách, từng chữ một.</span><span class="right">✅ Nghe tiếng Hàn tự nhiên, chú ý đến các biến đổi âm (nối âm, căng âm, mũi hóa, nuốt âm, rút gọn âm).</span><span class="explain">Người Việt thường có xu hướng muốn nghe rõ từng chữ như khi đọc. Tuy nhiên, trong giao tiếp tự nhiên, người Hàn thường nối âm, làm căng âm, hoặc thậm chí 'nuốt' bớt âm để nói nhanh và tự nhiên hơn. Ví dụ, '무엇을 했어요?' thường nghe như '무얼 했어요?' hay '뭔 했어요?'. Việc không nhận ra những thay đổi này là nguyên nhân chính gây khó khăn trong nghe hiểu.</span></div><div class="error-alert-item"><span class="wrong">❌ Chỉ tập trung vào từ vựng mà bỏ qua ngữ pháp.</span><span class="right">✅ Kết hợp từ vựng và ngữ pháp, đặc biệt là các cấu trúc câu phức tạp và lời nói gián tiếp.</span><span class="explain">Trong các bài nghe TOPIK II, đặc biệt là các bài 강연 hay 뉴스, thông tin thường được truyền tải qua các cấu trúc ngữ pháp phức tạp hoặc lời nói gián tiếp. Nếu chỉ cố gắng bắt từ khóa mà không hiểu cấu trúc câu, bạn sẽ dễ bỏ lỡ ý chính hoặc hiểu sai thông tin.</span></div></section>
@@ -97,6 +141,8 @@
             <a href="T2-57.html">Bài tiếp →</a>
         </div>
     </main>
+    
+    
     
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
@@ -128,6 +174,66 @@
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

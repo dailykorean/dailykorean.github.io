@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-ii/T2-32.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Trung cấp (3~4급)", "item": "https://dailykorean.me/topik-ii/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T2-32: Thói quen sống lành mạnh"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-advanced/index.html">👑 T3</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html" class="active">📕 T2</a>
+                <a href="../topik-advanced/index.html">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Trung cấp (3~4급)</a><span class="sep">›</span>
+        <span>Unit 6: Sức khỏe và Y tế</span><span class="sep">›</span>
+        <span>T2-32</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -82,7 +123,7 @@ Ví dụ khác:
 
 셋째, 충분한 수면은 건강관리의 기본입니다. 성인은 하루 7~8시간 정도 자는 것이 좋습니다. 잠을 충분히 잘수록 다음 날 컨디션이 좋아집니다.
 
-이러한 건강한 생활 습관을 통해 우리는 더욱 행복하고 건강한 삶을 살 수 있습니다. 여러분도 오늘부터 건강한 습관을 실천해 보세요!</div><div class="reading-hint"><small>💡 Bài viết này đưa ra những lời khuyên về thói quen sống lành mạnh, bao gồm tập thể dục đều đặn, chế độ ăn uống cân bằng và ngủ đủ giấc, nhấn mạnh rằng càng thực hiện những thói quen này, bạn càng khỏe mạnh hơn.</small></div><div class="reading-question"><p class="q-text">이 글의 주제로 가장 알맞은 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">건강한 생활 습관의 중요성</li><li class="option" data-idx="1">한국 음식의 영양</li><li class="option" data-idx="2">운동의 종류</li><li class="option" data-idx="3">수면 부족의 위험성</li></ul><div class="q-answer" hidden>Đáp án: 0 — Bài viết nói về tầm quan trọng của các thói quen lành mạnh như tập thể dục, ăn uống, ngủ nghỉ để có một cuộc sống khỏe mạnh.</div></div><div class="reading-question"><p class="q-text">다음 중 글의 내용과 다른 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">규칙적인 운동은 면역력을 높여준다.</li><li class="option" data-idx="1">가공식품을 많이 먹는 것이 건강에 좋다.</li><li class="option" data-idx="2">하루 7~8시간 자는 것이 성인에게 적당하다.</li><li class="option" data-idx="3">건강한 습관을 실천할수록 행복한 삶을 살 수 있다.</li></ul><div class="q-answer" hidden>Đáp án: 1 — Bài viết khuyên nên giảm bớt thực phẩm chế biến sẵn, không phải ăn nhiều.</div></div></section>
+이러한 건강한 생활 습관을 통해 우리는 더욱 행복하고 건강한 삶을 살 수 있습니다. 여러분도 오늘부터 건강한 습관을 실천해 보세요!</div><div class="reading-hint"><small>💡 Bài viết này đưa ra những lời khuyên về thói quen sống lành mạnh, bao gồm tập thể dục đều đặn, chế độ ăn uống cân bằng và ngủ đủ giấc, nhấn mạnh rằng càng thực hiện những thói quen này, bạn càng khỏe mạnh hơn.</small></div><div class="reading-question"><p class="q-text">이 글의 주제로 가장 알맞은 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">건강한 생활 습관의 중요성</li><li class="option" data-idx="1">한국 음식의 영양</li><li class="option" data-idx="2">운동의 종류</li><li class="option" data-idx="3">수면 부족의 위험성</li></ul><div class="q-answer" hidden>Đáp án:  — Bài viết nói về tầm quan trọng của các thói quen lành mạnh như tập thể dục, ăn uống, ngủ nghỉ để có một cuộc sống khỏe mạnh.</div></div><div class="reading-question"><p class="q-text">다음 중 글의 내용과 다른 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">규칙적인 운동은 면역력을 높여준다.</li><li class="option" data-idx="1">가공식품을 많이 먹는 것이 건강에 좋다.</li><li class="option" data-idx="2">하루 7~8시간 자는 것이 성인에게 적당하다.</li><li class="option" data-idx="3">건강한 습관을 실천할수록 행복한 삶을 살 수 있다.</li></ul><div class="q-answer" hidden>Đáp án: 1 — Bài viết khuyên nên giảm bớt thực phẩm chế biến sẵn, không phải ăn nhiều.</div></div></section>
 <section class="lesson-section writing"><h3>✍️ 쓰기 / Viết</h3><div class="writing-task">Hãy viết một đoạn văn ngắn (khoảng 100-120 chữ) về 'Thói quen sống lành mạnh của tôi' hoặc 'Lời khuyên về thói quen sống lành mạnh'. Sử dụng ít nhất 2 từ vựng mới (건강관리, 규칙적, 균형, 면역력) và cấu trúc ngữ pháp -(으)ㄹ수록.</div><details class="writing-model"><summary>📝 Bài mẫu</summary><div class="model-answer">저는 건강한 생활을 위해 몇 가지 습관을 실천하고 있습니다. 먼저, 매일 아침 규칙적으로 운동을 합니다. 걷기나 스트레칭을 30분 정도 하는데, 운동을 꾸준히 할수록 몸이 가벼워지고 활력이 생기는 것을 느낍니다. 또한, 식단에도 신경을 많이 씁니다. 인스턴트 음식 대신 신선한 채소와 과일을 많이 먹어서 영양의 균형을 맞추려고 노력합니다. 균형 잡힌 식사를 할수록 소화도 잘 되고 피부도 좋아지는 것 같습니다. 마지막으로, 충분한 수면도 중요하다고 생각합니다. 잠을 충분히 잘수록 다음 날 집중력도 높아지고 면역력도 강해지는 것을 경험했습니다. 이렇게 건강관리를 할수록 삶이 더 행복해지는 것 같습니다.</div><div class="writing-tips">1. Bắt đầu bằng việc giới thiệu chủ đề (ví dụ: 'Để sống khỏe mạnh, tôi...').
 2. Liệt kê các thói quen của bạn (tập thể dục, ăn uống, ngủ nghỉ...). 
 3. Giải thích lợi ích của từng thói quen, sử dụng cấu trúc -(으)ㄹ수록 để nhấn mạnh mối quan hệ 'càng... càng...'.
@@ -101,6 +142,8 @@ Ví dụ khác:
             <a href="T2-33.html">Bài tiếp →</a>
         </div>
     </main>
+    
+    
     
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
@@ -132,6 +175,66 @@ Ví dụ khác:
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

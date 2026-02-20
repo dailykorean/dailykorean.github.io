@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-ii/T2-33.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Trung cấp (3~4급)", "item": "https://dailykorean.me/topik-ii/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T2-33: Sức khỏe tinh thần và stress"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-advanced/index.html">👑 T3</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html" class="active">📕 T2</a>
+                <a href="../topik-advanced/index.html">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Trung cấp (3~4급)</a><span class="sep">›</span>
+        <span>Unit 6: Sức khỏe và Y tế</span><span class="sep">›</span>
+        <span>T2-33</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -67,7 +108,9 @@
 <section class="lesson-section vocab"><h3>📚 어휘 / Từ vựng</h3><table class="vocab-table"><thead><tr><th>한국어</th><th>발음</th><th>Tiếng Việt</th><th>Ví dụ</th></tr></thead><tbody><tr><td class="word-ko">정신건강</td><td class="word-pron">[정신건강]</td><td class="word-vi">Sức khỏe tinh thần</td><td class="word-ex">정신건강은 신체 건강만큼 중요해요.<br><small>Sức khỏe tinh thần quan trọng như sức khỏe thể chất.</small></td></tr><tr><td class="word-ko">우울증</td><td class="word-pron">[우울쯩]</td><td class="word-vi">Bệnh trầm cảm</td><td class="word-ex">갑자기 슬퍼지고 무기력해진다면 우울증을 의심해 봐야 합니다.<br><small>Nếu đột nhiên buồn bã và mất năng lượng, bạn nên nghi ngờ mình bị trầm cảm.</small></td></tr><tr><td class="word-ko">번아웃</td><td class="word-pron">[버나옫]</td><td class="word-vi">Kiệt sức, cháy sạch (burnout)</td><td class="word-ex">과도한 업무로 번아웃이 와서 잠시 쉬어야 했어요.<br><small>Vì công việc quá tải nên tôi bị kiệt sức và phải nghỉ ngơi một thời gian.</small></td></tr><tr><td class="word-ko">명상</td><td class="word-pron">[명상]</td><td class="word-vi">Thiền, thiền định</td><td class="word-ex">매일 아침 명상을 하면 마음이 차분해지고 스트레스 해소에 도움이 됩니다.<br><small>Nếu thiền mỗi sáng, tâm hồn sẽ trở nên bình tĩnh và giúp giảm stress.</small></td></tr><tr><td class="word-ko">스트레스</td><td class="word-pron">[스트레스]</td><td class="word-vi">Stress, căng thẳng</td><td class="word-ex">현대인들은 스트레스를 많이 받습니다.<br><small>Người hiện đại chịu nhiều căng thẳng.</small></td></tr><tr><td class="word-ko">극복하다</td><td class="word-pron">[극뽀카다]</td><td class="word-vi">Vượt qua, khắc phục</td><td class="word-ex">어려운 상황을 잘 극복해야 합니다.<br><small>Phải vượt qua tình huống khó khăn một cách tốt đẹp.</small></td></tr><tr><td class="word-ko">상담</td><td class="word-pron">[상담]</td><td class="word-vi">Tư vấn, tham vấn</td><td class="word-ex">전문가와 상담을 받는 것이 좋습니다.<br><small>Nên nhận tư vấn từ chuyên gia.</small></td></tr><tr><td class="word-ko">휴식</td><td class="word-pron">[휴식]</td><td class="word-vi">Sự nghỉ ngơi</td><td class="word-ex">충분한 휴식은 건강에 필수적입니다.<br><small>Nghỉ ngơi đầy đủ là điều cần thiết cho sức khỏe.</small></td></tr></tbody></table></section>
 <section class="lesson-section grammar"><h3>📝 문법 / Ngữ pháp</h3><div class="grammar-block"><h4>-기는커녕</h4><p class="grammar-explain">Diễn tả ý "chẳng những không... mà còn (thậm chí tệ hơn)". Dùng để phủ định mạnh mẽ một sự việc được mong đợi hoặc giả định, và thay vào đó là một tình huống hoàn toàn ngược lại hoặc tồi tệ hơn.</p><p class="grammar-compare">🔄 So sánh: "chẳng những không... mà còn", "đâu có... mà còn", "chứ đừng nói là...".</p><ul class="grammar-examples"><li><span class="ko">그는 나를 돕기는커녕 방해만 했다.</span> → <span class="vi">Anh ta chẳng những không giúp tôi mà còn gây cản trở.</span></li><li><span class="ko">시험에 합격하기는커녕 과락할까 봐 걱정돼요.</span> → <span class="vi">Đâu có đỗ được kì thi, tôi còn lo bị trượt môn nữa là.</span></li><li><span class="ko">밥을 먹기는커녕 물 한 잔도 못 마셨어요.</span> → <span class="vi">Chẳng những không ăn cơm mà tôi còn không uống nổi một ly nước.</span></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">너무 피곤해서 잠을 (자다) __________________ 밤새 일했어요. (quá mệt nên chẳng những không ngủ được mà còn làm việc suốt đêm.)</li><li class="practice-item">친구가 나를 (이해하다) __________________ 오해만 더 커졌어요. (Bạn tôi chẳng những không hiểu tôi mà hiểu lầm còn lớn hơn.)</li></ul></div></div><div class="grammar-block"><h4>-(으)라고 하다 / -(으)라고 말하다</h4><p class="grammar-explain">Dùng để trích dẫn lại một lời yêu cầu, mệnh lệnh hoặc đề nghị của người khác. Khi trích dẫn lời khuyên, đề xuất, thường dùng với động từ chỉ hành động.</p><p class="grammar-compare">🔄 So sánh: "bảo rằng hãy...", "nói rằng hãy...", "khuyên rằng nên...".</p><ul class="grammar-examples"><li><span class="ko">의사 선생님이 스트레스를 줄이라고 하셨어요.</span> → <span class="vi">Bác sĩ bảo tôi hãy giảm stress.</span></li><li><span class="ko">엄마는 나에게 일찍 자라고 말씀하셨다.</span> → <span class="vi">Mẹ bảo tôi hãy đi ngủ sớm.</span></li><li><span class="ko">친구는 나에게 명상을 해보라고 추천했어요.</span> → <span class="vi">Bạn tôi gợi ý tôi hãy thử thiền.</span></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">선생님은 숙제를 (하다) __________________ . (Cô giáo bảo hãy làm bài tập.)</li><li class="practice-item">저는 친구에게 건강을 위해 운동을 (하다) __________________ . (Tôi bảo bạn tôi hãy tập thể dục vì sức khỏe.)</li></ul></div></div><div class="grammar-block"><h4>-는 것이 좋다</h4><p class="grammar-explain">Dùng để đưa ra lời khuyên, đề xuất một hành động nào đó là tốt hoặc nên làm.</p><p class="grammar-compare">🔄 So sánh: "tốt nhất là nên...", "nên...", "sẽ tốt hơn nếu...".</p><ul class="grammar-examples"><li><span class="ko">스트레스를 받으면 충분히 쉬는 것이 좋습니다.</span> → <span class="vi">Khi bị stress, nên nghỉ ngơi đầy đủ là tốt nhất.</span></li><li><span class="ko">정신 건강을 위해 전문가와 상담하는 것이 좋아요.</span> → <span class="vi">Để có sức khỏe tinh thần, nên tham vấn chuyên gia.</span></li><li><span class="ko">매일 규칙적으로 운동하는 것이 건강에 좋습니다.</span> → <span class="vi">Tập thể dục đều đặn mỗi ngày tốt cho sức khỏe.</span></li></ul><div class=grammar-practice><strong>Luyện tập:</strong><ul><li class="practice-item">피곤할 때는 (잠을 자다) __________________ . (Khi mệt mỏi, nên ngủ là tốt nhất.)</li><li class="practice-item">한국어를 잘하고 싶으면 (매일 공부하다) __________________ . (Nếu muốn giỏi tiếng Hàn, nên học mỗi ngày là tốt nhất.)</li></ul></div></div></section>
 <section class="lesson-section pronunciation"><h3>🔊 발음 / Phát âm</h3><div class="pron-content">Từ '정신건강' là một từ ghép dài, thường được phát âm rõ ràng từng âm tiết: [정.신.건.강]. Không có quy tắc biến âm đặc biệt nào ở đây, nhưng quan trọng là phải phát âm rõ ràng, không nuốt âm, đặc biệt khi các từ ghép Hán-Hàn trở nên dài hơn. Hãy luyện tập đọc chậm và rõ ràng.</div></section>
-<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">정</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Tinh</div><div class="hv-meaning">tinh túy, tinh thần</div><div class=hv-sound>🔊 정 /jeong/ ← TINH — phát âm gần giống!</div><ul class=hv-compounds><li><strong>정신</strong> = Tinh thần <small>(Tinh thần)</small></li><li><strong>정성</strong> = Sự chân thành <small>(Tinh thành)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">건</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Kiện</div><div class="hv-meaning">khỏe mạnh</div><div class=hv-sound>🔊 건 /geon/ ← KIỆN — phát âm gần giống!</div><ul class=hv-compounds><li><strong>건강</strong> = Sức khỏe <small>(Kiện khang)</small></li><li><strong>건전</strong> = Lành mạnh <small>(Kiện toàn)</small></li></ul></div><div class="hv-bridge-card"><div class="hv-hangul">명</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Minh</div><div class="hv-meaning">nhắm mắt, tưởng tượng</div><div class=hv-sound>🔊 명 /myeong/ ← MINH — phát âm gần giống!</div><ul class=hv-compounds><li><strong>명상</strong> = Thiền định <small>(Minh tưởng)</small></li><li><strong>명상록</strong> = Nhật ký thiền <small>(Minh tưởng lục)</small></li></ul></div></div></section>
+<section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">정</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Tinh</div><div class="hv-meaning">tinh túy, tinh thần</div><div class=hv-sound>🔊 정 /jeong/ ← TINH — phát âm gần giống!</div><ul class=hv-compounds><li><strong>정신</strong> = Tinh thần <small>(Tinh thần)</small></li><li><strong>정성</strong> = Sự chân thành <small>(Tinh thành)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">건</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Kiện</div><div class="hv-meaning">khỏe mạnh</div><div class=hv-sound>🔊 건 /geon/ ← KIỆN — phát âm gần giống!</div><ul class=hv-compounds><li><strong>건강</strong> = Sức khỏe <small>(Kiện khang)</small></li><li><strong>건전</strong> = Lành mạnh <small>(Kiện toàn)</small></li></ul></div>
+<div class="hv-bridge-card"><div class="hv-hangul">명</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Minh</div><div class="hv-meaning">nhắm mắt, tưởng tượng</div><div class=hv-sound>🔊 명 /myeong/ ← MINH — phát âm gần giống!</div><ul class=hv-compounds><li><strong>명상</strong> = Thiền định <small>(Minh tưởng)</small></li><li><strong>명상록</strong> = Nhật ký thiền <small>(Minh tưởng lục)</small></li></ul></div></div></section>
 <section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">현대인의 정신 건강 관리: 스트레스와 번아웃 극복하기
 바쁜 현대 사회에서 많은 사람이 스트레스를 받고 있습니다. 가벼운 스트레스는 생활의 활력이 될 수도 있지만, 과도한 스트레스는 정신건강에 심각한 영향을 미칩니다. 어떤 사람들은 스트레스를 해소하기는커녕 쌓아두기만 해서 우울증이나 번아웃으로 이어지기도 합니다.
 전문가들은 정신 건강을 지키기 위해 여러 가지 방법을 추천합니다. 첫째, 충분한 휴식을 취하는 것이 좋습니다. 잠을 충분히 자고, 주말에는 좋아하는 취미 활동을 하는 것이 도움이 됩니다. 둘째, 규칙적인 운동을 하라고 조언합니다. 운동은 스트레스 호르몬을 줄여주고 기분을 좋게 만듭니다. 셋째, 명상을 통해 마음을 차분하게 가라앉히는 것도 좋은 방법입니다. 마지막으로, 혼자서 모든 것을 해결하기 어렵다면 주저하지 말고 전문가와 상담을 받는 것이 중요하다고 말합니다. 우리의 정신 건강은 우리의 삶의 질과 직결됩니다.</div><div class="reading-hint"><small>💡 Quản lý sức khỏe tinh thần của người hiện đại: Vượt qua stress và burnout. Bài viết nói về ảnh hưởng của stress quá mức, dẫn đến trầm cảm hoặc burnout. Các chuyên gia khuyên nên nghỉ ngơi, tập thể dục, thiền và tham vấn chuyên gia để bảo vệ sức khỏe tinh thần.</small></div><div class="reading-question"><p class="q-text">이 글의 내용과 다른 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">스트레스는 항상 나쁜 것만은 아니다.</li><li class="option" data-idx="1">스트레스가 심하면 우울증이나 번아웃이 올 수 있다.</li><li class="option" data-idx="2">정신 건강을 위해 혼자서 모든 문제를 해결해야 한다.</li><li class="option" data-idx="3">규칙적인 운동은 정신 건강에 도움이 된다.</li></ul><div class="q-answer" hidden>Đáp án: 2 — Bài viết khuyên nên tham vấn chuyên gia nếu khó tự giải quyết, không phải là phải tự mình giải quyết mọi vấn đề.</div></div><div class="reading-question"><p class="q-text">전문가들이 추천하는 방법이 아닌 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">충분한 휴식</li><li class="option" data-idx="1">규칙적인 운동</li><li class="option" data-idx="2">명상</li><li class="option" data-idx="3">밤샘 근무</li></ul><div class="q-answer" hidden>Đáp án: 3 — Làm việc thâu đêm (밤샘 근무) gây stress và burnout, trái ngược với lời khuyên của chuyên gia.</div></div></section>
@@ -89,6 +132,8 @@
             <a href="T2-34.html">Bài tiếp →</a>
         </div>
     </main>
+    
+    
     
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
@@ -120,6 +165,66 @@
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,61 @@
       "url": "https://dailykorean.me/topik-advanced/T3-30.html"
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://dailykorean.me/"},
+        {"@type": "ListItem", "position": 2, "name": "TOPIK II — Cao cấp (5~6급)", "item": "https://dailykorean.me/topik-advanced/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "T3-30: Tổng hợp Văn học"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="curriculum.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>(function(){ var t=localStorage.getItem('dk-theme'); if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.setAttribute('data-theme','dark'); })();</script>
 </head>
 <body>
-    <nav class="cur-nav">
+    
+    <nav class="cur-navbar" id="curNavbar">
+        <div class="cur-navbar-inner">
+            <a href="../index.html" class="cur-brand">
+                <span class="cur-brand-icon">🇰🇷</span>
+                <span>Daily Korean</span>
+            </a>
+            <div class="cur-nav-links" id="curNavLinks">
                 <a href="../index.html">🏠 Trang chủ</a>
-        <a href="../courses.html">🎓 Khóa Học</a>
-        <a href="index.html">📖 Mục lục</a>
-        <a href="../curriculum/index.html">📚 L1</a>
-        <a href="../topik2/index.html">📘 L2</a>
-        <a href="../eps-topik/index.html">🏭 EPS</a>
-        <a href="../conversation/index.html">🗣️ CONV</a>
-        <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../courses.html">🎓 Khóa Học</a>
+                <a href="../curriculum/index.html">📚 L1</a>
+                <a href="../topik2/index.html">📘 L2</a>
+                <a href="../eps-topik/index.html">🏭 EPS</a>
+                <a href="../conversation/index.html">🗣️ CONV</a>
+                <a href="../topik-ii/index.html">📕 T2</a>
+                <a href="../topik-advanced/index.html" class="active">👑 T3</a>
+            </div>
+            <div class="cur-nav-actions">
+                <button class="cur-theme-toggle" id="curThemeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cur-hamburger" id="curHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    
+    <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a><span class="sep">›</span>
+        <a href="index.html">TOPIK II — Cao cấp (5~6급)</a><span class="sep">›</span>
+        <span>Unit 5: Văn học cổ điển & Hiện đại</span><span class="sep">›</span>
+        <span>T3-30</span>
+    </div>
     
     <main class="lesson-page">
         <div class="lesson-nav-bar">
@@ -88,7 +129,7 @@
 *   창작 활동 [창작활똥]
 *   고전 문학 [고전무낙]</div></section>
 <section class="lesson-section han-viet-bridge"><h3>🔗 Cầu nối Hán-Việt ↔ Hán-Hàn</h3><p class="hv-intro">Người Việt biết sẵn từ Hán-Việt — hãy dùng nó làm cầu nối để nhớ từ Hàn nhanh hơn!</p><div class="hv-bridge-grid"><div class="hv-bridge-card"><div class="hv-hangul">감</div><div class="hv-arrow">↔</div><div class="hv-hanviet">Cảm</div><div class="hv-meaning">feel, emotion</div><div class=hv-sound>🔊 감 /gam/ ← CẢM (Hán-Việt). Phát âm 'c' → 'g', rất giống!</div><ul class=hv-compounds><li><strong>감사하다</strong> = Cảm ơn <small>(Cảm tạ)</small></li><li><strong>감기</strong> = Cảm cúm <small>(Cảm khí)</small></li><li><strong>감동</strong> = Cảm động <small>(Cảm động)</small></li><li><strong>감정</strong> = Cảm xúc <small>(Cảm tình)</small></li><li><strong>감각</strong> = Cảm giác <small>(Cảm giác)</small></li></ul></div></div></section>
-<section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">김소월 시인의 '진달래꽃'은 한국 현대시의 대표작 중 하나로, 이별의 정한(情恨)을 아름다운 언어로 표현한 작품이다. 이 시는 떠나가는 임에 대한 화자의 희생적인 사랑과 체념을 '나 보기가 역겨워 가실 때에는 / 말없이 고이 보내 드리우리다'라는 구절을 통해 절절하게 드러낸다. 진달래꽃은 단순한 꽃이 아니라, 화자의 순수한 사랑과 희생의 상징으로 기능한다. 임이 떠나는 길에 꽃을 뿌려주는 행위는 슬픔 속에서도 상대를 축복하고자 하는 깊은 마음을 보여주는바, 한국인의 전통적인 정서인 '한(恨)'을 미학적으로 승화시켰다는 비평을 받는다. 이처럼 '진달래꽃'은 보편적인 이별의 감정을 한국적인 미감으로 승화시켜, 시대를 막론하고 많은 독자들에게 깊은 감동을 선사하고 있다.</div><div class="reading-hint"><small>💡 Bài thơ 'Hoa đỗ quyên' của Kim So-wol là một trong những tác phẩm tiêu biểu của thơ hiện đại Hàn Quốc, thể hiện nỗi buồn chia ly (정한) bằng ngôn ngữ đẹp đẽ. Bài thơ này bộc lộ tình yêu hy sinh và sự cam chịu của người nói trước người ra đi qua câu 'Khi người chán ghét tôi mà ra đi / Tôi sẽ lặng lẽ tiễn người đi'. Hoa đỗ quyên không chỉ là một loài hoa đơn thuần mà còn là biểu tượng cho tình yêu trong sáng và sự hy sinh của người nói. Hành động rải hoa trên con đường người yêu ra đi cho thấy một tấm lòng sâu sắc muốn chúc phúc cho đối phương dù trong đau khổ, do đó nhận được lời phê bình rằng đã thăng hoa một cách thẩm mỹ 'han(恨)' – cảm xúc truyền thống của người Hàn Quốc. Như vậy, 'Hoa đỗ quyên' đã thăng hoa cảm xúc chia ly phổ quát bằng vẻ đẹp thẩm mỹ Hàn Quốc, mang lại sự xúc động sâu sắc cho nhiều độc giả bất kể thời đại nào.</small></div><div class="reading-question"><p class="q-text">위 글의 내용과 일치하지 않는 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">김소월의 '진달래꽃'은 한국 현대시의 대표작이다.</li><li class="option" data-idx="1">이 시는 이별의 슬픔을 아름다운 언어로 표현한다.</li><li class="option" data-idx="2">진달래꽃은 화자의 분노와 저항을 상징한다.</li><li class="option" data-idx="3">이 작품은 한국적인 정서 '한'을 미학적으로 승화시켰다는 평가를 받는다.</li></ul><div class="q-answer" hidden>Đáp án: 2 — Câu C không đúng. Trong bài, 진달래꽃 (hoa đỗ quyên) là biểu tượng cho 'tình yêu trong sáng và sự hy sinh của người nói', chứ không phải 'sự tức giận và phản kháng'.</div></div><div class="reading-question"><p class="q-text">이 글에 사용된 문법 '-는바'의 의미와 가장 가까운 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">~하기 때문에</li><li class="option" data-idx="1">~할 수 있도록</li><li class="option" data-idx="2">~하는 동안</li><li class="option" data-idx="3">~하든지 말든지</li></ul><div class="q-answer" hidden>Đáp án: 0 — Ngữ pháp '-는바' trong ngữ cảnh này có nghĩa 'do vậy', 'vì lý do đó', gần nhất với '~하기 때문에' (vì...).</div></div></section>
+<section class="lesson-section reading"><h3>📖 읽기 / Đọc hiểu</h3><div class="reading-passage">김소월 시인의 '진달래꽃'은 한국 현대시의 대표작 중 하나로, 이별의 정한(情恨)을 아름다운 언어로 표현한 작품이다. 이 시는 떠나가는 임에 대한 화자의 희생적인 사랑과 체념을 '나 보기가 역겨워 가실 때에는 / 말없이 고이 보내 드리우리다'라는 구절을 통해 절절하게 드러낸다. 진달래꽃은 단순한 꽃이 아니라, 화자의 순수한 사랑과 희생의 상징으로 기능한다. 임이 떠나는 길에 꽃을 뿌려주는 행위는 슬픔 속에서도 상대를 축복하고자 하는 깊은 마음을 보여주는바, 한국인의 전통적인 정서인 '한(恨)'을 미학적으로 승화시켰다는 비평을 받는다. 이처럼 '진달래꽃'은 보편적인 이별의 감정을 한국적인 미감으로 승화시켜, 시대를 막론하고 많은 독자들에게 깊은 감동을 선사하고 있다.</div><div class="reading-hint"><small>💡 Bài thơ 'Hoa đỗ quyên' của Kim So-wol là một trong những tác phẩm tiêu biểu của thơ hiện đại Hàn Quốc, thể hiện nỗi buồn chia ly (정한) bằng ngôn ngữ đẹp đẽ. Bài thơ này bộc lộ tình yêu hy sinh và sự cam chịu của người nói trước người ra đi qua câu 'Khi người chán ghét tôi mà ra đi / Tôi sẽ lặng lẽ tiễn người đi'. Hoa đỗ quyên không chỉ là một loài hoa đơn thuần mà còn là biểu tượng cho tình yêu trong sáng và sự hy sinh của người nói. Hành động rải hoa trên con đường người yêu ra đi cho thấy một tấm lòng sâu sắc muốn chúc phúc cho đối phương dù trong đau khổ, do đó nhận được lời phê bình rằng đã thăng hoa một cách thẩm mỹ 'han(恨)' – cảm xúc truyền thống của người Hàn Quốc. Như vậy, 'Hoa đỗ quyên' đã thăng hoa cảm xúc chia ly phổ quát bằng vẻ đẹp thẩm mỹ Hàn Quốc, mang lại sự xúc động sâu sắc cho nhiều độc giả bất kể thời đại nào.</small></div><div class="reading-question"><p class="q-text">위 글의 내용과 일치하지 않는 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">김소월의 '진달래꽃'은 한국 현대시의 대표작이다.</li><li class="option" data-idx="1">이 시는 이별의 슬픔을 아름다운 언어로 표현한다.</li><li class="option" data-idx="2">진달래꽃은 화자의 분노와 저항을 상징한다.</li><li class="option" data-idx="3">이 작품은 한국적인 정서 '한'을 미학적으로 승화시켰다는 평가를 받는다.</li></ul><div class="q-answer" hidden>Đáp án: 2 — Câu C không đúng. Trong bài, 진달래꽃 (hoa đỗ quyên) là biểu tượng cho 'tình yêu trong sáng và sự hy sinh của người nói', chứ không phải 'sự tức giận và phản kháng'.</div></div><div class="reading-question"><p class="q-text">이 글에 사용된 문법 '-는바'의 의미와 가장 가까운 것은 무엇입니까?</p><ul class="q-options"><li class="option" data-idx="0">~하기 때문에</li><li class="option" data-idx="1">~할 수 있도록</li><li class="option" data-idx="2">~하는 동안</li><li class="option" data-idx="3">~하든지 말든지</li></ul><div class="q-answer" hidden>Đáp án:  — Ngữ pháp '-는바' trong ngữ cảnh này có nghĩa 'do vậy', 'vì lý do đó', gần nhất với '~하기 때문에' (vì...).</div></div></section>
 <section class="lesson-section writing"><h3>✍️ 쓰기 / Viết</h3><div class="writing-task">Hãy viết một bài phê bình văn học (500+ chữ) về một tác phẩm văn học Hàn Quốc mà bạn đã đọc hoặc tìm hiểu. Bài viết cần bao gồm các nội dung sau:
 1.  **Giới thiệu tác phẩm:** Tên tác phẩm, tác giả, thể loại, bối cảnh (nếu có).
 2.  **Tóm tắt nội dung chính:** Giới thiệu ngắn gọn cốt truyện hoặc chủ đề.
@@ -134,6 +175,8 @@
         </div>
     </main>
     
+    
+    
     <section class="related-courses">
         <h3>📚 Khóa học khác trên Daily Korean</h3>
         <div class="related-courses-grid">
@@ -164,6 +207,66 @@
             answer.parentElement.insertBefore(btn, answer);
         }
     });
+    </script>
+    
+    <button class="cur-back-top" id="backTop" title="Lên đầu trang">↑</button>
+    <script>
+    // Dark mode
+    (function(){
+        var t = localStorage.getItem('dk-theme');
+        if (t==='dark' || (!t && window.matchMedia('(prefers-color-scheme:dark)').matches))
+            document.documentElement.setAttribute('data-theme','dark');
+    })();
+    document.getElementById('curThemeToggle').addEventListener('click', function(){
+        var d = document.documentElement;
+        var isDark = d.getAttribute('data-theme') === 'dark';
+        d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('dk-theme', isDark ? 'light' : 'dark');
+    });
+    // Hamburger
+    document.getElementById('curHamburger').addEventListener('click', function(){
+        document.getElementById('curNavLinks').classList.toggle('open');
+    });
+    // Back to top
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    });
+    backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    // Progress tracking — mark visited lessons
+    (function(){
+        var path = location.pathname;
+        var match = path.match(/\/(curriculum|topik2|topik-ii|topik-advanced|eps-topik|conversation)\/([A-Z0-9]+-\d+)\.html/);
+        if (match) {
+            var key = 'dk-visited';
+            var visited = JSON.parse(localStorage.getItem(key) || '[]');
+            var lessonId = match[2];
+            if (visited.indexOf(lessonId) === -1) { visited.push(lessonId); localStorage.setItem(key, JSON.stringify(visited)); }
+        }
+        // Mark visited on index pages
+        var links = document.querySelectorAll('.lesson-link[href]');
+        if (links.length > 0) {
+            var visited = JSON.parse(localStorage.getItem('dk-visited') || '[]');
+            links.forEach(function(a) {
+                var href = a.getAttribute('href');
+                var m = href.match(/([A-Z0-9]+-\d+)\.html/);
+                if (m && visited.indexOf(m[1]) !== -1) {
+                    a.classList.add('visited-lesson');
+                    var arrow = a.querySelector('.lesson-arrow');
+                    if (arrow) arrow.textContent = '✓';
+                }
+            });
+            // Update progress bar
+            var progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                var totalLinks = links.length;
+                var visitedCount = document.querySelectorAll('.visited-lesson').length;
+                progressFill.style.width = Math.round(visitedCount/totalLinks*100) + '%';
+                var small = document.querySelector('.cur-progress small');
+                if (small) small.textContent = visitedCount + '/' + totalLinks + ' bài đã học';
+            }
+        }
+    })();
     </script>
 </body>
 </html>
