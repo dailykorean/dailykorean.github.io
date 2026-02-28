@@ -30,12 +30,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
-    <url>
-        <loc>https://dailykorean.me/courses.html</loc>
-        <lastmod>2026-02-28</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
+    
     <url>
         <loc>https://dailykorean.me/posts/2026-02-13-viết-53-tiện-nghi-sinh-hoạt.html</loc>
         <lastmod>2026-02-13</lastmod>
@@ -1300,7 +1295,7 @@
         <loc>https://dailykorean.me/topik-ii/index.html</loc>
         <lastmod>2026-02-28</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://dailykorean.me/topik-ii/T2-01.html</loc>
@@ -1666,7 +1661,7 @@
         <loc>https://dailykorean.me/topik-advanced/index.html</loc>
         <lastmod>2026-02-28</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://dailykorean.me/topik-advanced/T3-01.html</loc>
