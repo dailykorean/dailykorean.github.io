@@ -657,6 +657,28 @@
     <p class="note">1. (Ví dụ: 스물) 2. (Ví dụ: 두) 3. (Ví dụ: 다섯) 4. (Ví dụ: 세, 삼십) 5. (Ví dụ: 만오천) 6. (Ví dụ: 네) 7. (Ví dụ: 세) 8. (Ví dụ: 십이, 이십오) 9. (Ví dụ: 공일공-일이삼사-오륙칠팔) 10. (Ví dụ: 오) 11. (Ví dụ: 백일) 12. (Ví dụ: 두) 13. (Ví dụ: 세) 14. (Ví dụ: 한) 15. (Ví dụ: 두) 16. (Ví dụ: 한) 17. (Ví dụ: 두) 18. (Ví dụ: 한) 19. (Ví dụ: 한) 20. (Ví dụ: 세)</p>
 
     <p>Chúc bạn học tốt tiếng Hàn!</p>
-**Giải thích chi tiết về code:**
 
-*   **`
+        </article>
+    </main>
+    <footer style="background: var(--footer-bg, #1f2937); color: var(--footer-text, #9ca3af); padding: 2rem; text-align: center; margin-top: 3rem;">
+        <p>&copy; 2026 <a href="/" style="color: var(--primary, #60a5fa);">Daily Korean</a> &mdash; Học Tiếng Hàn Miễn Phí Cho Người Việt</p>
+        <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+            <a href="/about.html" style="color: inherit;">Giới thiệu</a> &middot;
+            <a href="/contact.html" style="color: inherit;">Liên hệ</a> &middot;
+            <a href="/privacy.html" style="color: inherit;">Chính sách</a> &middot;
+            <a href="/feed.xml" style="color: inherit;">RSS</a>
+        </p>
+    </footer>
+    <script>
+    document.getElementById('themeToggle')?.addEventListener('click', () => {
+        const html = document.documentElement;
+        const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('dk-theme', next);
+    });
+    document.getElementById('hamburger')?.addEventListener('click', () => {
+        document.getElementById('navLinks')?.classList.toggle('active');
+    });
+    </script>
+</body>
+</html>
