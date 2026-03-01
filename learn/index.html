@@ -39,6 +39,16 @@
     .related-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
     .related-card h3 { color: var(--primary, #3b82f6); font-size: 1rem; margin: 0 0 0.5rem; }
     .related-card p { color: var(--text-muted, #6b7280); font-size: 0.9rem; margin: 0; }
+    
+    /* Dark mode for learn index */
+    [data-theme="dark"] .related-card { background: var(--card-bg, #162032); border-color: var(--border, #1e3050); }
+    [data-theme="dark"] .related-card:hover { box-shadow: 0 8px 25px rgba(0,0,0,0.4); border-color: var(--primary, #2563eb); }
+    [data-theme="dark"] .related-card h3 { color: var(--primary-light, #60a5fa); }
+    [data-theme="dark"] .related-card p { color: var(--text-secondary, #94a3b8); }
+    [data-theme="dark"] h1, [data-theme="dark"] h2 { color: var(--text, #e2e8f0); }
+    [data-theme="dark"] p { color: var(--text, #e2e8f0); }
+    [data-theme="dark"] footer { background: #0a0f1a; }
+
     </style>
 </head>
 <body>
