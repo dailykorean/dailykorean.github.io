@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +22,7 @@
     <meta name="twitter:description" content="Học Hangul đầy đủ cho người Việt">
     <meta name="twitter:image" content="https://dailykorean.me/assets/og-default.png">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
-    <link rel="stylesheet" href="/style.css?v=1772347257">
+    <link rel="stylesheet" href="../style.css?v=1772347257">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -117,6 +116,55 @@
     [data-theme="dark"] .grammar-card h3 { color: var(--primary-light, #60a5fa); }
 
     </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Học bảng chữ cái tiếng Hàn mất bao lâu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Với người Việt, bạn có thể học thuộc 40 chữ cái Hangul (14 phụ âm + 10 nguyên âm + phụ âm kép + nguyên âm kép) trong 1-3 ngày nếu học tập trung. Để đọc trôi chảy cần khoảng 1-2 tuần luyện tập."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tiếng Hàn có bao nhiêu chữ cái?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tiếng Hàn có 40 chữ cái: 14 phụ âm cơ bản (ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ), 10 nguyên âm cơ bản (ㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣ), 5 phụ âm kép (ㄲㄸㅃㅆㅉ) và 11 nguyên âm kép."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tiếng Hàn khó học không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tiếng Hàn không quá khó với người Việt. Hangul là hệ thống chữ cái logic, dễ học. Người Việt có lợi thế lớn nhờ từ Hán-Việt tương đồng với từ Hán-Hàn (khoảng 60% từ vựng)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Nên bắt đầu học tiếng Hàn từ đâu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bắt đầu từ bảng chữ cái Hangul, sau đó học phát âm cơ bản, rồi đến từ vựng và ngữ pháp. Lộ trình: Hangul → Phát âm → 500 từ vựng cơ bản → Ngữ pháp sơ cấp → Hội thoại đơn giản."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sự khác biệt giữa nguyên âm đơn và nguyên âm kép?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nguyên âm đơn (ㅏㅓㅗㅜㅡㅣ...) phát âm một âm đơn giản. Nguyên âm kép (ㅐㅔㅘㅙㅚ...) là sự kết hợp 2 nguyên âm, phát âm trượt từ âm này sang âm kia."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -152,17 +200,9 @@
             
             Tuyệt vời! Dưới đây là bài viết chi tiết về bảng chữ cái tiếng Hàn (Hangul), được thiết kế để dễ hiểu đối với người Việt Nam, cùng với các ví dụ, quy tắc và bài tập. Bài viết được trình bày dưới dạng HTML thuần, sử dụng bảng (`<table>`) cho bảng chữ cái, và các `<div>` với class `grammar-card` và `example-box` để phân tách nội dung rõ ràng.
 
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bảng Chữ Cái Tiếng Hàn (Hangul) Cho Người Việt</title>
-    
-</head>
-<body>
 
-    <h1>Bảng Chữ Cái Tiếng Hàn (한글)</h1>
+
+    <h2>Bảng Chữ Cái Tiếng Hàn (한글)</h2>
 
     <div class="grammar-card">
         <h2>1. Lịch Sử Hangul</h2>
@@ -647,9 +687,6 @@
             <li>돈이 필요해요. (Doni pillyohaeyo. - Tôi cần tiền.)</li>
         </ol>
     </div>
-
-</body>
-</html>
 **Giải thích code:**
 
 *   **HTML Structure:** Cấu trúc HTML cơ bản với `<head>` (chứa metadata, title, CSS) và `<body>` (chứa nội dung chính).
@@ -679,7 +716,38 @@
 
 Chúc bạn thành công với bài viết của mình!  Hy vọng nó sẽ giúp nhiều người Việt Nam học tiếng Hàn dễ dàng hơn.
             
-            <div class="share-buttons">
+            
+
+    <div class="faq-section">
+    <h2>❓ Câu Hỏi Thường Gặp</h2>
+
+    <details class="faq-item">
+        <summary>Học bảng chữ cái tiếng Hàn mất bao lâu?</summary>
+        <div class="faq-answer"><p>Với người Việt, bạn có thể học thuộc 40 chữ cái Hangul (14 phụ âm + 10 nguyên âm + phụ âm kép + nguyên âm kép) trong 1-3 ngày nếu học tập trung. Để đọc trôi chảy cần khoảng 1-2 tuần luyện tập.</p></div>
+    </details>
+
+    <details class="faq-item">
+        <summary>Tiếng Hàn có bao nhiêu chữ cái?</summary>
+        <div class="faq-answer"><p>Tiếng Hàn có 40 chữ cái: 14 phụ âm cơ bản (ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ), 10 nguyên âm cơ bản (ㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣ), 5 phụ âm kép (ㄲㄸㅃㅆㅉ) và 11 nguyên âm kép.</p></div>
+    </details>
+
+    <details class="faq-item">
+        <summary>Tiếng Hàn khó học không?</summary>
+        <div class="faq-answer"><p>Tiếng Hàn không quá khó với người Việt. Hangul là hệ thống chữ cái logic, dễ học. Người Việt có lợi thế lớn nhờ từ Hán-Việt tương đồng với từ Hán-Hàn (khoảng 60% từ vựng).</p></div>
+    </details>
+
+    <details class="faq-item">
+        <summary>Nên bắt đầu học tiếng Hàn từ đâu?</summary>
+        <div class="faq-answer"><p>Bắt đầu từ bảng chữ cái Hangul, sau đó học phát âm cơ bản, rồi đến từ vựng và ngữ pháp. Lộ trình: Hangul → Phát âm → 500 từ vựng cơ bản → Ngữ pháp sơ cấp → Hội thoại đơn giản.</p></div>
+    </details>
+
+    <details class="faq-item">
+        <summary>Sự khác biệt giữa nguyên âm đơn và nguyên âm kép?</summary>
+        <div class="faq-answer"><p>Nguyên âm đơn (ㅏㅓㅗㅜㅡㅣ...) phát âm một âm đơn giản. Nguyên âm kép (ㅐㅔㅘㅙㅚ...) là sự kết hợp 2 nguyên âm, phát âm trượt từ âm này sang âm kia.</p></div>
+    </details>
+    </div>
+
+    <div class="share-buttons">
                 <span>Chia sẻ:</span>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dailykorean.me/learn/bang-chu-cai-tieng-han.html" target="_blank" rel="noopener">📘 Facebook</a>
                 <a href="https://twitter.com/intent/tweet?url=https%3A//dailykorean.me/learn/bang-chu-cai-tieng-han.html&text=B%E1%BA%A3ng%20Ch%E1%BB%AF%20C%C3%A1i%20Ti%E1%BA%BFng%20H%C3%A0n%20Hangul" target="_blank" rel="noopener">🐦 Twitter</a>
