@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://dailykorean.me/assets/og-default.png">
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
-    <link rel="stylesheet" href="/style.css?v=1772418818">
+    <link rel="stylesheet" href="/style.css?v=1772420295">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -47,7 +47,7 @@
         --exam-bg: var(--card-bg, #fff);
         --exam-border: var(--border, #e5e7eb);
         --exam-text: var(--text, #1f2937);
-        --exam-muted: var(--text-muted, #6b7280);
+        --exam-muted: var(--text-secondary, #6b7280);
     }
     html { scroll-behavior: smooth; }
     
@@ -322,6 +322,7 @@
             </div>
         </div>
     </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
     
     <div class="exam-wrapper">
         <nav class="breadcrumb" aria-label="breadcrumb">
@@ -509,6 +510,10 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     
+    function toggleVi(el) {
+        el.parentElement.classList.toggle('show-vi');
+    }
+    
     function renderQuestions() {
         const container = document.getElementById('questionsContainer');
         let html = '';
@@ -535,7 +540,7 @@
             if (q.instruction_ko) {
                 html += '<div class="q-instruction">' + q.instruction_ko + '</div>';
                 if (q.instruction_vi) {
-                    html += '<button class="toggle-vi" onclick="this.parentElement.classList.toggle('show-vi')">Xem bản dịch</button>';
+                    html += '<button class="toggle-vi" onclick="toggleVi(this)">Xem bản dịch</button>';
                     html += '<div class="q-passage-vi">' + q.instruction_vi + '</div>';
                 }
             }
@@ -544,7 +549,7 @@
             if (q.passage_ko) {
                 html += '<div class="q-passage">' + q.passage_ko + '</div>';
                 if (q.passage_vi) {
-                    html += '<button class="toggle-vi" onclick="this.parentElement.classList.toggle('show-vi')">Xem bản dịch đoạn văn</button>';
+                    html += '<button class="toggle-vi" onclick="toggleVi(this)">Xem bản dịch đoạn văn</button>';
                     html += '<div class="q-passage-vi">' + q.passage_vi + '</div>';
                 }
             }
@@ -833,7 +838,12 @@
         localStorage.setItem('dk-theme', next);
     });
     document.getElementById('hamburger')?.addEventListener('click', () => {
-        document.getElementById('navLinks')?.classList.toggle('active');
+        document.getElementById('navLinks')?.classList.toggle('open');
+        document.getElementById('navOverlay')?.classList.toggle('open');
+    });
+    document.getElementById('navOverlay')?.addEventListener('click', () => {
+        document.getElementById('navLinks')?.classList.remove('open');
+        document.getElementById('navOverlay')?.classList.remove('open');
     });
     </script>
 </body>
