@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://dailykorean.me/assets/og-default.png">
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
-    <link rel="stylesheet" href="/style.css?v=1772423377">
+    <link rel="stylesheet" href="/style.css?v=1772423687">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -150,7 +150,7 @@
         font-size: 0.9rem; color: var(--exam-muted); line-height: 1.8;
         display: none; white-space: pre-wrap;
     }
-    .show-vi .q-passage-vi { display: block; }
+
     .toggle-vi {
         font-size: 0.8rem; color: var(--exam-primary); background: none; border: 1px solid var(--exam-primary);
         padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; margin: 0.5rem 0;
@@ -515,7 +515,11 @@
     }
     
     function toggleVi(el) {
-        el.parentElement.classList.toggle('show-vi');
+        const target = el.nextElementSibling;
+        if (!target) return;
+        const showing = target.style.display === 'block';
+        target.style.display = showing ? 'none' : 'block';
+        el.textContent = showing ? el.textContent.replace('Ẩn', 'Xem') : el.textContent.replace('Xem', 'Ẩn');
     }
     
     function scrollToFirstQuestion() {
