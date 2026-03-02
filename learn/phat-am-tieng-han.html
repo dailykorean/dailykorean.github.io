@@ -698,9 +698,31 @@ OK, đây là bản nháp chi tiết về cách phát âm tiếng Hàn chuẩn c
         html.setAttribute('data-theme', next);
         localStorage.setItem('dk-theme', next);
     });
-    document.getElementById('hamburger')?.addEventListener('click', () => {
-        document.getElementById('navLinks')?.classList.toggle('active');
-    });
+    (function(){
+        var hamburger = document.getElementById('hamburger');
+        var navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            var overlay = document.createElement('div');
+            overlay.className = 'nav-overlay';
+            document.body.appendChild(overlay);
+            function toggleMenu(open) {
+                var isOpen = typeof open === 'boolean' ? open : !navLinks.classList.contains('open');
+                navLinks.classList.toggle('open', isOpen);
+                hamburger.classList.toggle('active', isOpen);
+                hamburger.setAttribute('aria-expanded', isOpen);
+                overlay.classList.toggle('open', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            }
+            hamburger.addEventListener('click', function() { toggleMenu(); });
+            overlay.addEventListener('click', function() { toggleMenu(false); });
+            navLinks.querySelectorAll('a').forEach(function(a) {
+                a.addEventListener('click', function() { toggleMenu(false); });
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && navLinks.classList.contains('open')) toggleMenu(false);
+            });
+        }
+    })();
     </script>
 </body>
 </html>
