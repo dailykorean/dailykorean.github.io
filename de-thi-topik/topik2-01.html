@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://dailykorean.me/assets/og-default.png">
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
-    <link rel="stylesheet" href="/style.css?v=1772416152">
+    <link rel="stylesheet" href="/style.css?v=1772417482">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -288,17 +288,19 @@
                 <span class="brand-text">Daily Korean</span>
             </a>
             <div class="nav-links" id="navLinks">
-                <a href="/">Bai Hoc</a>
-                <a href="/courses.html">Khoa Hoc</a>
-                <a href="/de-thi-topik/">De Thi TOPIK</a>
-                <a href="/curriculum/index.html">TOPIK I</a>
-                <a href="/topik-ii/index.html">TOPIK II</a>
-                <a href="/eps-topik/index.html">EPS</a>
-                <a href="/conversation/index.html">Hoi thoai</a>
-                <a href="/learn/">Hoc them</a>
+                <a href="/">Bài Học</a>
+                <a href="/courses.html">🎓 Khóa Học</a>
+                <a href="/de-thi-topik/">📝 Đề Thi TOPIK</a>
+                <a href="/curriculum/index.html">📚 TOPIK I</a>
+                <a href="/topik2/index.html">📘 Sơ cấp 2</a>
+                <a href="/topik-ii/index.html">📕 TOPIK II</a>
+                <a href="/topik-advanced/index.html">👑 고급</a>
+                <a href="/eps-topik/index.html">🏭 EPS</a>
+                <a href="/conversation/index.html">🗣️ Hội thoại</a>
+                <a href="/learn/">📖 Học thêm</a>
             </div>
             <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" title="Sang/Toi" aria-label="Toggle dark mode">
+                <button class="theme-toggle" id="themeToggle" title="Sáng/Tối" aria-label="Toggle dark mode">
                     <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
                     <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 </button>
@@ -311,24 +313,24 @@
     
     <div class="exam-wrapper">
         <nav class="breadcrumb" aria-label="breadcrumb">
-            <a href="/">Trang chu</a> &rsaquo; <a href="/de-thi-topik/">De thi TOPIK</a> &rsaquo; Đề thi TOPIK II Online — Bộ đề #1 (50 câu)
+            <a href="/">🏠 Trang chủ</a> &rsaquo; <a href="/de-thi-topik/">Đề thi TOPIK</a> &rsaquo; Đề thi TOPIK II Online — Bộ đề #1 (50 câu)
         </nav>
         
         <!-- START SCREEN -->
         <div class="exam-start" id="examStart">
-            <h2>TOPIK II — Bo de #1</h2>
+            <h2>TOPIK II — Bộ đề #1</h2>
             <div class="exam-info">
-                <p><strong>50 cau hoi</strong> &bull; <strong>70 phut</strong> &bull; Cham diem tu dong</p>
-                <p>Format chuan ky thi TOPIK chinh thuc (NIIED)</p>
+                <p><strong>50 câu hỏi</strong> &bull; <strong>70 phút</strong> &bull; Chấm điểm tự động</p>
+                <p>Format chuẩn kỳ thi TOPIK chính thức (NIIED)</p>
             </div>
             <ul class="exam-rules">
-                <li>Thoi gian: <strong>70 phut</strong> (co dong ho dem nguoc)</li>
-                <li>Moi cau co 4 dap an, chon 1 dap an dung</li>
-                <li>Co the quay lai cau truoc bat ky luc nao</li>
-                <li>Nop bai &rarr; xem diem va giai thich chi tiet</li>
-                <li>Bam "Xem ban dich" de hien dich tieng Viet</li>
+                <li>Thời gian: <strong>70 phút</strong> (có đồng hồ đếm ngược)</li>
+                <li>Mỗi câu có 4 đáp án, chọn 1 đáp án đúng</li>
+                <li>Có thể quay lại câu trước bất kỳ lúc nào</li>
+                <li>Nộp bài &rarr; xem điểm và giải thích chi tiết</li>
+                <li>Bấm "Xem bản dịch" để hiện dịch tiếng Việt</li>
             </ul>
-            <button class="btn-start" onclick="startExam()">Bat dau lam bai</button>
+            <button class="btn-start" onclick="startExam()">Bắt đầu làm bài</button>
         </div>
         
         <!-- EXAM CONTENT (hidden until start) -->
@@ -339,7 +341,7 @@
                     <span class="timer" id="timerDisplay">--:--</span>
                 </div>
                 <div class="progress-info">
-                    <span id="progressText">0/50 cau</span>
+                    <span id="progressText">0/50 câu</span>
                     <div class="progress-bar-wrap"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
                 </div>
             </div>
@@ -352,7 +354,7 @@
             
             <!-- Submit -->
             <div class="exam-actions" id="examActions">
-                <button class="btn-submit" id="btnSubmit" onclick="submitExam()">Nop bai & Cham diem</button>
+                <button class="btn-submit" id="btnSubmit" onclick="submitExam()">Nộp bài & Chấm điểm</button>
             </div>
         </div>
         
@@ -370,22 +372,22 @@
         <!-- CTA -->
         <section class="cta-section">
             <div class="cta-box">
-                <h2>Hoc Tieng Han Mien Phi Voi Daily Korean</h2>
-                <p>320 bai hoc tu so cap den cao cap &mdash; 6 lo trinh TOPIK &mdash; Video YouTube moi ngay</p>
+                <h2>Học Tiếng Hàn Miễn Phí Với Daily Korean</h2>
+                <p>320 bài học từ sơ cấp đến cao cấp — 6 lộ trình TOPIK — Video YouTube mỗi ngày</p>
                 <div class="cta-buttons">
-                    <a href="/de-thi-topik/" class="btn-primary">Xem them de thi</a>
-                    <a href="/curriculum/index.html" class="btn-secondary">Bat dau hoc</a>
+                    <a href="/de-thi-topik/" class="btn-primary">Xem thêm đề thi</a>
+                    <a href="/curriculum/index.html" class="btn-secondary">Bắt đầu học</a>
                 </div>
             </div>
         </section>
     </div>
     
     <footer style="background: var(--footer-bg, #1f2937); color: var(--footer-text, #9ca3af); padding: 2rem; text-align: center; margin-top: 3rem;">
-        <p>&copy; 2026 <a href="/" style="color: var(--primary, #60a5fa);">Daily Korean</a> &mdash; Hoc Tieng Han Mien Phi Cho Nguoi Viet</p>
+        <p>&copy; 2026 <a href="/" style="color: var(--primary, #60a5fa);">Daily Korean</a> &mdash; Học Tiếng Hàn Miễn Phí Cho Người Việt</p>
         <p style="font-size: 0.85rem; margin-top: 0.5rem;">
-            <a href="/about.html" style="color: inherit;">Gioi thieu</a> &middot;
-            <a href="/contact.html" style="color: inherit;">Lien he</a> &middot;
-            <a href="/privacy.html" style="color: inherit;">Chinh sach</a> &middot;
+            <a href="/about.html" style="color: inherit;">Giới thiệu</a> &middot;
+            <a href="/contact.html" style="color: inherit;">Liên hệ</a> &middot;
+            <a href="/privacy.html" style="color: inherit;">Chính sách</a> &middot;
             <a href="/feed.xml" style="color: inherit;">RSS</a>
         </p>
     </footer>
@@ -446,7 +448,7 @@
             if (q.instruction_ko) {
                 html += '<div class="q-instruction">' + q.instruction_ko + '</div>';
                 if (q.instruction_vi) {
-                    html += '<button class="toggle-vi" onclick="this.parentElement.classList.toggle('show-vi')">Xem ban dich</button>';
+                    html += '<button class="toggle-vi" onclick="this.parentElement.classList.toggle('show-vi')">Xem bản dịch</button>';
                     html += '<div class="q-passage-vi">' + q.instruction_vi + '</div>';
                 }
             }
@@ -455,7 +457,7 @@
             if (q.passage_ko) {
                 html += '<div class="q-passage">' + q.passage_ko + '</div>';
                 if (q.passage_vi) {
-                    html += '<button class="toggle-vi" onclick="this.parentElement.classList.toggle('show-vi')">Xem ban dich doan van</button>';
+                    html += '<button class="toggle-vi" onclick="this.parentElement.classList.toggle('show-vi')">Xem bản dịch đoạn văn</button>';
                     html += '<div class="q-passage-vi">' + q.passage_vi + '</div>';
                 }
             }
@@ -488,10 +490,10 @@
             
             // Explanation (hidden until submit)
             html += '<div class="q-explanation" id="exp-' + i + '">';
-            html += '<h4>Giai thich</h4>';
+            html += '<h4>Giải thích</h4>';
             if (q.explanation_ko) html += '<div class="exp-ko">' + q.explanation_ko + '</div>';
             if (q.explanation_vi) html += '<div class="exp-vi">' + q.explanation_vi + '</div>';
-            if (q.tip_vi) html += '<div class="exp-tip">Meo: ' + q.tip_vi + '</div>';
+            if (q.tip_vi) html += '<div class="exp-tip">Mẹo: ' + q.tip_vi + '</div>';
             if (q.key_vocab && q.key_vocab.length) {
                 html += '<div class="exp-vocab">';
                 q.key_vocab.forEach(v => {
@@ -566,7 +568,7 @@
         
         const unanswered = answers.filter(a => a === null).length;
         if (unanswered > 0 && timeLeft > 0) {
-            if (!confirm('Ban con ' + unanswered + ' cau chua tra loi. Nop bai ngay?')) return;
+            if (!confirm('Bạn còn ' + unanswered + ' câu chưa trả lời. Nộp bài ngay?')) return;
         }
         
         examSubmitted = true;
@@ -660,17 +662,17 @@
         
         // Show result
         const resultDiv = document.getElementById('examResult');
-        resultDiv.innerHTML = '<h2>Ket qua thi ' + LEVEL + '</h2>' +
+        resultDiv.innerHTML = '<h2>Kết quả thi ' + LEVEL + '</h2>' +
             '<div class="score-circle ' + (isPass ? 'pass' : 'fail') + '">' +
-            '<span>' + score + '</span><small>/ ' + totalPossible + ' diem</small></div>' +
-            '<p style="font-size:1.2rem;font-weight:600;margin:0.5rem 0;">' + (isPass ? levelAchieved : 'Chua dat - Can co gang them!') + '</p>' +
-            '<p style="color:var(--exam-muted);">' + correct + ' dung / ' + wrong + ' sai / ' + skipped + ' bo qua &bull; ' + percent + '% chinh xac</p>' +
-            '<p style="color:var(--exam-muted);font-size:0.9rem;">Thoi gian: ' + timeUsedMin + ' phut ' + timeUsedSec + ' giay</p>' +
+            '<span>' + score + '</span><small>/ ' + totalPossible + ' điểm</small></div>' +
+            '<p style="font-size:1.2rem;font-weight:600;margin:0.5rem 0;">' + (isPass ? levelAchieved : 'Chưa đạt - Cần cố gắng thêm!') + '</p>' +
+            '<p style="color:var(--exam-muted);">' + correct + ' đúng / ' + wrong + ' sai / ' + skipped + ' bỏ qua &bull; ' + percent + '% chính xác</p>' +
+            '<p style="color:var(--exam-muted);font-size:0.9rem;">Thời gian: ' + timeUsedMin + ' phút ' + timeUsedSec + ' giây</p>' +
             '<div class="level-badges">' + levelBadges + '</div>' +
             '<div class="result-stats">' + sectionHtml + '</div>' +
             '<div class="exam-actions">' +
-            '<button class="btn-submit" onclick="window.scrollTo({top:document.getElementById('q-0').offsetTop-80,behavior:\'smooth\'})">Xem lai bai lam</button>' +
-            '<a href="/de-thi-topik/" class="btn-outline-exam">Lam de khac</a>' +
+            '<button class="btn-submit" onclick="window.scrollTo({top:document.getElementById('q-0').offsetTop-80,behavior:\'smooth\'})">Xem lại bài làm</button>' +
+            '<a href="/de-thi-topik/" class="btn-outline-exam">Làm đề khác</a>' +
             '</div>';
         
         resultDiv.style.display = 'block';
