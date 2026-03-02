@@ -2,33 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://dailykorean.me</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://dailykorean.me/courses.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dailykorean.me/about.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://dailykorean.me/contact.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://dailykorean.me/privacy.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://dailykorean.me/courses.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://dailykorean.me/posts/2026-02-13-viết-53-tiện-nghi-sinh-hoạt.html</loc>
@@ -61,118 +68,64 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/posts/2026-03-01-topik-bài-học-hôm-nay.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <loc>https://dailykorean.me/posts/2026-02-20-topik-bài-học-hôm-nay.html</loc>
+        <lastmod>2026-02-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/learn/</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <loc>https://dailykorean.me/posts/2026-02-21-topik-bài-học-hôm-nay.html</loc>
+        <lastmod>2026-02-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/learn/ngu-phap-tieng-han-co-ban.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <loc>https://dailykorean.me/posts/2026-02-22-topik-bài-học-hôm-nay.html</loc>
+        <lastmod>2026-02-22</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/learn/ngu-phap-tieng-han-trung-cap.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <loc>https://dailykorean.me/posts/2026-02-23-topik-bài-học-hôm-nay.html</loc>
+        <lastmod>2026-02-23</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/learn/tu-vung-tieng-han-co-ban.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <loc>https://dailykorean.me/posts/2026-02-24-topik-bài-học-hôm-nay.html</loc>
+        <lastmod>2026-02-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/learn/tu-vung-topik-ii.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <loc>https://dailykorean.me/posts/2026-02-25-topik-bài-học-hôm-nay.html</loc>
+        <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/learn/luyen-thi-topik-i.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <loc>https://dailykorean.me/posts/2026-02-26-topik-bài-học-hôm-nay.html</loc>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/learn/luyen-thi-topik-ii.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <loc>https://dailykorean.me/posts/2026-02-27-topik-bài-học-hôm-nay.html</loc>
+        <lastmod>2026-02-27</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/learn/bang-chu-cai-tieng-han.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <loc>https://dailykorean.me/posts/2026-02-28-topik-bài-học-hôm-nay.html</loc>
+        <lastmod>2026-02-28</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/learn/hoi-thoai-tieng-han-co-ban.html</loc>
+        <loc>https://dailykorean.me/posts/2026-03-01-topik-bài-học-hôm-nay.html</loc>
         <lastmod>2026-03-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://dailykorean.me/learn/eps-topik-huong-dan.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://dailykorean.me/learn/van-hoa-han-quoc.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://dailykorean.me/learn/du-hoc-han-quoc.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://dailykorean.me/learn/hoc-tieng-han-cho-nguoi-moi-bat-dau.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://dailykorean.me/learn/tu-han-viet-hoc-tieng-han.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://dailykorean.me/learn/phat-am-tieng-han.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://dailykorean.me/learn/topik-writing-guide.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://dailykorean.me/learn/so-dem-tieng-han.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://dailykorean.me/learn/kinh-ngu-tieng-han.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://dailykorean.me/curriculum/index.html</loc>
@@ -1402,7 +1355,7 @@
         <loc>https://dailykorean.me/topik-ii/index.html</loc>
         <lastmod>2026-03-02</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://dailykorean.me/topik-ii/T2-01.html</loc>
@@ -1768,7 +1721,7 @@
         <loc>https://dailykorean.me/topik-advanced/index.html</loc>
         <lastmod>2026-03-02</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://dailykorean.me/topik-advanced/T3-01.html</loc>
@@ -2129,5 +2082,47 @@
         <lastmod>2026-03-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://dailykorean.me/de-thi-topik/index.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://dailykorean.me/de-thi-topik/topik1-01.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dailykorean.me/de-thi-topik/topik1-02.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dailykorean.me/de-thi-topik/topik1-03.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dailykorean.me/de-thi-topik/topik2-01.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dailykorean.me/de-thi-topik/topik2-02.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dailykorean.me/de-thi-topik/topik2-03.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>
