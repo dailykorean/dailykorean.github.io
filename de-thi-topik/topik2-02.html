@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://dailykorean.me/assets/og-default.png">
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
-    <link rel="stylesheet" href="/style.css?v=1772420295">
+    <link rel="stylesheet" href="/style.css?v=1772421459">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -514,6 +514,11 @@
         el.parentElement.classList.toggle('show-vi');
     }
     
+    function scrollToFirstQuestion() {
+        const el = document.getElementById('q-0');
+        if (el) window.scrollTo({top: el.offsetTop - 80, behavior: 'smooth'});
+    }
+    
     function renderQuestions() {
         const container = document.getElementById('questionsContainer');
         let html = '';
@@ -766,7 +771,7 @@
             '<div class="level-badges">' + levelBadges + '</div>' +
             '<div class="result-stats">' + sectionHtml + '</div>' +
             '<div class="exam-actions">' +
-            '<button class="btn-submit" onclick="window.scrollTo({top:document.getElementById(\'q-0\').offsetTop-80,behavior:\'smooth\'})">📋 Xem lại bài làm</button>' +
+            '<button class="btn-submit" onclick="scrollToFirstQuestion()">📋 Xem lại bài làm</button>' +
             '<button class="btn-outline-exam" onclick="location.reload()">🔄 Làm lại đề này</button>' +
             '<a href="/de-thi-topik/" class="btn-outline-exam">📝 Làm đề khác</a>' +
             '</div>';
@@ -837,11 +842,13 @@
         html.setAttribute('data-theme', next);
         localStorage.setItem('dk-theme', next);
     });
-    document.getElementById('hamburger')?.addEventListener('click', () => {
+    document.getElementById('hamburger')?.addEventListener('click', function() {
+        this.classList.toggle('active');
         document.getElementById('navLinks')?.classList.toggle('open');
         document.getElementById('navOverlay')?.classList.toggle('open');
     });
     document.getElementById('navOverlay')?.addEventListener('click', () => {
+        document.getElementById('hamburger')?.classList.remove('active');
         document.getElementById('navLinks')?.classList.remove('open');
         document.getElementById('navOverlay')?.classList.remove('open');
     });
