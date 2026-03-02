@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://dailykorean.me/assets/og-default.png">
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
-    <link rel="stylesheet" href="/style.css?v=1772417482">
+    <link rel="stylesheet" href="/style.css?v=1772418575">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -49,9 +49,21 @@
         --exam-text: var(--text, #1f2937);
         --exam-muted: var(--text-muted, #6b7280);
     }
+    html { scroll-behavior: smooth; }
     
     /* Exam Container */
     .exam-wrapper { max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem 3rem; }
+    
+    /* Back to top button */
+    .btn-top {
+        position: fixed; bottom: 2rem; right: 2rem; z-index: 100;
+        width: 44px; height: 44px; border-radius: 50%;
+        background: var(--exam-primary); color: white; border: none; cursor: pointer;
+        font-size: 1.2rem; display: none; align-items: center; justify-content: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: all 0.3s;
+    }
+    .btn-top:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+    .btn-top.visible { display: flex; }
     
     /* Sticky Timer Bar */
     .timer-bar {
@@ -363,10 +375,11 @@
         
         <!-- Share -->
         <div class="share-buttons" style="display:none" id="shareSection">
-            <span>Chia se:</span>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dailykorean.me/de-thi-topik/topik1-01.html" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?url=https%3A//dailykorean.me/de-thi-topik/topik1-01.html&text=%C4%90%E1%BB%81%20thi%20TOPIK%20I%20Online%20%E2%80%94%20B%E1%BB%99%20%C4%91%E1%BB%81%20%231%20%2850%20c%C3%A2u%29" target="_blank" rel="noopener">Twitter</a>
-            <a href="https://t.me/share/url?url=https%3A//dailykorean.me/de-thi-topik/topik1-01.html&text=%C4%90%E1%BB%81%20thi%20TOPIK%20I%20Online%20%E2%80%94%20B%E1%BB%99%20%C4%91%E1%BB%81%20%231%20%2850%20c%C3%A2u%29" target="_blank" rel="noopener">Telegram</a>
+            <span>Chia sẻ:</span>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dailykorean.me/de-thi-topik/topik1-01.html" target="_blank" rel="noopener">📘 Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https%3A//dailykorean.me/de-thi-topik/topik1-01.html&text=%C4%90%E1%BB%81%20thi%20TOPIK%20I%20Online%20%E2%80%94%20B%E1%BB%99%20%C4%91%E1%BB%81%20%231%20%2850%20c%C3%A2u%29" target="_blank" rel="noopener">🐦 Twitter</a>
+            <a href="https://t.me/share/url?url=https%3A//dailykorean.me/de-thi-topik/topik1-01.html&text=%C4%90%E1%BB%81%20thi%20TOPIK%20I%20Online%20%E2%80%94%20B%E1%BB%99%20%C4%91%E1%BB%81%20%231%20%2850%20c%C3%A2u%29" target="_blank" rel="noopener">✈️ Telegram</a>
+            <a href="javascript:void(0)" onclick="navigator.clipboard.writeText(window.location.href).then(()=>this.textContent='Đã copy!')">🔗 Copy link</a>
         </div>
         
         <!-- CTA -->
@@ -381,6 +394,9 @@
             </div>
         </section>
     </div>
+    
+    <!-- Back to top button -->
+    <button class="btn-top" id="btnTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">↑</button>
     
     <footer style="background: var(--footer-bg, #1f2937); color: var(--footer-text, #9ca3af); padding: 2rem; text-align: center; margin-top: 3rem;">
         <p>&copy; 2026 <a href="/" style="color: var(--primary, #60a5fa);">Daily Korean</a> &mdash; Học Tiếng Hàn Miễn Phí Cho Người Việt</p>
@@ -403,11 +419,82 @@
     const TOTAL = QUESTIONS.length;
     const LEVEL = "TOPIK I";
     
+    const EXAM_ID = "topik1-01";
+    const STORAGE_KEY = 'dk-exam-' + EXAM_ID;
+    
     let answers = new Array(TOTAL).fill(null);
     let timer = null;
     let timeLeft = TIME_LIMIT;
     let examStarted = false;
     let examSubmitted = false;
+    
+    // ─── Check for saved progress ───
+    (function checkSavedProgress() {
+        try {
+            const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+            if (saved && saved.answers && !saved.submitted) {
+                const btn = document.getElementById('btnResume');
+                if (!btn) {
+                    const startDiv = document.getElementById('examStart');
+                    const resumeBtn = document.createElement('button');
+                    resumeBtn.className = 'btn-start';
+                    resumeBtn.id = 'btnResume';
+                    resumeBtn.style.cssText = 'margin-top:1rem;background:linear-gradient(135deg,#22c55e,#16a34a);';
+                    const answeredCount = saved.answers.filter(a => a !== null).length;
+                    resumeBtn.textContent = 'Tiếp tục làm bài (' + answeredCount + '/' + TOTAL + ' câu đã trả lời)';
+                    resumeBtn.onclick = function() { resumeExam(saved); };
+                    startDiv.appendChild(document.createElement('br'));
+                    startDiv.appendChild(resumeBtn);
+                }
+            }
+        } catch(e) {}
+    })();
+    
+    function resumeExam(saved) {
+        answers = saved.answers;
+        timeLeft = saved.timeLeft || TIME_LIMIT;
+        document.getElementById('examStart').style.display = 'none';
+        document.getElementById('examContent').style.display = 'block';
+        examStarted = true;
+        
+        renderQuestions();
+        renderNavigator();
+        startTimer();
+        
+        // Restore selected options
+        answers.forEach((a, i) => {
+            if (a !== null) {
+                document.querySelectorAll('.q-option[data-q="' + i + '"]').forEach(el => {
+                    if (parseInt(el.dataset.opt) === a) el.classList.add('selected');
+                });
+                const navBtn = document.getElementById('nav-' + i);
+                if (navBtn) navBtn.classList.add('answered');
+            }
+        });
+        
+        // Update progress
+        const answered = answers.filter(a => a !== null).length;
+        document.getElementById('progressText').textContent = answered + '/50 câu';
+        document.getElementById('progressFill').style.width = (answered/TOTAL*100) + '%';
+        
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    function saveProgress() {
+        if (examSubmitted) return;
+        try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                answers: answers,
+                timeLeft: timeLeft,
+                submitted: false,
+                savedAt: Date.now()
+            }));
+        } catch(e) {}
+    }
+    
+    function clearProgress() {
+        try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+    }
     
     function startExam() {
         document.getElementById('examStart').style.display = 'none';
@@ -435,7 +522,7 @@
             }
             
             const diffClass = q.difficulty || 'medium';
-            const diffLabel = diffClass === 'easy' ? 'De' : diffClass === 'hard' ? 'Kho' : 'TB';
+            const diffLabel = diffClass === 'easy' ? 'Dễ' : diffClass === 'hard' ? 'Khó' : 'TB';
             
             html += '<div class="question-card" id="q-' + i + '">';
             html += '<div class="q-header">';
@@ -534,8 +621,11 @@
         
         // Update progress
         const answered = answers.filter(a => a !== null).length;
-        document.getElementById('progressText').textContent = answered + '/50 cau';
+        document.getElementById('progressText').textContent = answered + '/50 câu';
         document.getElementById('progressFill').style.width = (answered/TOTAL*100) + '%';
+        
+        // Auto-save progress
+        saveProgress();
     }
     
     function scrollToQ(index) {
@@ -622,7 +712,7 @@
         const timeUsedSec = timeUsed % 60;
         
         // Determine level achieved
-        let levelAchieved = 'Chua dat';
+        let levelAchieved = 'Chưa đạt';
         let levelBadges = '';
         
         if (LEVEL.includes('I') && !LEVEL.includes('II')) {
@@ -651,7 +741,7 @@
             });
         }
         
-        const isPass = levelAchieved !== 'Chua dat';
+        const isPass = levelAchieved !== 'Chưa đạt';
         
         // Section breakdown
         let sectionHtml = '';
@@ -671,8 +761,9 @@
             '<div class="level-badges">' + levelBadges + '</div>' +
             '<div class="result-stats">' + sectionHtml + '</div>' +
             '<div class="exam-actions">' +
-            '<button class="btn-submit" onclick="window.scrollTo({top:document.getElementById('q-0').offsetTop-80,behavior:\'smooth\'})">Xem lại bài làm</button>' +
-            '<a href="/de-thi-topik/" class="btn-outline-exam">Làm đề khác</a>' +
+            '<button class="btn-submit" onclick="window.scrollTo({top:document.getElementById(\'q-0\').offsetTop-80,behavior:\'smooth\'})">📋 Xem lại bài làm</button>' +
+            '<button class="btn-outline-exam" onclick="location.reload()">🔄 Làm lại đề này</button>' +
+            '<a href="/de-thi-topik/" class="btn-outline-exam">📝 Làm đề khác</a>' +
             '</div>';
         
         resultDiv.style.display = 'block';
@@ -699,7 +790,39 @@
                 time_used_sec: timeUsed
             });
         }
+        
+        // Clear saved progress (exam done)
+        clearProgress();
     }
+    
+    // Save on page unload so user can resume
+    window.addEventListener('beforeunload', () => {
+        if (examStarted && !examSubmitted) saveProgress();
+    });
+    
+    // Keyboard shortcuts: 1-4 to select option for current visible question
+    document.addEventListener('keydown', (e) => {
+        if (examSubmitted || !examStarted) return;
+        const key = parseInt(e.key);
+        if (key >= 1 && key <= 4) {
+            // Find which question is most visible
+            const cards = document.querySelectorAll('.question-card');
+            let visibleQ = 0;
+            let maxVisible = 0;
+            cards.forEach((card, idx) => {
+                const rect = card.getBoundingClientRect();
+                const visible = Math.max(0, Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 60));
+                if (visible > maxVisible) { maxVisible = visible; visibleQ = idx; }
+            });
+            selectOption(visibleQ, key);
+        }
+    });
+    
+    // Back to top button visibility
+    window.addEventListener('scroll', () => {
+        const btn = document.getElementById('btnTop');
+        if (btn) btn.classList.toggle('visible', window.scrollY > 400);
+    });
     
     // Theme toggle & hamburger
     document.getElementById('themeToggle')?.addEventListener('click', () => {
