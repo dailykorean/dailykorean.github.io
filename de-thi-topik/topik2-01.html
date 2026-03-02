@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://dailykorean.me/assets/og-default.png">
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇰🇷</text></svg>">
-    <link rel="stylesheet" href="/style.css?v=1772423068">
+    <link rel="stylesheet" href="/style.css?v=1772423377">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -528,6 +528,57 @@
         let html = '';
         let currentSection = '';
         
+        const TYPE_LABELS = {
+            'vocabulary_from_image': 'Từ vựng (hình ảnh)',
+            'contextual_vocabulary': 'Từ vựng (ngữ cảnh)',
+            'grammar': 'Ngữ pháp',
+            'reading_comprehension': 'Đọc hiểu',
+            'listening': 'Nghe hiểu',
+            'fill_in_blank': 'Điền từ',
+            'sentence_order': 'Sắp xếp câu',
+            'main_idea': 'Ý chính',
+            'purpose': 'Mục đích',
+            'content_match': 'Nội dung',
+            'inference': 'Suy luận',
+            '문법': 'Ngữ pháp',
+            '빈칸 채우기': 'Điền từ',
+            '내용 일치': 'Nội dung',
+            '문장 순서 배열': 'Sắp xếp câu',
+            '글의 목적': 'Mục đích',
+            '글 내용 파악': 'Đọc hiểu',
+            '글 내용 채우기': 'Điền nội dung',
+            '글쓴이 의도': 'Ý đồ tác giả',
+            '글쓴이 태도': 'Thái độ tác giả',
+            '내용 일치 및 태도 파악': 'Nội dung & thái độ',
+            '유사한 의미': 'Nghĩa tương đồng',
+            '장문 이해': 'Đọc dài',
+            '주제 선택': 'Chọn chủ đề',
+            '중심 생각': 'Ý chính',
+            '지문 이해': 'Đọc hiểu đoạn',
+            '틀린 문법': 'Sửa lỗi ngữ pháp',
+            'điền từ': 'Điền từ',
+            'đoạn văn': 'Đoạn văn',
+            'đoạn văn ngắn': 'Đoạn văn ngắn',
+            'đoạn văn trung bình': 'Đoạn văn TB',
+            'ý chính': 'Ý chính',
+            'nội dung': 'Nội dung',
+            'suy luận': 'Suy luận',
+            'mục đích': 'Mục đích',
+            'biển báo': 'Biển báo',
+            'chọn chủ đề': 'Chọn chủ đề',
+            'chọn nội dung đúng': 'Chọn nội dung đúng',
+            'ý chính/mục đích': 'Ý chính / Mục đích',
+            'điền chỗ trống': 'Điền chỗ trống',
+            'Sắp xếp câu': 'Sắp xếp câu',
+        };
+        
+        function getTypeLabel(type) {
+            if (!type) return '';
+            if (TYPE_LABELS[type]) return TYPE_LABELS[type];
+            // Fallback: convert snake_case to Title Case
+            return type.replace(/_/g, ' ').replace(/\w/g, c => c.toUpperCase());
+        }
+        
         QUESTIONS.forEach((q, i) => {
             // Section header
             if (q.section && q.section !== currentSection) {
@@ -541,7 +592,7 @@
             html += '<div class="question-card" id="q-' + i + '">';
             html += '<div class="q-header">';
             html += '<div class="q-number">' + (i+1) + '</div>';
-            html += '<span class="q-type">' + (q.type || '') + '</span>';
+            html += '<span class="q-type">' + getTypeLabel(q.type) + '</span>';
             html += '<span class="q-diff ' + diffClass + '">' + diffLabel + '</span>';
             html += '</div>';
             
