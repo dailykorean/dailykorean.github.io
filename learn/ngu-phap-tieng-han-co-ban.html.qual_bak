@@ -635,6 +635,7 @@
     </div>
     <p class="note">💡 -는데 thường được sử dụng để tạo bối cảnh hoặc dẫn dắt một câu chuyện.</p>
 </div>
+</div>
 
 <!-- Diễn đạt khả năng -->
 <h3>5. Diễn đạt khả năng</h3>
@@ -1102,6 +1103,25 @@
     </div>
 </div>
 
+<div class="grammar-card">
+    <h4>-아/어/여야 하다/되다 (-a/eo/yeoya hada/doeda) - Phải, cần phải</h4>
+    <p><b>Ý nghĩa:</b> Diễn tả sự bắt buộc, cần thiết phải làm một việc gì đó.</p>
+    <p><b>Cách dùng:</b> Gắn vào gốc động từ hoặc tính từ.</p>
+        <p><b>Cấu trúc:</b></p>
+    <ul>
+        <li>Nếu gốc động từ/tính từ kết thúc bằng 아 hoặc 오, thêm -아야 하다/되다.</li>
+        <li>Nếu gốc động từ/tính từ kết thúc bằng các nguyên âm khác, thêm -어야 하다/되다.</li>
+        <li>Nếu gốc động từ/tính từ là 하다, chuyển thành 해야 하다/되다.</li>
+    </ul>
+    <div class="example-box">
+        <p class="korean-text">매일 운동해야 해요. (Maeil undonghaeya haeyo.)</p>
+        <p>Tôi phải tập thể dục mỗi ngày.</p>
+    </div>
+    <div class="example-box">
+        <p class="korean-text">시험을 잘 봐야 돼요. (Siheomeul jal bwaya dwaeyo.)</p>
+        <p>Tôi phải làm bài thi tốt.</p>
+    </div>
+</div>
 
 <div class="grammar-card">
     <h4>-기 전에 (-gi jeone) - Trước khi</h4>
@@ -1588,6 +1608,25 @@
     </div>
 </div>
 
+<div class="grammar-card">
+    <h4>-아/어/여야 하다 (-a/eo/yeoya hada) - Phải</h4>
+    <p><b>Ý nghĩa:</b> Diễn tả sự bắt buộc, cần thiết phải thực hiện một hành động nào đó.</p>
+    <p><b>Cách dùng:</b> Gắn vào gốc động từ hoặc tính từ.</p>
+    <p><b>Cấu trúc:</b></p>
+    <ul>
+        <li>Nếu gốc động từ/tính từ kết thúc bằng 아 hoặc 오, thêm -아야 하다.</li>
+        <li>Nếu gốc động từ/tính từ kết thúc bằng các nguyên âm khác, thêm -어야 하다.</li>
+        <li>Nếu gốc động từ/tính từ là 하다, chuyển thành 해야 하다.</li>
+    </ul>
+    <div class="example-box">
+        <p class="korean-text">숙제를 해야 해요. (Sukjereul haeya haeyo.)</p>
+        <p>Tôi phải làm bài tập.</p>
+    </div>
+    <div class="example-box">
+        <p class="korean-text">일찍 일어나야 해요. (Iljjik ireonaya haeyo.)</p>
+        <p>Tôi phải dậy sớm.</p>
+    </div>
+</div>
 
 <div class="grammar-card">
     <h4>-지 말다 (-ji malda) - Đừng</h4>
