@@ -31,11 +31,6 @@
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://dailykorean.me/courses.html</loc>
-        <lastmod>2026-03-04</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
     <url>
         <loc>https://dailykorean.me/posts/2026-02-13-viết-53-tiện-nghi-sinh-hoạt.html</loc>
         <lastmod>2026-02-13</lastmod>
@@ -2178,4 +2173,5 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
 </urlset>
