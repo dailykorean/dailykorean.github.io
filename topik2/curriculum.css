@@ -440,6 +440,8 @@ a { color: var(--primary); }
 
 /* ===== AD CONTAINERS ===== */
 .ad-container { text-align: center; margin: 2rem auto; padding: 0.5rem; max-width: 728px; min-height: 90px; }
+.ad-after-lesson { text-align: center; margin: 2.5rem auto 1rem; padding: 1rem; max-width: 728px; border-top: 1px solid var(--border, #e0e0e0); }
+.ad-after-lesson .ad-label { display: block; color: #999; font-size: 0.75rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
 .ad-container-lesson { margin: 1.5rem -1rem; padding: 1rem; background: var(--bg); border-radius: 8px; text-align: center; }
 
 /* ===== VISITED LESSON ENHANCEMENTS ===== */

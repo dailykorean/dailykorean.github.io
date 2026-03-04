@@ -115,13 +115,10 @@
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQKK9KJ0JF"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZQKK9KJ0JF');</script>
-    
+    <!-- AdSense (manual placements only, no auto-ads) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-4343125715021828">
-<style>
-.ad-after-lesson { text-align: center; margin: 2.5rem auto 1rem; padding: 1rem; max-width: 728px; border-top: 1px solid #e0e0e0; }
-.ad-after-lesson .ad-label { display: block; color: #999; font-size: 0.75rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
-</style>
+    
 </head>
 <body>
     
@@ -218,12 +215,18 @@ Nhớ nhé, '금리' không phải là [금리] mà là [금니]!</div></section
             <button class="mark-complete-btn" id="markCompleteBtn">⬜ Đánh dấu hoàn thành</button>
         </div>
     </main>
-    <!-- Quảng cáo cuối bài -->
+    
+    
+    <div class="ad-container" style="margin:1.5rem 0">
+        <script async="async" data-cfasync="false" src="https://pl28837086.effectivegatecpm.com/b4f802a5fbd59e88a4f5ed98c88ff221/invoke.js"></script>
+        <div id="container-b4f802a5fbd59e88a4f5ed98c88ff221"></div>
+    </div>
+
+    <!-- Quảng cáo cuối bài (non-intrusive) -->
     <div class="ad-after-lesson" id="adAfterLesson">
         <small class="ad-label">Quảng cáo</small>
         <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4343125715021828" data-ad-slot="auto" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
     </div>
-
     
     
     
@@ -475,23 +478,5 @@ Nhớ nhé, '금리' không phải là [금리] mà là [금니]!</div></section
         }
     })();
     </script>
-
-<script>
-// Lazy-load: only initialize ad when user scrolls near it
-if ('IntersectionObserver' in window) {
-    var adEl = document.getElementById('adAfterLesson');
-    if (adEl) {
-        var obs = new IntersectionObserver(function(entries) {
-            entries.forEach(function(e) {
-                if (e.isIntersecting) {
-                    try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(err) {}
-                    obs.unobserve(e.target);
-                }
-            });
-        }, { rootMargin: '200px' });
-        obs.observe(adEl);
-    }
-}
-</script>
 </body>
 </html>
