@@ -31,7 +31,6 @@
         <priority>0.3</priority>
     </url>
     <url>
-    <url>
         <loc>https://dailykorean.me/posts/2026-02-13-vi%E1%BA%BFt-53-ti%E1%BB%87n-nghi-sinh-ho%E1%BA%A1t.html</loc>
         <lastmod>2026-02-13</lastmod>
         <changefreq>monthly</changefreq>
@@ -2173,5 +2172,4 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
 </urlset>
