@@ -5,8 +5,56 @@
     <link>https://dailykorean.me</link>
     <description>Học tiếng Hàn và luyện thi TOPIK mỗi ngày</description>
     <language>vi</language>
-    <lastBuildDate>Tue, 03 Mar 2026 17:33:36 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 13:09:38 GMT</lastBuildDate>
     <atom:link href="https://dailykorean.me/feed.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+        <title>📝 TOPIK — Bài học hôm nay</title>
+        <link>https://dailykorean.me/posts/2026-03-04-topik-bài-học-hôm-nay.html</link>
+        <description><![CDATA[📝 TOPIK — Bài học hôm nay]]></description>
+        <pubDate>Wed, 04 Mar 2026 00:00:00 GMT</pubDate>
+        <guid>https://dailykorean.me/posts/2026-03-04-topik-bài-học-hôm-nay.html</guid>
+    </item>
+
+    <item>
+        <title>🎧 Nghe hiểu (Hội thoại) — Chuẩn bị tài liệu họp</title>
+        <link>https://dailykorean.me/posts/2026-02-17-nghe-hiểu-hội-thoại-chuẩn-bị-tài-liệu-họp.html</link>
+        <description><![CDATA[## 📖 Từ Vựng Hôm Nay]]></description>
+        <pubDate>Tue, 17 Feb 2026 00:00:00 GMT</pubDate>
+        <guid>https://dailykorean.me/posts/2026-02-17-nghe-hiểu-hội-thoại-chuẩn-bị-tài-liệu-họp.html</guid>
+    </item>
+
+    <item>
+        <title>📖 Đọc hiểu — Sự thay đổi của cộng đồng trong xã hội hiện đại</title>
+        <link>https://dailykorean.me/posts/2026-02-16-đọc-hiểu-sự-thay-đổi-của-cộng-đồng-trong-xã-hội-hi.html</link>
+        <description><![CDATA[## 📝 So Sánh Ngữ Pháp: -더라도 vs -든지]]></description>
+        <pubDate>Mon, 16 Feb 2026 00:00:00 GMT</pubDate>
+        <guid>https://dailykorean.me/posts/2026-02-16-đọc-hiểu-sự-thay-đổi-của-cộng-đồng-trong-xã-hội-hi.html</guid>
+    </item>
+
+    <item>
+        <title>📝 Luyện đề — Ngữ pháp · Từ vựng · Đọc hiểu</title>
+        <link>https://dailykorean.me/posts/2026-02-15-luyện-đề-ngữ-pháp-từ-vựng-đọc-hiểu.html</link>
+        <description><![CDATA[## 📖 Từ Vựng Hôm Nay]]></description>
+        <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
+        <guid>https://dailykorean.me/posts/2026-02-15-luyện-đề-ngữ-pháp-từ-vựng-đọc-hiểu.html</guid>
+    </item>
+
+    <item>
+        <title>✍️ Viết 54 (Nghị luận) — Thông tin giả và tư duy phản biện</title>
+        <link>https://dailykorean.me/posts/2026-02-14-viết-54-thông-tin-giả-và-tư-duy-phản-biện.html</link>
+        <description><![CDATA[## 📝 So Sánh Ngữ Pháp: -에 비해 vs -에 반해]]></description>
+        <pubDate>Sat, 14 Feb 2026 00:00:00 GMT</pubDate>
+        <guid>https://dailykorean.me/posts/2026-02-14-viết-54-thông-tin-giả-và-tư-duy-phản-biện.html</guid>
+    </item>
+
+    <item>
+        <title>✍️ Viết 53 (Biểu đồ) — Tiện nghi sinh hoạt</title>
+        <link>https://dailykorean.me/posts/2026-02-13-viết-53-tiện-nghi-sinh-hoạt.html</link>
+        <description><![CDATA[## 📖 Từ Vựng Hôm Nay]]></description>
+        <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+        <guid>https://dailykorean.me/posts/2026-02-13-viết-53-tiện-nghi-sinh-hoạt.html</guid>
+    </item>
+
 </channel>
 </rss>
